@@ -1,0 +1,36 @@
+.custommap{
+    width:100%;
+    
+    img{
+        width: 100%;
+        max-width: 500px;
+        padding: 0.5em;
+        
+        @include breakpoint(md) {
+            width: auto;
+        }
+    }
+}
+
+.custommap-description{
+
+    margin-left:0;
+    text-align: center;
+    
+     
+    p{
+        font-size: 1.1em!important;
+        margin: 0!important;
+        padding: 0!important;
+        display: block!important;
+        min-width: 100%!important;
+    }
+    a{
+        font-size: 1.1em;
+        display: block!important;
+    }
+    
+    .custommap-description-head{
+        margin-top: 1em!important;
+    }
+}

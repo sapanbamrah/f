@@ -1,0 +1,35 @@
+//**********************
+// Included fonts:
+//**********************
+
+//@include font-face("ProximaNova Light", font-files("ProximaNova-Light.svg", "ProximaNova-Light.woff", "ProximaNova-Light.otf"), "ProximaNova-Light.eot");
+@include font-face("ProximaNova Regular Italic", font-files( "ProximaNova-RegularIt.woff", "ProximaNova-RegularIt.otf"), "ProximaNova-RegularIt.eot");
+@include font-face("ProximaNova Regular", font-files( "ProximaNova-Regular.woff", "ProximaNova-Regular.otf"), "ProximaNova-Regular.eot");
+@include font-face("ProximaNova Bold", font-files( "ProximaNova-Bold.woff", "ProximaNova-Bold.otf"), "ProximaNova-Bold.eot");
+@include font-face("ProximaNova Bold Italic", font-files( "ProximaNova-BoldIt.woff", "ProximaNova-BoldIt.otf"), "ProximaNova-BoldIt.eot");
+@include font-face("ProximaNova Semi Bold", font-files( "ProximaNova-Semibold.woff", "ProximaNova-Semibold.otf"), "ProximaNova-Semibold.eot");
+//@include font-face("ProximaNova Semi Bold Italic", font-files("ProximaNova-SemiboldIt.svg", "ProximaNova-SemiboldIt.woff", "ProximaNova-SemiboldIt.otf"), "ProximaNova-SemiboldIt.eot");
+
+
+@include font-face("TheSanB5Pla", font-files("TheSanB5Pla.svg", "TheSanB5Pla.woff", "TheSanB5Pla.otf"), "TheSanB5Pla.eot");
+//@include font-face("TheSans-B3Light", font-files("TheSans-B3Light.svg", "TheSans-B3Light.woff", "TheSans-B3Light.otf"), "TheSans-B3Light.eot");
+
+//@include font-face("Mission Gothic Light Italic", font-files("Mission Gothic Light Italic.svg", "Mission Gothic Light Italic.woff", "Mission Gothic Light Italic.otf"), "Mission Gothic Light Italic.eot");
+
+@include font-face("TAheadline", font-files("TAheadline.svg", "TAheadline.woff", "TAheadline.otf"), "TAheadline.eot");
+
+@include font-face("GearedSlab-Thin", font-files("GearedSlab-Thin.svg", "GearedSlab-Thin.woff", "GearedSlab-Thin.otf"), "GearedSlab-Thin.eot");
+@include font-face("GearedSlab-Bold", font-files("GearedSlab-Bold.svg", "GearedSlab-Bold.woff", "GearedSlab-Bold.otf"), "GearedSlab-Bold.eot");
+
+@include font-face("FoodWineIcons", font-files("FoodWineIcons.svg", "FoodWineIcons.woff", "FoodWineIcons.otf"), "FoodWineIcons.eot");
+
+//in Win 8.1 select text with svg font 'GearedSlab-Thin' is not rendered properly for select element
+@font-face {
+  font-family: "GearedSlab-Thin-Fix";
+  src: url('../fonts/GearedSlab-Thin.eot');
+  src:  url('../fonts/GearedSlab-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GearedSlab-Thin.svg#GearedSlab-Thin') format('svg'),
+        url('../fonts/GearedSlab-Thin.woff') format('woff'),
+        url('../fonts/GearedSlab-Thin.otf') format('opentype');
+
+}

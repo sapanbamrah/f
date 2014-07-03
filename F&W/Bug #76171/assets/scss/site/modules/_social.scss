@@ -1,0 +1,19 @@
+.social {
+  min-width: 300px;
+}
+
+.social-list {
+  @extend .l-list-clean;
+  @extend .l-list-inline;
+
+
+  & > li {
+    width: 160px;
+  }
+
+  & > li:last-child {
+    width: 100px;
+  }
+}
+
+

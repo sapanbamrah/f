@@ -1,0 +1,15 @@
+---
+title: Food and Explore teaser
+---
+<div class="fawexploremosaic">
+<div class="headerlockup headerlockup-single">
+	    <hr class="headerlockup-hr">
+	    <h2>A taste of victoria</h2>
+	    <hr class="headerlockup-hr">
+	</div>
+	<p class="fawexploremosaictext">Victoria has so much to offer the gourmet traveller. To get your tastebuds tingling here's a small tasting plate of the state’s top picks.</p>
+
+{{>mosaiclocation}}
+
+<p class="fawexploremosaictext">Want to list your Food & Wine business here? <a href="" target="_self">Register now.</a></p>
+</div>

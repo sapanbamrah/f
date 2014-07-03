@@ -1,0 +1,36 @@
+$caption-header-font-family: "ProximaNova Bold Italic", Helvetica, Arial, sans-serif !default;
+$caption-font-size: 14px !default;
+$caption-body-font-family: "ProximaNova Regular Italic", Helvetica, Arial, sans-serif !default;
+$captionColour: #363333;
+
+/*
+.caption {
+  position: relative;
+  font-size:pxtoem(14px);
+  color:$captionColour;
+  max-width: 25em;
+  margin: 0 auto;
+}
+
+.caption-container {
+  margin: 2em auto;
+  max-width: pxtoem(300px);
+  line-height: 1.5em;
+}
+*/
+.caption {
+  font-size: pxtoem($caption-font-size);
+  $captionColour: $captionColour;
+}
+.caption-header {
+  display: block;
+  font-family: $caption-header-font-family;
+  line-height: pxtolineheightem($caption-font-size, 22px);
+
+}
+
+.caption-body {
+  font-family: $caption-body-font-family;
+  line-height: pxtolineheightem($caption-font-size, 22px);
+}
+

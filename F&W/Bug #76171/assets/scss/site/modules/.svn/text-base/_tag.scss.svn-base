@@ -1,0 +1,12 @@
+
+
+.tag-list {
+
+  @extend .clearfix;
+  @extend .l-list-float;
+  @extend .l-list-clean;
+}
+.tag-list > li {
+  margin: 0.15em;
+
+}

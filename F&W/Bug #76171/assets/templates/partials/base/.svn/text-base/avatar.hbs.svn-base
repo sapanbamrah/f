@@ -1,0 +1,7 @@
+---
+title: Avatar
+---
+<div class="avatar">
+	<img src="imgs/pages/article/avatar-icon.jpg" alt="Avatar Alt Text" />
+	<p class="avatar-label"><strong>Anthony Simon</strong></p>
+</div>

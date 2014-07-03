@@ -1,0 +1,11 @@
+---
+title: Food and Wine Hero Thank You
+note: note-foodandwineherohome
+---
+
+<div class='form-hero-thankyou l-page-width-640'>
+	<div class="faw-hero-home-container">
+        {{> icon_logo_withlines }}
+		<h1 class="form-thankyou-h1 type-spacing-10">Thank you for your submission</h1>
+	</div>
+</div>

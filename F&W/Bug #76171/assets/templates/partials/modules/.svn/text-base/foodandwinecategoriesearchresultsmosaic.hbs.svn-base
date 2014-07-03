@@ -1,0 +1,17 @@
+---
+title: Food and Wine Category Mosaic
+---
+<div class="faw-category-mosaic">
+	<!-- FOOD MOSAIC GRID CHANGER -->
+	{{>mosaicgridandcategorychanger}}
+	<!-- END: FOOD MOSAIC GRID CHANGER -->
+
+	<!-- MOSAIC -->
+	{{> mosaicblank}}
+	<!-- END: MOSAIC -->
+
+	<p>
+		<a href="#" class="btn-secondary btn-auto-size">Show more Results</a>
+	</p>
+
+</div>

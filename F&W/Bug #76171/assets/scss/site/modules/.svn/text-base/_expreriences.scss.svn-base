@@ -1,0 +1,26 @@
+.experiences{
+    background-color: #ebebeb;
+    padding-top: 2em;
+    margin-top: 4em;
+    
+     @include breakpoint(md) {
+        padding-top: 5em;
+        margin-top: 7em
+    }
+}
+
+.experiences-headline{
+    margin-bottom: 0.3em;
+}
+
+.experiences-head-divider-hr {
+  @include breakpoint(md) {
+    bottom: -20px !important; //Hacky but overwrites standard
+  }
+}
+
+.experiences-head-divider-image {
+      height: 60px; //PX height due to image
+}
+
+

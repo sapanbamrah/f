@@ -1,0 +1,67 @@
+---
+title: Food and Wine Carousel
+note: note-foodandwinecarousel
+---
+
+<!-- FOOD AND WINE CAROUSEL -->
+<div class='carousel faw-carousel faw-bg-full-container' data-autoslidetime="0">
+	
+	<div class="l-display-none-md l-position-absolute fullwidth-bg" data--300-top="-webkit-transform: translate(0,10%);" data-300-bottom="-webkit-transform: translate(0,-10%);">
+		<div class="responsive-image l-display-none-md l-position-absolute" data-picture="" data-alt="" >
+			<div data-src="imgs/base/faw-carousel-bg.jpg" data-media="(min-width: 1px)"></div>
+			<div data-src="imgs/base/faw-carousel-bg.jpg" data-media="(min-width: 481px)"></div>
+			<div data-src="imgs/base/faw-carousel-bg.jpg" data-media="(min-width: 769px)"></div>
+			<div data-src="imgs/base/faw-carousel-bg.jpg" data-media="(min-width: 993px)"></div>
+			
+			<noscript>
+				<img src='imgs/base/faw-carousel-bg.jpg' alt=''>
+			</noscript>
+		</div>
+		<!--[if (lt IE 9) & (!IEMobile)]>
+            <img src='imgs/base/faw-carousel-bg.jpg' alt=''>
+        <![endif]-->
+	</div>	
+	
+	<div class='faw-carousel-outer'>
+		<div class='faw-carousel-wrapper'>
+			<ul class="carousel-wrapper">
+				<li class="item">
+					<!-- FOOD AND WINE CAROUSEL ITEM -->
+					{{>foodandwinecarouselitem}}
+					<!-- END: FOOD AND WINE CAROUSEL ITEM -->
+				</li>
+				<li class="item">
+					<!-- FOOD AND WINE CAROUSEL ITEM -->
+					{{>foodandwinecarouselitem}}
+					<!-- END: FOOD AND WINE CAROUSEL ITEM -->
+				</li>
+				<li class="item">
+					<!-- FOOD AND WINE CAROUSEL ITEM -->
+					{{>foodandwinecarouselitem}}
+					<!-- END: FOOD AND WINE CAROUSEL ITEM -->
+				</li>
+				<li class="item">
+					<!-- FOOD AND WINE CAROUSEL ITEM -->
+					{{>foodandwinecarouselitem}}
+					<!-- END: FOOD AND WINE CAROUSEL ITEM -->
+				</li>
+				<li class="item">
+					<!-- FOOD AND WINE CAROUSEL ITEM -->
+					{{>foodandwinecarouselitem}}
+					<!-- END: FOOD AND WINE CAROUSEL ITEM -->
+				</li>
+				<li class="item">
+					<!-- FOOD AND WINE CAROUSEL ITEM -->
+					{{>foodandwinecarouselitem}}
+					<!-- END: FOOD AND WINE CAROUSEL ITEM -->
+				</li>
+				<li class="item">
+					<!-- FOOD AND WINE CAROUSEL ITEM -->
+					{{>foodandwinecarouselitem}}
+					<!-- END: FOOD AND WINE CAROUSEL ITEM -->
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- END: FOOD AND WINE CAROUSEL -->

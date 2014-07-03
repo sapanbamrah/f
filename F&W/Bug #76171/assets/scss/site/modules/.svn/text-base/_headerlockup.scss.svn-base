@@ -1,0 +1,34 @@
+.headerlockup {
+  text-align: center;
+}
+.headerlockup-single{
+    padding: 0 1em;
+    h2{
+        padding-top: 0.4em;
+    }
+}
+.headerlockup-hr {
+  margin-bottom: 14px;
+  width: 12.125em;
+
+  @include breakpoint(md) {
+    width: pxtoem(226px);
+  }
+}
+.headerlockup-type-sml1 {
+  font-family: $font-family-secondary;
+  font-size: pxtoem(24px);
+  line-height: 1.9em;
+  //line-height: pxtolineheightem(24px, 30px);
+}
+.headerlockup-type-lrg {
+  font-family: $font-family-feature;
+  font-size: pxtoem(48px);
+  line-height: .9em;
+  //line-height: pxtolineheightem(48px, 48px);
+  text-transform: uppercase;
+}
+.headerlockup-type-sml2 {
+  font-family: $font-family-secondary;
+  font-size: pxtoem(24px);
+}

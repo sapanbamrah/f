@@ -1,0 +1,52 @@
+.mosaicgridchanger{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: pxtoem(1160px);
+    margin: 0 auto;
+    margin-top: 1em;
+    border-top: 1px #bbbbbb solid;
+    padding-top: 2em;
+    
+    @include breakpoint(md) {
+        text-align: right;
+    }
+}
+
+.mosaicgridchanger-button{
+    display: inline-block;
+    padding: 0.5em;
+    background-color: white;
+    border: 1px #bbbbbb solid;
+    margin: 0;
+    cursor: pointer;
+    
+    span{
+        font-size: 1.5em;
+        color: #bbbbbb;
+    }
+}
+
+.mosaicgridchanger-button:hover{
+  background-color: #393939;
+  span{
+    color: white;
+  }
+}
+
+.mosaicgridchanger-button-active{
+    background-color: #393939;    
+    span{
+        color: white;
+    }
+}
+
+.mosaicgridchanger-list-button{
+    margin-left: -0.4em;
+    margin-right: 0;
+    
+     @include breakpoint(md) {
+         margin-right: 1em;
+    }
+}

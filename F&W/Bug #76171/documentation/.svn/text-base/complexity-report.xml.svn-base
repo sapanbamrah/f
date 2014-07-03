@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jslint>
+<file name="assets/js/src/helper/dataTags.js">
+  
+  <issue
+    line="8"
+    char="DataTagHelper.setDataTag"
+    evidence="DataTagHelper.setDataTag is too complicated"
+    reason="Cyclomatic: 5,
+    Halstead: 10.667
+    | Effort: 2673.8
+    | Volume: 250.67
+    | Vocabulary: 20" />
+  
+</file>
+<file name="assets/js/src/modules/jquery.ta.carousel.js">
+  
+  <issue
+    line="45"
+    char="&lt;anonymous&gt;.init"
+    evidence="&lt;anonymous&gt;.init is too complicated"
+    reason="Cyclomatic: 7,
+    Halstead: 18.018
+    | Effort: 32799
+    | Volume: 1820.4
+    | Vocabulary: 70" />
+  
+  <issue
+    line="92"
+    char="&lt;anonymous&gt;"
+    evidence="&lt;anonymous&gt; is too complicated"
+    reason="Cyclomatic: 7,
+    Halstead: 14.250
+    | Effort: 10351
+    | Volume: 726.39
+    | Vocabulary: 33" />
+  
+  <issue
+    line="187"
+    char="&lt;anonymous&gt;.paginationIcons"
+    evidence="&lt;anonymous&gt;.paginationIcons is too complicated"
+    reason="Cyclomatic: 2,
+    Halstead: 8.2500
+    | Effort: 6169.8
+    | Volume: 747.86
+    | Vocabulary: 34" />
+  
+</file>
+<file name="assets/js/src/modules/jquery.ta.custommap.js">
+  
+  <issue
+    line="121"
+    char="&lt;anonymous&gt;.initMap"
+    evidence="&lt;anonymous&gt;.initMap is too complicated"
+    reason="Cyclomatic: 1,
+    Halstead: 9.1406
+    | Effort: 5876.6
+    | Volume: 642.91
+    | Vocabulary: 41" />
+  
+</file>
+<file name="assets/js/src/helper/stacticMapUrlConverter.js">
+  
+  <issue
+    line="10"
+    char="&lt;anonymous&gt;.forEach"
+    evidence="&lt;anonymous&gt;.forEach is too complicated"
+    reason="Cyclomatic: 6,
+    Halstead: 21.235
+    | Effort: 8124.1
+    | Volume: 382.57
+    | Vocabulary: 36" />
+  
+</file>
+<file name="assets/js/src/modules/jquery.ta.customstaticmap.js">
+  
+</file>
+<file name="assets/js/src/main.js">
+  
+</file>
+<file name="assets/js/src/modules/jquery.ta.formcategory.js">
+  
+  <issue
+    line="73"
+    char="&lt;anonymous&gt;.updatePrimarySecondary"
+    evidence="&lt;anonymous&gt;.updatePrimarySecondary is too complicated"
+    reason="Cyclomatic: 4,
+    Halstead: 8.4000
+    | Effort: 4785.8
+    | Volume: 569.73
+    | Vocabulary: 31" />
+  
+</file>
+<file name="assets/js/src/modules/jquery.ta.inputfield.js">
+  
+  <issue
+    line="218"
+    char="&lt;anonymous&gt;"
+    evidence="&lt;anonymous&gt; is too complicated"
+    reason="Cyclomatic: 4,
+    Halstead: 8.8846
+    | Effort: 3610.2
+    | Volume: 406.34
+    | Vocabulary: 37" />
+  
+</file>
+<file name="assets/js/src/modules/jquery.ta.navbar.js">
+  
+  <issue
+    line="31"
+    char="&lt;anonymous&gt;.init"
+    evidence="&lt;anonymous&gt;.init is too complicated"
+    reason="Cyclomatic: 2,
+    Halstead: 10.316
+    | Effort: 5382.3
+    | Volume: 521.75
+    | Vocabulary: 26" />
+  
+</file>
+<file name="assets/js/src/modules/jquery.ta.fullwidthbg.js">
+  
+</file>
+<file name="assets/js/src/modules/jquery.ta.imageuploader.js">
+  
+</file>
+<file name="assets/js/src/modules/jquery.ta.video.js">
+  
+</file>
+<file name="assets/js/src/modules/jquery.ta.mosaicgridchanger.js">
+  
+</file>
+</jslint>

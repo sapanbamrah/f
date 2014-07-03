@@ -1,0 +1,79 @@
+///*
+// * Sprite Based Icons:
+// * ---------------------------------------------------------------------------------------------------------------- */
+.icon {
+    font-weight: normal !important;
+    vertical-align: middle;
+    display: inline-block;
+    background-image: url(../imgs/icon-sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 0; // top left corner should contain a 68x68 pixel transparent square...
+}
+
+///*
+// * Icon size presets:
+// * ---------------------------------------------------------------------------------------------------------------- */
+.icon-32 {
+    margin:-16px 0; // reduce the line height
+    @include icon-sprite-size(32px);
+}
+
+.icon-52 {
+    margin:-26px 0; // reduce the line height
+    @include icon-sprite-size(52px);
+}
+
+///*
+// * Icon positions:
+// * ---------------------------------------------------------------------------------------------------------------- */
+.icon-red-heart {
+    background-position: -10px -10px;
+}
+
+.icon-green-search {
+    background-position: -56px -10px;
+}
+
+.icon-diamond-koalas {
+    background-position: -10px -58px;
+}
+
+.icon-diamond-camping {
+    background-position: -82px -58px;
+}
+
+.icon-diamond-aboriginal {
+    background-position: -154px -58px;
+}
+
+
+
+
+///*
+// * Icon positions:
+// * ---------------------------------------------------------------------------------------------------------------- */
+.icon-circle {
+  position: relative;
+  display: block;
+  border-radius: 50%;
+  color:#fff;
+  border:pxtoem(1px) solid #fff;
+  min-height: 4.2em;
+  min-width: 4.2em;
+}
+
+
+//Todo - migrate over to the video scss
+
+
+.icon-play {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.48em;
+  left: 50%;
+  margin-left: -0.55em;
+  font-size: 0.7em;
+}
+
+
+

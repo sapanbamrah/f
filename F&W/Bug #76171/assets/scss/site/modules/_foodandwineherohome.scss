@@ -1,0 +1,193 @@
+/*------------------ TEST BG TBR IN LAYOUT ----------------------*/
+.faw-hero-home{
+    position: relative;
+    min-height: auto;
+    height: auto;
+    
+    @include breakpoint(md) {
+        min-height: 1120px;
+    }
+   
+    h1{
+        color: $color-white;
+        font-size: pxtoem(42px);
+        letter-spacing: -0.015em;
+        padding-left: 1em;
+        padding-right: 1em;
+        font-family: $font-family-secondary;
+        margin-top: -11px;
+        margin-bottom: 11px;
+        
+        @include breakpoint(md) {
+          font-size: 3.5em;
+        }
+        
+        @include breakpoint(lg) {
+            font-size: 4.5em;
+        }
+    }
+}
+
+.faw-hero-home-container{
+    .btn-auto-size{
+        margin-left: 0em;
+        margin-right: 0em;
+   }
+}
+
+.faw-hero-home-headline{
+    font-family: "TAheadline", Helvetica, Arial, sans-serif;
+    padding-bottom: 0.5em;
+}
+
+.fullwidth-bg{
+    width: 100%;
+    height: 100%;
+}
+
+
+.faw-hero-home-container{
+    position: relative;
+    text-align: center;
+    padding-top: 1em;
+    width: 100%;
+    color: $color-white;
+    z-index: 1;
+    margin: 0;
+    
+    @include breakpoint(md) {
+        padding-top: 5em;
+    }
+}
+.faw-hero-home-bg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    
+    z-index: -1; 
+    
+    /* IE 10 fix */
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        z-index: 0; 
+    }
+    
+    img{
+        width: 100%;
+    }
+
+}
+
+.faw-hero-home-bg .responsive-image img{
+  max-width: none;
+}
+
+/*
+ Fix for when displaying within styleguide
+ Image sits over all other elements due to position being fixed
+*/
+.sg-pattern {
+  .faw-hero-home-bg {
+    position: absolute;
+  }
+}
+
+
+//Todo - This fix was needed to solve the rendering issue for the pullquotefullfeature, didn't like z-index being -1
+.skrollr-desktop {
+    .faw-hero-home-bg{
+        z-index: inherit;
+    }
+}
+
+// HR Rules
+.faw-hero-home-container .icon-logo-withlines-container {
+  margin: 0;
+  height: 140px;
+  overflow: hidden;
+}
+
+.faw-hero-home.make-black {
+  .faw-hero-home-container .icon-logo-withlines-logo{
+    color: #040000;
+  }
+  hr {
+    border-top: 1px solid #040000;
+  }
+  h1{
+    color: #040000;
+  }
+}
+
+.faw-hero-home.make-white{
+  .faw-hero-home-container .icon-logo-withlines-logo{
+    color: #FFF;
+  }
+  hr {
+    border-top: 1px solid #FFF;
+  }
+  h1{
+    color: #FFF;
+  }
+}
+/*
+.faw-hero-home-container .icon-logo-withlines-logo{
+  color: #FFF;
+  @include breakpoint(md) {
+    color: #040000;
+  }
+}
+
+.faw-hero-home hr {
+  border-top: 1px solid #FFF;
+  @include breakpoint(md) {
+    border-top: 1px solid #040000;
+  }
+}
+*/
+.faw-hero-home-hr {
+  margin: 0 auto;
+  width: 230px;
+  @include breakpoint(md) {
+    width: 230px;
+  }
+}
+
+.form-hero{
+    padding-left: 1em;
+    padding-right: 1em;
+    position: relative;
+    z-index: 1;
+    
+    .btn-auto-size{
+        width: 100%;
+        @include breakpoint(md) {
+            width: auto;
+        }
+    }
+}
+
+.form-hero.is-active {
+  z-index: 100;
+}
+
+
+.form-hero-register {
+  color: #040000;
+  font-size: pxtoem(14px);
+  padding: 0 0.5em;
+  max-width: 480px;
+
+  @include breakpoint(sm){
+    font-size: pxtoem(18px);
+    padding: 0 1.4em;
+    margin: 0 auto;
+  }
+
+  @include breakpoint(md){
+    max-width: 520px;
+  }
+
+}

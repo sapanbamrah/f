@@ -1,0 +1,44 @@
+.faw-search-tag-cloud{
+    text-align: center;
+    padding: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    
+    ul{
+        text-align: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+        li{
+           display: inline-block;
+           background-color: $type-link-colour;
+           color: #FFF;
+           padding: 1em;
+           padding-top: 0.6em;
+           padding-bottom: 0.6em; 
+           margin: 0.2em;
+           font-size: 0.9em;
+            border:1px solid $type-link-colour;
+           
+           a{
+               text-decoration: none;
+               color: #FFF;
+           }
+        }
+    }
+}
+
+.faw-search-tag-cloud-headline{
+    font-size: 1.2em;
+    margin-bottom: 0.4em;
+}
+
+.faw-search-tag-cloud ul li:hover{
+  background-color: #fff;
+  color: $type-link-colour;
+
+  a{
+    color: $type-link-colour;
+  }
+}

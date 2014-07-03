@@ -1,0 +1,42 @@
+
+$breakpoint-no-queries: false;
+@import "variables";
+@import "site/partials/breakpoints";
+
+//Start - fix for error message overlapping
+//_inputfield.scss
+
+.categories-box{
+  padding-bottom: 3.5em;
+  @include breakpoint(sm) {
+    padding-bottom: 1em;
+  }
+}
+.categories-box .categories-box-validation-alert{
+  bottom: -3em;
+  left: 1em;
+  @include breakpoint(sm) {
+    bottom: 0em;
+    right:4em;
+    left:auto;
+  }
+}
+.categories-box .categories-box-validation-alert .input-field-validation-icon{
+  top: -0.6em;
+  right: 1.3em;
+  @include breakpoint(sm) {
+    top: 0.7em;
+  }
+}
+//end
+
+//start - fix for tap issue on mobile devices
+//_categories.scss
+
+.category-item-container .category-input[type=checkbox] + label{
+  display: inline-block;
+}
+.touch .category-item-container .category-input[type=checkbox] + label > * {
+  pointer-events: none;
+}
+//End

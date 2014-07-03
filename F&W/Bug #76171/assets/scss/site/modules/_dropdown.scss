@@ -1,0 +1,40 @@
+$dropdownWidth: 250px!default;
+
+.dropdown{
+  width: pxtoem($dropdownWidth);
+  height: 50px;
+  overflow: hidden;
+  background: url(../imgs/dropdown/dropdown-icon.png) no-repeat right #092e44;
+  border: 1px solid #547182;
+  cursor: pointer;
+  margin-bottom: 1em;
+
+  @media screen and (max-width:990px) {
+    width: 100%;
+  }
+}
+
+.dropdown select {
+  background: transparent;
+  width: pxtoem($dropdownWidth);
+  height: 50px;
+  padding: 0;
+  padding-left: 2em;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  height: 50px;
+  -webkit-appearance: none;
+  color: #33738f;
+  font-size: 0.9em;
+  cursor: pointer;
+  margin-left: 10px;
+
+  @media screen and (max-width:990px) {
+    width: 100%;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}

@@ -1,0 +1,86 @@
+
+input[type=checkbox].checkbox {
+  position: absolute;
+  top: 1.6em;
+  left: 0;
+}
+
+
+/**
+ Only enable for modern browsers
+**/
+
+.rgba {
+
+  input[type=checkbox].checkbox {
+    position: absolute;
+    overflow: hidden;
+    top: auto;
+    left: auto;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
+}
+
+input[type=checkbox].checkbox + label.checkbox-label {
+    padding-left: 3em;
+    min-height: pxtoem(36px);
+    display: inline-block;
+    line-height: 2.3em;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    font-size: 1.1em;
+    vertical-align: middle;
+    cursor: pointer;
+    font-family: "ProximaNova Bold";
+    margin-top: 2em;
+}
+
+
+/**
+ Only enable for modern browsers
+**/
+
+.rgba {
+
+  input[type=checkbox].checkbox + label.checkbox-label {
+    background-image: url('../imgs/base/checkbox-unchecked.png');
+  }
+
+  input[type=checkbox].checkbox:checked + label.checkbox-label {
+    background-image: url('../imgs/base/checkbox-checked.png');
+    border: none;
+  }
+
+
+}
+
+
+
+.checkbox{
+    position: relative;   
+    margin: 0.5em;
+}
+
+.checkbox-description{
+    font-size: 0.9em;
+    margin-left: 3.7em;
+    margin-top: 0em;
+    color: #737373;
+    margin-bottom: 2.5em;
+    
+    a{
+        color: #000;
+        font-weight: bold;
+        font-family: "ProximaNova Bold";
+        font-size: pxtoem(14px);
+    }
+
+  @include breakpoint(sm){
+    margin-bottom: 4.5em;
+  }
+}

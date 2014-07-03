@@ -1,0 +1,30 @@
+[
+	{
+		"icon": "http://extranet.ogilvy.com.au/TA/Styleguide/imgs/custommap/marker.png",
+		"lat": -25.850033,
+		"long":135.6500523,
+		"iconWidth": 59,
+		"iconHeight": 37,
+		"iconAnchorX": 45,
+		"iconAnchorY": 36,
+		"headline": "City 1",
+		"subline": "Subline",
+		"copy": "Lorem ipsum",
+		"link": "http://www.test.com.au",
+		"linklabel": "Show me more"
+	},
+	{
+		"icon": "http://extranet.ogilvy.com.au/TA/Styleguide/imgs/custommap/marker.png",
+		"lat": -20.850033,
+		"long":120.6500523,
+		"iconWidth": 59,
+		"iconHeight": 37,
+		"iconAnchorX": 45,
+		"iconAnchorY": 36,
+		"headline": "City 2",
+		"subline": "Subline",
+		"copy": "Lorem ipsum",
+		"link": "http://www.test.com.au",
+		"linklabel": "Show me more"
+	}
+]

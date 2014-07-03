@@ -1,0 +1,42 @@
+
+.sharebox {
+  position: relative;
+}
+
+.sharebox-header {
+  margin-bottom: 0.2em;
+  color:#fff;
+  text-align: center;
+
+  @include breakpoint(md) {
+    text-align: left;
+  }
+
+}
+
+
+
+
+.sharebox-list {
+  @extend .l-list-clean;
+  display: block;
+  text-align: center;
+
+  @include breakpoint(md) {
+    text-align: left;
+  }
+
+
+  > li {
+    margin: 0.8em 0;
+    display: inline-block;
+    margin-right: 1.3em;
+    width: 7.4em;
+  }
+
+
+}
+
+.sharebox-label {                          //Naming convention?
+  margin-left: 0.5em;
+}

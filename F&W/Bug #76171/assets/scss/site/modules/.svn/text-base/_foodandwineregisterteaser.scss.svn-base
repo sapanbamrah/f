@@ -1,0 +1,71 @@
+.faw-register-teaser{
+    text-align: center;
+    background: none;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    padding: 1em;
+    padding-top: 1.5em;
+
+    @include breakpoint(md) {
+      background: url(../imgs/pages/home/bg_register_teaser.png) repeat-x;
+    }
+    .is-desktop {
+      display: none;
+    }
+
+    h5 {
+      font-family: "ProximaNova Regular", Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+      font-size: pxtoem(14px);
+    }
+
+    @include breakpoint(md) {
+      h5 {
+        @include type_TAheadline();
+        font-size: pxtoem(24px);
+      }
+
+       position: absolute;
+
+      .is-mobile {
+        display: none;
+      }
+      .is-desktop {
+        display: inline-block;
+      }
+    }
+    
+    .headerlockup-type-sml1{
+        padding: 0;
+        margin: 0;
+        color: white;
+    }
+
+    .headerlockup-hr{
+      display: none;
+      border-top: 1px solid white!important;
+      margin-top: 1em;
+      margin-bottom: 1.9em;
+      @include breakpoint(md) {
+        display: block;
+
+      }
+    }
+    .headerlockup-hr-mobile{
+      border-top: 1px solid white!important;
+      margin-top: 1.5em;
+      margin-bottom: 1.3em;
+      display: block;
+      @include breakpoint(md) {
+        display:none;
+      }
+    }
+}
+
+.faw-register-teaser-subline{
+    color: white;
+}

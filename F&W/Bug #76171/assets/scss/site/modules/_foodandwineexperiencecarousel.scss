@@ -1,0 +1,47 @@
+.faw-experience{
+    width: 300px;
+    display: inline-block;
+    margin-top: 0.5em;
+    margin-bottom: 7.5em;
+    
+    @include breakpoint(lg) {
+         margin-top: 2em;
+         margin-bottom: 7em;
+    }
+    
+    margin-left: 0;
+    @include breakpoint(lg) {
+        margin-left: -900px;
+    }
+        
+    .owl-item{
+        width: 300px!important;
+        height: 300px!important;
+    }
+    
+    .owl-wrapper-outer{
+        overflow: visible!important;
+    }
+    
+    .owl-theme .owl-controls .owl-page span{ 
+       background: transparent!important;
+       border: 1px #000 solid!important;
+       @include breakpoint(md) {
+            border: 1px #000 solid!important;
+       }
+    }
+    
+    .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span{
+        background: #000!important;
+        @include breakpoint(md) {
+            background: #000!important;
+        }
+    }
+    
+    .owl-theme .owl-controls {
+        margin-top: 1em!important;
+        @include breakpoint(md) {
+            margin-top: 1em!important;
+        }
+    }
+}

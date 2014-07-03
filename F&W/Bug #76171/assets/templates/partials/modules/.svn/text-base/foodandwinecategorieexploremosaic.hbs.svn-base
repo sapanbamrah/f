@@ -1,0 +1,28 @@
+---
+title: Food and Wine Category Mosaic
+---
+<div class="faw-category-mosaic">
+
+	<div class="headerlockup">
+	    <hr class="headerlockup-hr">
+	    <div class="headerlockup-type-sml1">Take a look inside</div>
+	    <div class="headerlockup-type-lrg">Restaurant Australia</div>
+	    <div class="headerlockup-type-sml2">and see all that's on offer</div>
+	    <hr class="headerlockup-hr">
+	</div>
+
+    {{> foodandwinecategoryitems }}
+	
+	<!-- FOOD MOSAIC GRID CHANGER -->
+	{{>mosaicgridchanger}}
+	<!-- END: FOOD MOSAIC GRID CHANGER -->
+
+	<!-- MOSAIC -->
+	{{> mosaicblank}}
+	<!-- END: MOSAIC -->
+
+	<p class="type-spacing-120">
+	    <a href="#" class="btn-secondary btn-auto-size">Show more Results</a>
+	</p>
+
+</div>

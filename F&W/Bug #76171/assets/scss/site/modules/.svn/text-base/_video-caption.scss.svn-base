@@ -1,0 +1,30 @@
+
+/**
+ Issues with image ratio - and centering the caption
+ Requirements - captions need to be a set a specific height for this to work
+ //Todo - Review captions height make sure it's fixed!!!
+**/
+
+.video-caption {
+  position: relative;
+  overflow: hidden;
+  max-width: pxtoem(1100px);
+}
+
+.video-caption-container {
+  position: relative;
+
+  @include breakpoint(sm) {
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+  }
+}
+
+.video-caption-copy {
+  position: relative;
+  @include breakpoint(sm) {
+    margin-top: 50%;
+    top: -2.8em;
+  }
+}
+

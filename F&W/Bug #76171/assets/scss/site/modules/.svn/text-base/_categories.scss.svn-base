@@ -1,0 +1,220 @@
+///*
+// * Category CSS:
+// * ---------------------------------------------------------------------------------------------------------------- */
+.categories-row {
+    position: relative;
+    text-align: left;
+}
+
+/**
+ Support for modern browsers
+**/
+
+.rgba .categories-row {
+    text-align: center;
+    @include breakpoint(lg){
+      text-align: left;
+    }
+}
+
+
+.categories-box-validation-alert{
+    position: absolute;
+    bottom: 0em;
+    right: 4em;
+}
+
+.categories-box-validation-icon{
+    margin-top: 0;
+    margin-right: -4.2em;
+    @include breakpoint(sm){
+        margin-top: -1.3em;
+    }
+}
+
+.category-items{
+    text-align: center;
+}
+
+.category-item-center {
+    display: inline-block;
+}
+
+
+.category-item-container {
+  position: relative;
+  display: inline-block;
+  *display: inline; //Hack for ie8 to support display inline-block
+  *zoom: 1;         //Hack for ie8 to support display inline-block
+  vertical-align: top;
+  margin-bottom: 2em;
+
+}
+
+//start - fix for tap issue on mobile devices
+/* uncomment this
+.category-item-container .category-input[type=checkbox] + label{
+  display: inline-block;
+}
+.touch .category-item-container .category-input[type=checkbox] + label > * {
+  pointer-events: none;
+}
+*/
+//End
+
+/**
+  Fix for modern browsers
+**/
+.rgba .category-item-container {
+    margin-bottom: 0;
+}
+
+
+.category-item {
+  margin-top: -1.25em; //Fix for old browsers
+  text-align: left; //Fix for old browsers
+  padding: 0.5em;
+  min-width: pxtoem(120px);
+    
+
+
+  .category-title {
+    display: block;
+    font-family: "ProximaNova Regular", Helvetica, Arial, sans-serif;
+    line-height: 2.5em;
+  }
+
+  .category-description {
+    display:none;
+    font-family: "ProximaNova Regular Italic", Helvetica, Arial, sans-serif;
+    line-height: 1.2em;
+    max-width: pxtoem(160px);
+    font-size: 0.9em;
+
+    @include breakpoint(md){
+      display: inline-block;
+      *display: inline; //Hack for ie8 to support display inline-block
+      *zoom: 1;         //Hack for ie8 to support display inline-block
+    }
+
+  }
+
+  .icon-round {
+    display: none;
+    font-size: 3.5em;
+    border: 1px solid #c9c9c9;
+    background: white;
+    @include border-radius(100%);
+    width: 100px;
+    height: 100px;
+    padding: 18px 10px;
+  }
+
+
+}
+
+
+/**
+ Support for modern browsers
+ Fix - needs refinement /
+**/
+
+.rgba .category-item {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+
+  @include breakpoint(sm){
+    padding: .5em;
+  }
+
+
+  .icon-round {
+    display: inline-block;
+  }
+}
+
+
+/*
+    Hide the original radios and checkboxes
+    (but still accessible)
+
+    based on:
+    http://css-tricks.com/snippets/css/custom-checkboxes-and-radio-buttons/
+
+    :not(#foo) > is a rule filter to block browsers
+                 that don't support that selector from
+                 applying rules they shouldn't
+*/
+.category-input:not(#foo) {
+  display: none;
+}
+
+// label needs to be after input
+.category-input[type=checkbox] + label {
+    
+  cursor: pointer;
+  min-width: pxtoem(112px);
+  vertical-align: top;
+  
+  .category-title {
+    display: block;
+    font-family: "ProximaNova Regular", Helvetica, Arial, sans-serif;
+    line-height: 2.5em;
+  }
+  
+  .category-image-dark{
+      display: block;
+  }
+  .category-image-light{
+      display: none;
+  }
+  
+  @include breakpoint(md){
+    min-width: pxtoem(180px);
+  }
+  
+}
+.category-input[type=checkbox]:checked + label {
+
+  .icon-round {
+    color: #FFF;
+    border: 1px solid #393939;
+    background: #393939;
+  }
+  
+  .category-image-dark{
+      display: none;
+  }
+  .category-image-light{
+      display: block;
+  }
+
+  .category-title {
+    display: block;
+    line-height: 2.5em;
+  }
+}
+
+.category-item{
+
+    &:hover {
+       .icon-round {
+          color: #FFF;
+          border: 1px solid #393939;
+          background: #393939;
+        }
+  
+        .category-image-dark{
+            display: none!important;
+        }
+        .category-image-light{
+            display: block!important;
+        }
+
+        .category-title {
+          display: block;
+          line-height: 2.5em;
+        }
+    }
+}

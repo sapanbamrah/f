@@ -1,0 +1,47 @@
+.img {
+  background: #ccc;
+}
+
+.img-icon {
+  position: relative;
+  display: block;
+}
+
+/**
+ Todo - Fix this is a one off case for POC
+**/
+.img-icon-header {
+  position: absolute;
+  color: #FFF;
+
+  text-align: center;
+  display: table-cell;
+  line-height: 1em;
+  top: 50%;
+  margin-top: -0.9em;
+
+  @include breakpoint(md) {
+    font-size: 2em;
+  }
+
+  @include breakpoint(lg) {
+    font-size: 5em;
+  }
+
+}
+
+
+/**
+ Set position of icon
+**/
+.image-icon-bottom {
+  position: absolute;
+  bottom: -1.5em;
+  right: 0.4em;
+}
+
+.image-icon-top {
+  position: absolute;
+  top: 1.5em;
+  left: 0em;
+}

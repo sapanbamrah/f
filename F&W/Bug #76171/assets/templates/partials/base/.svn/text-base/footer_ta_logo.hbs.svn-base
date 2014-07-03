@@ -1,0 +1,10 @@
+---
+title: Footer TA Logo
+---
+
+<div class="footer-col footer-logo-fixed-height">
+    <div class="footer-ta-logo-container">
+        <a href="http://www.australia.com/"><img class="type-spacing-15" src="imgs/logo/logo-tourism-australia.png"></a>
+        <div class="footer-ta-logo-copyright">&copy; Tourism Australia 2014</div>
+    </div>
+</div>

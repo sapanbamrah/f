@@ -1,0 +1,112 @@
+---
+title: Navigation Top Bar
+note: note-navbar
+---
+
+<!--Search box-->
+<div class="nav-bar-panel-container">
+    <div class="nav-bar-panel-content">
+        <form class="nav-search-form" method="get" action="#">
+            <fieldset class="nav-search-fieldset">
+                <label class="nav-search-label" for="nav-search-field">What would you like to explore in Restaurant Australia?</label>
+                <input class="nav-search-text" id="nav-search-field" type="text" name="" value="" placeholder="What would you like to explore in Restaurant Australia?">
+                <button class="biutton nav-search-button" type="submit" name="submit" value="submit">
+                </button>
+            </fieldset>
+        </form>
+
+        <a tabindex="-1" class="nav-bar-panel-close" href="#nav-bar-top"><span class="icon icon-16 icon-close" aria-hidden="true"></span></a>
+    </div>
+</div>
+
+<div class="navbar-outer">
+    <!-- navbar module -->
+    <header class="navbar make-black">
+
+        <div class="navbar-container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand black_logo" href="http://www.australia.com/">
+                    <img src="imgs/brand/logo.png" alt="Australia" title="Australia" />
+                </a>
+                <a class="navbar-brand l-display-none-lg white_logo" href="#">
+                    <img src="imgs/brand/logo_white_text.png" alt="Australia" title="Australia" />
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <nav class="navbar-nav">
+                <div class="navbar-mobile-head l-display-lg">
+                    <h2 class="navbar-mobile-head-label">Menu</h2>
+                    <span class="navbar-mobile-close-icon"></span>
+                    <span class="navbar-mobile-open-icon"></span>
+                    <span class="navbar-mobile-back-icon"></span>
+                </div>
+                <ul class="navbar-items">
+                    <li class="navbar-item-active" >
+                        <a href="#" target="_self">Restaurant Australia</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_self">List your business</a>
+                    </li>
+                    <li class="navbar-item-active-subitem">
+                        <a href="#" target="_self">Explore by State & Territory</a>
+                        <a><span class="navbar-item-dropdown-icon"></span></a>
+
+                        <ul class="navbar-items navbar-subitems">
+                            <li>
+                                <a href="#1" target="_self">
+                                    <p>Australia Capital Territory</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#2" target="_self">
+                                    <p>New South Wales</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#3" target="_self">
+                                    <p>Northern Territory</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#4" target="_self">
+                                    <p>Queensland</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#5" target="_self">
+                                    <p>South Australia</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#6" target="_self">
+                                    <p>Tasmania</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#7" target="_self">
+                                    <p>Victoria</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#8" target="_self">
+                                    <p>Western Australia</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" target="_self">Contributors</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <!-- serach icon -->
+
+            <a class="navbar-search-icon" href="#">
+                <img src="imgs/base/search-icon.png" alt="" title="" />
+            </a>
+        </div>
+    </header>
+</div>

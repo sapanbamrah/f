@@ -1,0 +1,134 @@
+.video-container {
+  position: fixed;
+  background:url("../imgs/base/modal-bg.png") repeat;
+  top: 0%;
+  bottom: 100%;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  display: none;
+  z-index: 100;
+  
+  transition: opacity 1s ease-out;
+  -moz-transition: opacity 1s ease-out; 
+  -webkit-transition: opacity 1s ease-out;
+  -o-transition: opacity 1s ease-out;
+
+  /*@include transition (top bottom opacity visibility, 0.5s, cubic-bezier(0.455, 0.030, 0.515, 0.955), .1s)*/
+}
+
+
+/*
+
+*/
+
+.rgba .video-container {
+  background: rgba(0,0,0, .7);
+}
+
+
+.video-container.is-active {
+  opacity: 1;
+  top: 0%;
+  bottom: 0%;
+  display: block;
+  transition: opacity 1s ease-out;
+  -moz-transition: opacity 1s ease-out; 
+  -webkit-transition: opacity 1s ease-out;
+  -o-transition: opacity 1s ease-out;
+}
+
+.video-close-btn {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  font-size: 2em;
+  color: #FFF;
+  text-decoration: none;
+  &:hover, &:focus {
+    border: 1px solid #FFF;
+    text-decoration: none;
+    background: #FFF;
+    color: #000;
+  }
+}
+.video-table {
+  display: table;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.video-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  color: #FFF;
+
+}
+
+/*
+.video {
+  position: relative;
+
+  max-width: pxtoem(730px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video-ui {
+  position: absolute;
+  width: 100%;
+}
+
+.video-ui-btn {
+  @include type_TAheadline();
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin-top: -2.1625em;
+  margin-left: -2.3em;
+  display: block;
+  color:#fff;
+  font-size: 1.475em;
+
+  @include breakpoint(sm) {
+    font-size: pxtoem(30px);
+  }
+
+}
+
+
+
+.video-ui-btn:hover, .video-ui-btn:focus {
+   .icon-circle {
+      background: #fff;
+   }
+  .icon-dash {
+    background: #000;
+  }
+  .icon-play {
+    color:#000;
+  }
+}
+
+
+
+.video-ui-btn-left, .video-ui-btn-right  {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.6em;
+}
+
+.video-ui-btn-right {
+  right:-1.9em;
+}
+.video-ui-btn-left {
+  left: -1.9em;
+}
+
+.video-image {
+  
+}
+
+.video-media {
+  
+}*/

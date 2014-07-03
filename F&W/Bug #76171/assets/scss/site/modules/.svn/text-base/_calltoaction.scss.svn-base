@@ -1,0 +1,164 @@
+
+
+.calltoaction{
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  background-color: black;
+  display: inline-block;
+  padding: 1em 1em 0;
+  text-align: center;
+  color: #FFF;
+  
+  margin-top: 5em;
+
+  .is-desktop {
+    display: none;
+  }
+
+  @include breakpoint(md) {
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 3.75em;
+    border-radius: 50%;
+    padding: 3.5em;
+    width: 400px;
+    height: 400px;
+    .is-mobile {
+      display: none;
+    }
+    .is-desktop {
+      display: inherit;
+    }
+  }
+}
+
+.rgba .calltoaction {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.calltoaction-title-container {
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 9px;
+}
+.calltoaction-type-sml1 {
+  @include type_TAheadline();
+  font-size: pxtoem(30px);
+  padding-bottom: 10px;
+  margin: 0 auto;
+  max-width: 240px;
+  @include breakpoint(sm){
+    max-width: inherit;
+  }
+  @include breakpoint(md) {
+    font-size: pxtoem(24px);
+  }
+}
+
+.calltoaction-type-lrg {
+  font-family: "GearedSlab-Thin", Helvetica, Arial, sans-serif;
+  font-size: 2.4em;
+  line-height: .9em;
+  text-transform: uppercase;
+}
+
+.calltoaction-hr {
+  border-top: 1px solid #FFF !important;
+  width: 240px;
+  @include breakpoint(md) {
+    width: 286px;
+  }
+  margin-top: 15px;
+}
+
+.calltoaction p {
+  text-transform: uppercase;
+  font-size: .9em;
+  padding: 10px 0;
+  @include breakpoint(md) {
+    padding: 0;
+  }
+}
+
+.calltoactionvideo{
+    .head-divider-inner{
+        position: relative;
+        margin-top: 2em;
+    }
+    
+    .icon-logo-withlines-hr-small{
+        border-top: 1px solid white!important;
+        bottom: 43px!important;
+    }
+    
+    .faw-video-teaser-icon{
+        margin: 2em;
+    }
+}
+
+.head-divider-inner{
+  .icon-logo-withlines-hr-small{
+    bottom: -4px;
+    //outline: 1px solid blue;
+    //margin:0;
+  }
+}
+
+.calltoactionbubble{
+    h5{
+        color: white;
+        padding-left: 1em;
+        padding-right: 1em;
+
+    }
+    h2{
+        color: white;
+        margin-top: .18em;
+        padding-left: .5em;
+        padding-right: .5em;
+    }
+}
+
+
+.calltoaction .divider-small{
+  margin-top: 1.13em;
+}
+
+.calltoactionbubblebig{
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 4em;
+    padding-bottom: 2em;
+    
+    background-color: rgba(0,0,0,1);
+    
+    @include breakpoint(md) {
+        width: 500px;
+        height: 500px;
+        margin-top: 6em;
+        margin-bottom: 6em;
+        padding-top: 4em;
+        padding-bottom: 0;
+        
+        background-color: rgba(0,0,0,0.8);
+    }
+    
+    p{
+        max-width: 420px;
+        font-size: 1em;
+        text-transform: none;
+        display: inline-block;
+        margin-top: pxtoem(10px);
+    }
+}
+
+.calltoactionbubblebig h5{
+  padding-top: .25em;
+}
+
+.calltoactionbubblebig-withiconlogo h5{
+  padding-top: 0;
+}

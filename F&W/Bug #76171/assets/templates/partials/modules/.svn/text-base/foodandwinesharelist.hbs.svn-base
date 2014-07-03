@@ -1,0 +1,31 @@
+---
+title: Food and Wine Share List
+---
+<div class="faw-share-list">
+	<p>See all conversations relating to <strong>#restaurants</strong> on:</p>
+	
+	<a href="#" target="_blank" class="faw-share-list-item">
+		<span class="faw-share-list-icon">
+            <img class="faw-share-list-icon-hover" src="imgs/base/share/share-fb-blue.png" alt="">
+            <img class="faw-share-list-icon-default" src="imgs/base/share/share-fb-black.png" alt="">
+        </span>
+		<p class="faw-share-list-tem-label"><strong>Facebook</strong></p>
+	</a>
+	
+	<a href="#" target="_blank" class="faw-share-list-item">
+		<span class="faw-share-list-icon">
+            <img class="faw-share-list-icon-hover" src="imgs/base/share/share-twitter-blue.png" alt="">
+            <img class="faw-share-list-icon-default" src="imgs/base/share/share-twitter-black.png" alt="">
+        </span>
+		<p class="faw-share-list-tem-label"><strong>Twitter</strong></p>
+	</a>
+	
+	<a href="#" target="_blank" class="faw-share-list-item">
+		<span class="faw-share-list-icon">
+            <img class="faw-share-list-icon-hover" src="imgs/base/share/share-instagram-blue.png" alt="">
+            <img class="faw-share-list-icon-default" src="imgs/base/share/share-instagram-black.png" alt="">
+        </span>
+		<p class="faw-share-list-tem-label"><strong>Instagram</strong></p>
+	</a>
+	
+</div>

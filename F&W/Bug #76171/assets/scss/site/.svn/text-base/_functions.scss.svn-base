@@ -1,0 +1,24 @@
+/*!Px To EMs*/
+@function pxtoem($px, $basepx:$font-size-base) {
+  @return ($px/$basepx) + 0em;
+}
+@function frmpxtoem($px, $basepxadd: $basepxadd) {
+  @return ($px/$basepxadd) + 0em;
+}
+/*!Px to lineHeight em (use values from Photoshop */
+@function pxtolineheightem($fs, $lh, $basepx:$font-size-base) {
+  $hh: ($fs - $basepx)/2; // calculate half height of font size
+  @return ($lh / ($fs - $hh)) + 0em;
+}
+
+
+/*!Px to letterSpacing em (use values from Photoshop) */
+@function pxtoletterspacingem($px) {
+  @return ($px/1000) + 0em;
+}
+
+/*!Divide items into percent */
+@function itemsInPercent($totalItems, $container) {
+  $result : ($container / $totalItems);
+  @return	percentage($result / $container);
+}

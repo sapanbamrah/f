@@ -1,0 +1,64 @@
+---
+title: Food and Wine Hero Article
+note: note-foodandwineheroarticle
+---
+<!-- test background for testing, whow the transparent menu respons -->
+<div class='form-hero'>
+	<div class="faw-hero-home-container">
+		{{> icon_logo_withlines }}
+		<h1 class="form-h1">&#60;Article name&#62;</h1>
+		<div class="form-biline-container type-spacing-60">
+			<hr>
+			<div class="form-elements-biline">
+				www.simonesofbright.com.au
+			</div>
+		</div>
+		<!-- category items -->
+		<div class="category-items">
+			<div class="category-item category-item-center">
+				<p>
+					<span class="btn-round is-active"><img src="imgs/base/categories/category-icon-wine-white.png" alt=""/></span>
+					<span class="category-title l-color-black">Wine</span>
+				</p>
+			</div>
+			<div class="category-item category-item-center">
+				<p>
+					<span class="btn-round is-active"><img src="imgs/base/categories/category-icon-people-white.png" alt=""/></span>
+					<span class="category-title l-color-black">People</span>
+				</p>
+			</div>
+			<div class="category-item category-item-center">
+				<p>
+					<span class="btn-round is-active"><img src="imgs/base/categories/category-icon-produce-white.png" alt=""/></span>
+					<span class="category-title l-color-black">Produce</span>
+				</p>
+			</div>
+			<div class="category-item category-item-center">
+				<p>
+					<span class="btn-round is-active"><img src="imgs/base/categories/category-icon-restaurants-white.png" alt=""/></span>
+					<span class="category-title l-color-black">Restaurants</span>
+				</p>
+			</div>
+		</div>
+		
+		<h3 class="faw-article-healdine">Simone’s Restaurant is located in Bright at the foot of the alpine resorts in the heart of the north east of Victoria.</h3>
+	
+		<p class='faw-article-share-icons'>
+
+            <!--
+    		<a href="#" class="btn-round-share icon-font-mail-outline"></a>
+    		<a href="#" class="btn-round-share icon-font-twitter-outline"></a>
+    		<a href="#" class="btn-round-share icon-font-twitter-outline"></a>
+    		-->
+
+            <span class='st_email_large' displayText='Email'></span>
+            <span class='st_facebook_large' displayText='Facebook'></span>
+            <span class='st_twitter_large' displayText='Tweet'></span>
+
+    		<a class="faw-article-divider"></a>
+    		<a href="#" class="faw-bookmark-icon"><img class="faw-article-share-round faw-bookmark-icon-light" src="imgs/base/share/share-round-bookmark.png" alt=""/><img class="faw-article-share-round faw-bookmark-icon-black" src="imgs/base/share/share-round-bookmark-black.png" alt=""/></a>
+		</p>
+		<p class='faw-article-share-label l-color-black'>Share or bookmark this page</p>
+		<hr class='divider-small'></hr>
+	</div>
+</div>

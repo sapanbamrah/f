@@ -1,0 +1,29 @@
+---
+title: Buttons
+---
+<p>
+    <a href="#" class="btn-primary">Primary Button</a>
+</p>
+<p>
+    <a href="#" class="btn-secondary">Secondary Button</a>
+</p>
+<p>
+    <a href="#" class="btn-primary btn-small">Primary Small</a>
+</p>
+<p>
+    <a href="#" class="btn-secondary btn-small">Second Small</a>
+</p>
+
+<p>
+    <a href="#" class="btn-square icon-font-arrow-previous"></a>
+    <a href="#" class="btn-square icon-font-arrow-left"></a>
+    <a href="#" class="btn-square">1</a>
+    <a href="#" class="btn-square is-active">2</a>
+    <a href="#" class="btn-square">3</a>
+    <a href="#" class="btn-square icon-font-arrow-right"></a>
+    <a href="#" class="btn-square icon-font-arrow-next"></a>
+    <a href="#" class="btn-square icon-font-cross"></a>
+    <a href="#" class="btn-square icon-font-plus"></a>
+    <a href="#" class="btn-square icon-font-arrow-down"></a>
+
+</p>

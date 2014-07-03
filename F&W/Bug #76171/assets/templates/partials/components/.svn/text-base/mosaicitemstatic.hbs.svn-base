@@ -1,0 +1,10 @@
+---
+title: Mosaic item static with Anchor tag
+---
+<a href="#" title="" class="mosaic-item">
+    <img class="mosaic-item-image" src="http://placehold.it/580x580" alt="" width="100%">
+    <span class="mosaic-item-description">
+        <span class="mosaic-item-description-head type-font-feature">Melbourne &amp; Wine</span>
+        <span class="mosaic-item-description-sub">New South Wales</span>
+    </span>
+</a>

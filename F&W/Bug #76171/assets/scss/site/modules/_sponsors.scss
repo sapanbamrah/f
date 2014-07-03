@@ -1,0 +1,65 @@
+.sponsors {
+  text-align: center;
+  margin: 0 auto;
+  padding: pxtoem(30px) 0;
+}
+
+.sponsors-wrapper{
+    text-decoration: none;
+    
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.sponsors-item {
+  text-align: center;
+}
+.sponsors-item-video {
+  text-align: center;
+}
+.sponsors-item a {
+   font-family: "ProximaNova Bold", Helvetica, Arial, sans-serif;
+   color: #040000;
+   &:hover, &:focus {
+     color: #333333;
+   }
+}
+.video-play-icon a{
+  font-family: 'foodWineIcons';
+}
+.sponsors-item p {
+  font-size: pxtoem(18px);
+  line-height: pxtolineheightem(18px, 20px);
+  padding: 0 pxtoem(56px);
+}
+.sponsors-row-1 {
+  line-height: pxtoem(100px);
+}
+.sponsors-row-2 {
+  margin: 0 auto;
+  text-align: center;
+  max-width: pxtoem(380px);
+}
+.sponsors-image {
+  max-width: 100%;
+}
+.sponsors-hr {
+  margin: 0 auto;
+  width: pxtoem(226px);
+}
+.sponsors-type-title {
+  font-family: $font-family-secondary;
+  font-size: pxtoem(36px);
+  line-height: pxtolineheightem(24px, 20px);
+  vertical-align: bottom;
+  display: inline-block;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.sponsors-image-link-container{
+    min-height: 13.2em;
+}
+.sponsors-description{
+     text-decoration: none!important;
+}

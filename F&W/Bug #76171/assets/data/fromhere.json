@@ -1,0 +1,7 @@
+{
+    "collection": [
+        { "isFave": "false", "type" : "hiking",    "img": "imgs/preview/sample1.jpg", "title": "Today",    "subtitle": "Spring in the Daintree Rainforest",    "content": "Consectetur elit, sed do eiusmod tempor incididunt ut voluptate", "cta": "Daintree Rainforest"  },
+        { "isFave": "true", "type" : "camping",   "img": "imgs/preview/sample2.jpg", "title": "Tomorrow", "subtitle": "Swim in the falls at Wonga Beach",     "content": "Consectetur elit, sed do eiusmod tempor incididunt ut voluptate", "cta": "Wonga Beach"  },
+        { "isFave": "true", "type" : "beach",     "img": "imgs/preview/sample3.jpg", "title": "Day 3",    "subtitle": "Sunbake on the beach in Port Douglas", "content": "Consectetur elit, sed do eiusmod tempor incididunt ut voluptate", "cta": "Port Douglas"  }
+    ]
+}

@@ -1,0 +1,60 @@
+---
+title: Food and Wine Places
+---
+<div class='faw-places faw-bg-full-container'>
+
+	<div class="l-display-none-md l-position-absolute fullwidth-bg" data-image-vertical-alignment="bottom" data--500-top="-webkit-transform: translate(0,15%);" data-500-bottom="-webkit-transform: translate(0,-15%);">
+		<div class="responsive-image" data-picture="" data-alt="" >
+			<div data-src="imgs/base/faw-carousel-bg.jpg" data-media="(min-width: 1px)"></div>
+			<div data-src="imgs/base/faw-carousel-bg.jpg" data-media="(min-width: 481px)"></div>
+			<div data-src="imgs/base/faw-carousel-bg.jpg" data-media="(min-width: 769px)"></div>
+			<div data-src="imgs/base/faw-carousel-bg.jpg" data-media="(min-width: 993px)"></div>
+			
+			<noscript>
+				<img src='imgs/base/faw-carousel-bg.jpg' alt=''>
+			</noscript>
+		</div>
+		<!--[if (lt IE 9) & (!IEMobile)]>
+            <img src='imgs/base/faw-carousel-bg.jpg' alt=''>
+        <![endif]-->
+	</div>
+	
+	<div class='faw-places-inner'>
+		{{> calltoactionbubble }}
+
+		<!-- selection for mobile -->
+		<div class="l-display-none-md">
+			<p class='icon-map-wrapper'>
+				<a href="#" class="icon-map icon-map-white icon-map-capital"> <span>Australian Captital Territory</span> </a>
+				<a href="#" class="icon-map icon-map-white icon-map-nsw"> <span>New South Wales</span> </a>
+				<a href="#" class="icon-map icon-map-white icon-map-northern"> <span>Northern Territory</span> </a>
+				<a href="#" class="icon-map icon-map-white icon-map-queensland"> <span>Queensland</span> </a>
+				<a href="#" class="icon-map icon-map-white icon-map-south"> <span>South Australia</span> </a>
+				<a href="#" class="icon-map icon-map-white icon-map-tasmania"> <span>Tasmania</span> </a>
+				<a href="#" class="icon-map icon-map-white icon-map-victoria"> <span>Victoria</span> </a>
+				<a href="#" class="icon-map icon-map-white icon-map-western"> <span>Western Australia</span> </a>
+			</p>
+		</div>
+		<!-- END: selection -->
+
+		<!-- selection for mobile -->
+		<div class="l-display-md">
+			<select class="input-select input-select-small">
+				<option value="nsw">
+					<p class="type-font-feature">
+						Select place
+					</p></option>
+				<option value="southernaustralia">Capital</option>
+				<option value="victoria">NSW</option>
+				<option value="northern">Northern</option>
+				<option value="queensland">Queensland</option>
+				<option value="south">South</option>
+				<option value="tasmania">Tasmania</option>
+				<option value="victoria">Victoria</option>
+				<option value="western">Western</option>
+			</select>
+		</div>
+		<!-- END: selection -->
+
+	</div>
+</div>

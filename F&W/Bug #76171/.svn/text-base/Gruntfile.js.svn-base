@@ -1,0 +1,452 @@
+'use strict'
+
+
+/**
+ * Live reload port number
+ * @type {number}
+ */
+var LIVERELOAD_PORT = 35729;
+var lrSnippet = require('connect-livereload')({
+    port: LIVERELOAD_PORT
+});
+
+/**
+ * Access folder location for localhost
+ * @param connect
+ * @param dir
+ * @returns {*}
+ */
+var mountFolder = function (connect, dir) {
+    return connect.static(require('path').resolve(dir));
+};
+
+
+
+module.exports = function( grunt ) {
+
+
+    /**
+     * Dynamically add all the dependancies
+     */
+    require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
+
+
+    /**
+     * Initiate Grunt
+     */
+    grunt.initConfig({
+
+
+        /**
+         * Styleguide templates
+         */
+       // DATA: 'assets/data',
+       // HELPERS: 'assets/helpers',
+       // MARKDOWN: 'assets/md',
+
+        /**
+         * Development / Production location / Asset output for CMS e.g. imgs / css / js
+         */
+        ASSETS: 'assets',
+        STYLEGUIDE: 'styleguide',
+        ASSET_OUTPUT: 'asset_output',
+        PROD: 'www',
+
+        BANNER : '/**Provide version number **/',
+
+        /**
+         * Documentation output for Javascript and other
+         */
+        DOCUMENTATION: 'documentation',
+
+
+
+        /********************************************************************
+         * Pre Processors CSS
+         ********************************************************************/
+
+
+        /**
+         * Compass
+         * Note - settings located in config.rb
+         * https://npmjs.org/package/grunt-contrib-compass
+         */
+        compass : {
+            development: {
+                options : {
+                    config: 'config.dev.rb'
+                }
+            },
+            assetOut: {
+                options : {
+                    config: 'config.prod.rb'
+                }
+            },
+            styleguide: {
+                options: {
+                    config: 'config.styleguide.rb'
+                }
+            }
+
+        },
+
+
+
+
+
+        //Todo add Less
+
+        /********************************************************************
+         * JS Quality checks
+         ********************************************************************/
+
+
+
+        /**
+         * JS Hint
+         * Note - This only hints custom code not vendors
+         * https://npmjs.org/package/grunt-contrib-jshint
+         */
+        jshint : {
+            options : {
+                globals : {
+                    jQuery : true
+                }
+            },
+            files: ['<%= ASSETS %>/js/src/**/*.js']
+        },
+
+
+
+        /**
+         * Validate the complexity of javascript
+         * Note - This only hints custom code not vendors
+         * https://npmjs.org/package/grunt-complexity
+         */
+        complexity : {
+            build : {
+                src: ['<%= ASSETS %>/js/src/**/*.js'],
+                options: {
+                    jsLintXML: '<%= DOCUMENTATION %>/complexity-report.xml', // create XML JSLint-like report
+                    errorsOnly: false, // show only maintainability errors
+                    cyclomatic: 10,
+                    halstead: 8,
+                    maintainability: 100
+                }
+            }
+        },
+
+
+        /********************************************************************
+         * JS PRODUCTION
+         ********************************************************************/
+
+
+
+        /**
+         *
+         * Concat
+         * https://npmjs.org/package/grunt-contrib-concat
+         * Only used for styleguide for now
+         */
+        concat : {
+            options : {
+                separator: ';'
+            },
+            dist: {
+                src: [
+                	'<%= STYLEGUIDE %>/js/vendor/owl-carousel/**/*.js',
+                	'<%= STYLEGUIDE %>/js/vendor/responsive-images/**/*.js',
+                    '<%= STYLEGUIDE %>/js/vendor/**/*.js',
+                    '<%= STYLEGUIDE %>/js/src/**/*.js',
+                ],
+                dest: '<%= PROD %>/js/main.js'
+            }
+        },
+
+
+        /**
+         *Todo - reference uglify url
+         */
+        uglify : {
+            my_target: {
+                options : {
+                    banner : '<%= BANNER %>',
+                    mangle: true
+                },
+                files : {
+                    '<%= PROD %>/js/main.js' : ['<%= PROD %>/js/main.js']
+                }
+            }
+        },
+
+
+
+
+
+
+
+
+
+
+        /********************************************************************
+         * BUILDS
+         ********************************************************************/
+
+
+        /**
+         * Copy asset items to production folder or asset_output for cms usage
+         * https://npmjs.org/package/grunt-copy-to
+         */
+        copyto: {
+            prod: {
+                files: [
+                    { cwd: '<%= ASSETS %>/fonts/', src: ['**/*'], dest: '<%= PROD %>/fonts/' },
+                    { cwd: '<%= ASSETS %>/js/', src: ['src/*','src/modules/*','src/helper/*','vendor/*', 'vendor/owl-carousel/*', 'vendor/responsive-images/*'], dest: '<%= PROD %>/js/' },
+                    { cwd: '<%= ASSETS %>/imgs/', src: ['**/*'], dest: '<%= PROD %>/imgs/' },
+                    { cwd: '<%= ASSETS %>/json/', src: ['**/*'], dest: '<%= PROD %>/json/' }
+                ]
+            },
+            styleguide: {
+                files: [
+                    { cwd: '<%= STYLEGUIDE %>/js/', src: ['src/*', 'vendor/*', 'vendor/owl-carousel/*','vendor/responsive-images/*'], dest: '<%= PROD %>/js/' }
+                ]
+            },
+            assetOut: {
+                files: [
+                    { cwd: '<%= ASSETS %>/fonts/', src: ['**/*'], dest: '<%= ASSET_OUTPUT %>/fonts/' },
+                    { cwd: '<%= ASSETS %>/imgs/', src: ['**/*'], dest: '<%= ASSET_OUTPUT %>/img/' }, //Todo - Review scss output this may output the css and imgs
+                    { cwd: '<%= ASSETS %>/js/', src: ['src/*', 'vendor/*'], dest: '<%= ASSET_OUTPUT %>/js/' },
+                    { cwd: '<%= ASSETS %>/json/', src: ['src/*', 'vendor/*'], dest: '<%= ASSET_OUTPUT %>/json/' }
+                ]
+            }
+        },
+
+
+
+
+        /**
+         * Delete folder contents - Used before copying new assets over
+         * https://npmjs.org/package/grunt-contrib-clean
+         */
+        clean: {
+            styleguide: {
+                src: ['<%= PROD %>/']
+            },
+            assetOut: {
+                src: ['<%= ASSET_OUTPUT  %>/']
+            }
+        },
+
+
+
+
+
+        /********************************************************************
+         * Local Hosting
+         ********************************************************************/
+
+
+        /**
+         * Watch refresh browsers
+         * https://github.com/gruntjs/grunt-contrib-watch
+         */
+        watch : {
+            scss: {
+                files: ['<%= ASSETS %>/scss/**/*.scss'],
+                tasks: ['compass:development']
+            },
+            js: {
+                files: ['<%= ASSETS %>/js/**/*.js'],
+                tasks: ['complexity', 'jshint']
+            },
+
+            /**
+             * Renders out all partials from the assets folder
+             **/
+            siteTemplates: {
+                files: ['<%= ASSETS %>/templates/**/*.hbs', '<%= ASSETS %>/md/**/*.md', '<%= ASSETS %>/data/**/*.json'],
+                tasks: ['sgPartials']
+           },
+
+            /**
+             * If sg-navigation.json / sg-templates has been modified then update
+             **/
+            styleguideNavigation: {
+                files: ['<%= STYLEGUIDE %>/data/**/*.json', '<%= ASSETS %>/data/styleguidenav/*.json'],
+                tasks: ['sg']
+            },
+
+
+
+
+
+            livereload : {
+                options : {
+                    livereload: LIVERELOAD_PORT
+                },
+                files: [
+                    '<%= STYLEGUIDE %>/data/**/*.json',             //Data files
+                    '<%= ASSETS %>/data/**/*.json',             //Data files
+                    '<%= ASSETS %>/js/**/*.js',                 //JS files
+                    '<%= ASSETS %>/scss/**/*.scss',             //JS files
+                    '<%= ASSETS %>/md/**/*.md',                 //Markdown files
+                    '<%= ASSETS %>/templates/**/*.hbs'          //Templates
+                ]
+            }
+        },
+
+
+        /**
+         * Connect port/livereload
+         * https://github.com/gruntjs/grunt-contrib-connect
+         * Starts a local webserver and injects
+         * livereload snippet
+         */
+        connect : {
+            options: {
+                port : 9000,
+                hostname : '0.0.0.0'
+            },
+            livereload: {
+                options: {
+                    middleware: function (connect) {
+                        return [
+                            lrSnippet,
+                            mountFolder(connect, 'www'),
+                            mountFolder(connect, 'assets'),
+                            mountFolder(connect, 'styleguide')
+                        ];
+                    }
+                }
+            }
+        },
+
+
+        /**
+         * Opens the web server in the browser
+         * https://github.com/jsoverson/grunt-open
+         */
+        open: {
+            server: {
+                path: 'http://localhost:<%= connect.options.port %>'
+            }
+        },
+
+
+
+        /********************************************************************
+         * Assemble
+         ********************************************************************/
+
+
+
+        /**
+         * Templating tool of awesomeness
+         * http://assemble.io/docs/
+         */
+        assemble: {
+            options: {
+                flatten: true,
+                marked: {
+                    sanitize: false
+                }
+            },
+            build: {              //Output templates from assets folder, this should be site assets only
+                options: {
+                    data: '<%= ASSETS %>/data/**/*.json',
+                    assets: '<%= ASSETS %>',
+                    helpers: [ '<%= ASSETS %>/helpers/**/*.js'],
+                    layoutdir: '<%= ASSETS %>/templates/layouts',
+                    partials: ['<%= ASSETS %>/templates/partials/*.hbs']
+                },
+                files: {
+                    '<%= PROD %>/': ['<%= ASSETS %>/templates/pages/**/*.hbs']
+                }
+            },
+
+
+
+            /**
+             * Step 1
+             * Generate page structure in JSON format that will be ran through styleguide pages
+             * This is reading the sg-navigation.json file and generating the correct JSON structure for
+             * the individual partials to be generated
+             *
+             * Note - If sg-navigation.json / sg-templates.json have been updated then create re-create json then run styleguideJsonToPages
+             */
+            styleguideCreateJSON: {
+                options: {
+                    data: ['<%= ASSETS %>/data/styleguidenav/*.json'],
+                    helpers: [ '<%= STYLEGUIDE %>/helpers/**/*.js'],
+                    server: false,
+                    ext: '.json'
+                },
+                files: {
+                    '<%= STYLEGUIDE %>/data': ['<%= STYLEGUIDE %>/templates/pages/*.hbs']
+                }
+            },
+
+
+
+            /**
+             * Step 2
+             * Read JSON file convert to pages
+             */
+            styleguideJSONToPages: {
+                options: {
+                    server: false,
+                    ext: '.html',
+                    data: ['<%= STYLEGUIDE %>/data/**/*.json', '<%= ASSETS %>/data/**/*.json'],
+                    helpers: [ '<%= STYLEGUIDE %>/helpers/**/*.js'],
+                    layoutdir: '<%= STYLEGUIDE %>/templates/layouts',
+                    partials: ['<%= STYLEGUIDE %>/templates/partials/**/*.hbs','<%= ASSETS %>/templates/partials/**/*.hbs'],    // Reference partials from assets
+                    pages: grunt.file.readJSON('styleguide/data/sg-pages.json')
+                },
+                files: {
+                    '<%= PROD %>/': ['<%= STYLEGUIDE %>/templates/pages/index.hbs']
+                }
+            }
+        }
+    });
+
+
+
+
+
+    //Will not load dymaically based on namespace
+    grunt.loadNpmTasks('assemble');
+
+
+    /****************************************************** Tasks *************************************************************************/
+
+    grunt.registerTask('default', ['host']);
+
+
+    //Check javascript quality
+    grunt.registerTask('jscheck', ['jshint', 'complexity']);
+
+    //Run host and watch
+    grunt.registerTask('host', ['connect', 'open', 'watch']);
+
+
+
+    //Produce assets for CMS integration
+    grunt.registerTask('output', ['clean:assetOut', 'copyto:assetOut', 'jscheck', 'compass:assetOut']);
+
+
+    //SG Render partials only / Refresh compass / All partials page / Each partial page
+    grunt.registerTask('sgPartials', ['compass:development', 'copyto:prod', 'assemble:styleguideJSONToPages', 'assemble:build']);
+
+
+    //SG Render Entire Styleguide and partials / All JS / Render styleguide / Generate All partials JSON / Render out partials
+    grunt.registerTask('sg', [ 'copyto:styleguide', 'compass:styleguide', 'assemble:styleguideCreateJSON', 'sgPartials']);
+
+    //Clean all and rebuild
+    grunt.registerTask('build', ['clean:styleguide', 'sg']);
+
+
+    /****************************************************** Tasks *************************************************************************/
+
+
+};

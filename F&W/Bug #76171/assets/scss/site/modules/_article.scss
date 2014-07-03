@@ -1,0 +1,212 @@
+.faw-article {
+    text-align: center;
+    overflow: hidden;
+    
+    p{
+        max-width: 750px;
+        display: inline-block;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+   
+    .category-item{
+        min-width: 60px!important;
+    }
+    
+    .btn-round.is-active{
+        width: 60px!important;
+        height: 60px!important;
+        
+        img{
+            width: 40px;
+        }
+        
+        padding-top: 0.2em!important;
+        font-size: 2.6em!important;
+        
+         @include breakpoint(md) {
+            width: 100px!important;
+            height: 100px!important;
+            padding-top: 12px!important;
+            font-size: 3.5em!important;
+            
+            img{
+                width: 80px;
+            }
+        }
+    }
+    
+    .category-title{
+        font-size: 0.9em!important;
+        
+         @include breakpoint(md) {
+            font-size: 1em!important;
+         }
+    }
+    
+    .form-biline-container{
+        margin-bottom: 1em!important;
+        @include breakpoint(md) {
+            margin-bottom: 3em!important;
+         }
+    }
+}
+
+.faw-article-quotes{
+    font-size: 2em;
+    line-height: 1em;
+    margin-top: 0.5em;
+    
+    @include breakpoint(md) {
+        margin-top: 1.5em;
+        font-size: 2.5em;
+    }
+}
+
+.avatar-label{
+    display: block!important;
+    max-width: 100%!important;
+}
+
+.faw-article-share-icons {
+    margin-top: 1em;
+    display: block!important;
+    max-width: 100%!important;
+    margin-top: 0.5!important;
+    margin-bottom: 0.5!important;
+    
+    a{
+        margin: 0.1em;
+    }
+}
+
+/*
+.faw-article .head-divider{
+  margin-bottom: 1.5em;
+  hr{
+    margin: 0.5em;
+  }
+}
+*/
+
+.faw-article-share-icons > span{
+  //Content is loaded later in the spans, to make the perfect alignment of other siblings, dimensions are defined
+  display: inline-block;
+  min-width: pxtoem(58px);
+  min-height: pxtoem(52px);
+}
+
+.faw-article-share-icons > a{
+  display: inline-block;
+}
+
+.faw-article-share-label {
+    font-size: 1.1em;
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+}
+
+.faw-article-copyright{
+    margin-top: 0em;
+    margin-bottom: 0em;
+    color: #737373;
+    
+    @include breakpoint(md) {
+        margin-top: 1em;
+    }
+}
+
+.faw-article-divider {
+    width: pxtoem(1px);
+    border-left: pxtoem(1px) #bebebe solid;
+    padding: 0;
+    padding-top: 2.5em;
+    padding-bottom: 0em;
+    padding-right: 0.40em;
+}
+
+.faw-article-healdine {
+    max-width: 750px;
+    display: inline-block;
+    line-height: 1.3em;
+}
+
+.divider-small {
+    max-width: 220px;
+}
+
+.faw-article-share-round{
+   margin-top: -2.4em;
+}
+
+/* SHARE OVERRIDES */
+.st_email_large{
+    .stButton{
+        .stLarge{
+            background-image: url("../imgs/base/share/share-round-mail.png")!important;
+            width: 52px;
+            height: 52px;
+            top: 0.25em;
+            
+             &:hover{
+                opacity:1;
+                background-position: 0 0!important;
+                background-image: url("../imgs/base/share/share-round-mail-black.png")!important;
+            }   
+        }
+    }
+}
+
+.st_facebook_large{
+    .stButton{
+        .stLarge{
+            background-image: url("../imgs/base/share/share-round-fb.png")!important;
+            width: 52px;
+            height: 52px;
+          top: 0.25em;
+
+            &:hover{
+                opacity:1;
+                background-position: 0 0!important;
+                background-image: url("../imgs/base/share/share-round-fb-black.png")!important;
+            }     
+        }
+    }
+}
+
+.st_twitter_large{
+    .stButton{
+        .stLarge{
+            background-image: url("../imgs/base/share/share-round-twitter.png")!important;
+            width: 52px;
+            height: 52px;
+          top: 0.25em;
+            
+             &:hover{
+                opacity:1;
+                background-position: 0 0!important;
+                background-image: url("../imgs/base/share/share-round-twitter-black.png")!important;
+            }   
+        }
+    }
+}
+
+.faw-bookmark-icon{
+    .faw-bookmark-icon-black{
+        display: none;
+    }
+    .faw-bookmark-icon-light{
+            display: inline-block;
+        }
+    
+    
+    &:hover{
+        .faw-bookmark-icon-black{
+            display: inline-block;
+        }
+        .faw-bookmark-icon-light{
+            display: none;
+        }
+    }
+}
+

@@ -1,0 +1,14 @@
+---
+title: Food and Wine Video Teaser
+---
+<div class="faw-video-teaser-wrapper l-position-normal">
+	<div class="faw-video-teaser">
+		<h5 class="faw-video-teaser-label is-mobile">what is restaurant australia?</h5>
+		<h5 class="faw-video-teaser-label is-desktop">Discover more about</h5>
+		<a href="#" class="faw-video-teaser-icon btn-round-video icon-font-video-play" data-video-button="home-video"></a>
+		<h5 class="faw-video-teaser-label is-desktop">Restaurant Australia</h5>
+	</div>
+</div>
+
+<!-- video container -->
+{{> video }}

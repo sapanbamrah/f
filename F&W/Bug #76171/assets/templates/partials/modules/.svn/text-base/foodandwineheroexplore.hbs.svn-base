@@ -1,0 +1,51 @@
+---
+title: Food and Wine Hero Explore
+note: note-foodandwineherohome
+---
+
+<div class='explore-hero'>
+	<div class="faw-hero-home-container">
+        {{> icon_logo_withlines }}
+		<h1 class="form-h1">Explore by state & territory</h1>
+        <div class="form-biline-container type-spacing-60">
+            <hr>
+            <div class="form-elements-biline">Let your tastebuds guide you</div>
+        </div>
+        <h3 class="explore-h3"><strong>From the mountains to the see, the outback to the beach, Australia is a land with culinary delights.</strong></h3>
+        <p class="select-state-label select-state-label-explore">Select a state or territory to discover Restaurant Australia</p>
+
+        <!-- selection for Large Screen -->
+		<div class="l-display-none-md l-push-down-sm-5">
+			<p class='icon-map-wrapper'>
+				<a href="#" class="icon-map icon-map-black icon-map-capital"> <span>Australian Captital Territory</span> </a>
+				<a href="#" class="icon-map icon-map-black icon-map-nsw"> <span>New South Wales</span> </a>
+				<a href="#" class="icon-map icon-map-black icon-map-northern"> <span>Northern Territory</span> </a>
+				<a href="#" class="icon-map icon-map-black icon-map-queensland"> <span>Queensland</span> </a>
+				<a href="#" class="icon-map icon-map-black icon-map-south"> <span>South Australia</span> </a>
+				<a href="#" class="icon-map icon-map-black icon-map-tasmania"> <span>Tasmania</span> </a>
+				<a href="#" class="icon-map icon-map-black icon-map-black-active icon-map-victoria"> <span>Victoria</span> </a>
+				<a href="#" class="icon-map icon-map-black icon-map-western"> <span>Western Australia</span> </a>
+			</p>
+		</div>
+		<!-- END: selection -->
+
+		<!-- selection for mobile -->
+		<div class="l-display-md  l-push-down-sm-3">
+			<select class="input-select input-select-small input-select-top-border">
+				<option value="nsw">
+					<p class="type-font-feature">
+						Select place
+					</p></option>
+				<option value="southernaustralia">Capital</option>
+				<option value="victoria">NSW</option>
+				<option value="northern">Northern</option>
+				<option value="queensland">Queensland</option>
+				<option value="south">South</option>
+				<option value="tasmania">Tasmania</option>
+				<option value="victoria">Victoria</option>
+				<option value="western">Western</option>
+			</select>
+		</div>
+		<!-- END: selection -->
+	</div>
+</div>

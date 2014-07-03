@@ -1,0 +1,591 @@
+.mosaic-item{
+  position: relative;
+  overflow: hidden;
+  padding: .56em;
+  width: auto;
+  display: block;
+
+}
+
+.mosaic-item-small {
+  @include breakpoint(md) {
+    margin: 0 auto;
+    width: 95.55%;
+  }
+}
+
+.mosaic-item-description{
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    right: 0;
+    margin: 9px 10px 3px 10px;//em creates problem here
+    padding: 1em .5em 0 .5em!important;
+    text-align: left;
+  background: url("../imgs/base/black-gradient.png") repeat-x bottom;
+  min-height: 56px;
+}
+
+
+.mosaic-item-description-copy{
+    display: none!important;
+    line-height: 1.3em;
+    margin-bottom: 0;
+    font-family:$font-family-base;
+}
+
+
+
+
+.mosaic-item-description-head{
+    color: white;
+    font-size: 1em;
+    line-height: 1em;
+    text-align: left;
+    padding: 0!important;
+    margin: 0;
+    padding-right: 1.5em;
+    text-transform: uppercase;
+    display: block;
+    width:83%;
+
+}
+
+.mosaic-item-description-sub{
+    display: block;
+    font-family: $font-family-base;
+    font-size: 0.75em;
+    color: white;
+    padding: 0!important;
+    text-align: left;
+    margin: 0;
+    padding-right: 1.5em!important;
+    line-height: 1em;
+    width:83%;
+}
+
+.mosaic-item-description-share{
+    font-size: 2em;
+    position: absolute;
+    right: 0.1em;
+    right: 3px\0;//IE8 Fix
+    bottom: 0.2em;
+    color: white;
+    width: 35px;
+    height:35px;
+    
+    img{
+        width: 35px;
+        height:35px;
+    }
+}
+
+.mosaic-item-description-share-dark{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+.mosaic-item-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: pxtoem(10px);
+    padding: 3em 2em 2em 2em;
+    cursor: pointer;
+    color: white;
+    display: none;
+    text-align: left;
+    font-size: 0.8em;
+    line-height: 1.5em;
+
+}
+
+/*
+ Hover / focus state
+ only on non-touch devices
+*/
+.no-touch {
+
+  .mosaic-item:hover, .mosaic-item:focus {
+
+    /*
+      Show overlay
+    */
+    .mosaic-item-overlay {
+      display: block;
+    }
+
+    /*
+     Show underline under cta
+    */
+    .mosaic-item-description-copy-link {
+      text-decoration: underline;
+    }
+
+
+
+  }
+}
+
+
+/**
+ Provide transition based on feature being available.
+**/
+.no-touch.opacity {
+
+  .mosaic-item-overlay {
+    -webkit-transform: translateZ(0); //Fix for twitching on transition
+
+    display: block;
+    opacity: 0;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+  }
+
+  /*
+   Only on non touch devices
+  */
+
+    .mosaic-item:hover, .mosaic-item:focus {
+
+      /**
+       Transition overlay
+      **/
+      .mosaic-item-overlay {
+        opacity: 1;
+        transition: opacity .2s ease-out;
+        -moz-transition: opacity .2s ease-out;
+        -webkit-transition: opacity .2s ease-out;
+        -o-transition: opacity .2s ease-out;
+      }
+
+      /*
+      Show underline under cta
+     */
+      .mosaic-item-description-copy-link {
+        text-decoration: underline;
+      }
+    }
+
+}
+
+
+
+/**
+ Brand heading
+**/
+.mosaic-item-overlay-info-head{
+  position: relative;
+  font-size: 1.2em;
+  line-height: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  margin-top: -1.4em;
+  width: 5.3em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/**
+ Category icon
+**/
+.mosaic-item-overlay-info-icon-item{
+  position: relative;
+  display: block;
+  width: 6.7em;
+  margin: 0.9em auto;
+}
+
+
+/**
+  Locations
+**/
+.mosaic-item-overlay-info-desciption{
+  position: relative;
+  display: block;
+  width: 8.2em;
+  margin: 1em auto;
+  margin-top: pxtoem(28px);
+  font-size: 1em;
+  line-height: 1.1em;
+
+}
+
+
+/**
+ Other categories
+**/
+
+.mosaic-item-overlay-info-categories{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 0.9em;
+  text-align: left;
+  color: #FFF;
+  padding: 1.4em 1.4em 3% 1.4em;
+  display: block;
+  @include breakpoint(md) {
+    padding: 0 1.4em 0 1.4em;
+  }
+  @include breakpoint(lg) {
+    padding: 1.4em 1.4em 3% 1.4em;
+  }
+}
+
+
+
+
+
+
+.mosaic-item-overlay-share{
+    background-color: #036c86;
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+
+.mosaic-item-overlay-share-container {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  margin-top: -5em;
+  margin-left: -40%;
+  width: 80%;
+}
+
+
+.mosaic-item-overlay-share-copy {
+  text-align: center;
+  display: block;
+  position: relative;
+  max-width: pxtoem(500px);
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5em;
+  font-family: $font-family-base-b;
+
+  @include breakpoint(md) {
+    line-height: 1.2em;
+    font-family: $font-family-base;
+  }
+  @include breakpoint(lg) {
+    line-height: 1.5em;
+    font-family: $font-family-base-b;
+  }
+  strong{
+    @include breakpoint(md) {
+      line-height: 1.2em;
+      font-family: $font-family-base;
+    }
+    @include breakpoint(lg) {
+      line-height: 1.5em;
+      font-family: $font-family-base-b;
+    }
+  }
+}
+
+
+
+
+.mosaic-item-overlay-info{
+    background-color: #181818;
+    text-align: center;
+    opacity: 0;
+}
+
+.mosaic-item-overlay-info-icon{
+    width: 175px;
+    height: 117px;
+    background-image: url(../imgs/base/icon-brakets.png);
+    background-repeat: 0;
+    font-size: 1em;
+    padding-top: 0.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -80px;
+    margin-left: -87px;
+}
+
+
+
+
+
+.mosaic-item-register{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    
+    img{
+        opacity: 0;
+    }
+    
+    .mosaic-item-register-inner{
+        border: 1px #bbbbbb solid;
+    }
+}
+.mosaic-item-register-content{
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-top: -7.5em;
+    text-align: center;
+    
+    .faw-register-teaser-subline{
+        color: black;
+        font-size: 0.8em;
+    }
+    
+    p{
+        margin-top: 0.5em;
+    }
+}
+
+.mosaic-item-description-categories{
+    position: absolute;
+    top: 0;
+    right: 0.5em;
+    display: none;
+    font-size: 15px;
+    @include breakpoint(md) {
+        display: block;
+    }
+}
+
+.mosaic-item-location{
+    .mosaic-item-description{
+       padding-left: 1.5em!important;
+       z-index: 2;
+      font-size: pxtoem(18px);
+      margin: 9px 9px 2px 8px;//em show the incorrect scaling
+
+    }
+    
+    .mosaic-item-location-icon{
+        position: absolute;
+        left: 1em;
+        bottom: pxtoem(32px);
+        z-index: 9;
+
+    }
+}
+
+
+
+
+/*-----------------------grid changer-------------------------*/
+
+/*
+ List view
+*/
+.mosaic-item-list  {
+
+  /*
+  List view hide overlay
+*/
+  &:hover, &:focus {
+    .mosaic-item-overlay {
+      display: none;
+    }
+  }
+}
+
+
+
+
+.mosaic-item-list{
+    text-align: left;
+    border-bottom: 1px #ebebeb solid;
+    min-height: 8em;
+    text-decoration: none;
+    padding-top: pxtoem(30px);
+    overflow: visible;
+
+
+    &:hover, &:focus {
+      text-decoration: none;
+    }
+        
+    .mosaic-item-description{
+        top: 0;
+        bottom: 0;
+        position: relative;
+        margin-top: pxtoem(-100px);
+        margin-left: 7em;
+        margin-bottom: 0;
+        padding-bottom: 0!important;
+        display: block;
+        background: none;
+
+    }
+
+
+    .mosaic-item-description-sub {
+      color: #393939;
+    }
+    
+    .mosaic-item-description-head{
+        font-size: 2em;
+        line-height: 1em;
+        color: #393939;
+    }
+    
+    .mosaic-item-description-copy{
+        display: none!important;
+        text-align: left;
+        max-width: inherit;
+        margin-top: 1em;
+
+        @include breakpoint(md) {
+            display: block!important;
+        }
+    }
+    
+    p {
+        color: #393939;
+        margin-left: 100px;
+    }
+    
+    .mosaic-item-image{
+        width: 100px;
+        @include transition(width, 0.3s, ease-out, 0s)
+    }
+
+     &:hover{
+        background-color: #ebebeb;
+    }
+    
+    .mosaic-item-description-share{
+        color: #393939;
+        right: 0em;
+        top: 0em;
+    }
+    
+    .mosaic-item-description-share-dark{
+        display: none;
+        
+        @include breakpoint(md) {
+            display: block;
+        }
+    }
+    
+    .mosaic-item-description-share-white{
+        display: none;
+    }
+}
+.mosaic-item-grid{
+
+    text-align: center;
+    border-bottom: 0px #ebebeb solid;
+    margin-left: 0;
+    margin-right: 0;
+    
+    .mosaic-item-description{
+        /*top: none;
+        bottom: 0;
+        position: absolute;
+        margin-top: 0;
+        margin-bottom: 1em;
+        padding-bottom: 1em;*/
+        padding-top: 22px!important;
+        padding-bottom: 14px!important;
+    }
+    
+    .mosaic-item-description-copy{
+        display: none!important;
+    }
+    
+    .mosaic-item-image{
+        width: 100%;
+        @include transition(width, 0.3s, ease-out, 0s)
+    }
+    
+    .mosaic-item-description-head{
+        /*font-size: 1.5em;
+        line-height: 1em;*/
+    }
+    
+    p{
+        color: white;
+        margin-left: 0;
+    }
+    
+    .mosaic-item-overlay{
+        display: block;
+    }
+    
+    &:hover{
+        background-color: white;
+    }
+    
+    .mosaic-item-description-share{
+        color: white;
+        top: none;
+        right: 0.1em;
+        right: 3px\0;//IE8 Fix
+        bottom: 0.4em;
+    }
+    
+    .mosaic-item-description-share-dark{
+        display: none;
+    }
+    
+    .mosaic-item-description-share-white{
+        display: block;
+    }
+}
+
+//.mosaic-item-list .mosaic-item-overlay{
+  //display: none!important;
+//}
+
+//IE8 has the issue, it shows the overlay when we toggle the view, as it does not have no-touch class in it
+.mosaic-item.mosaic-item-grid .mosaic-item-overlay{
+  display: none\0!important;
+}
+
+.mosaic-item:hover {
+  .mosaic-item-overlay {
+    display: block;
+  }
+}
+
+//For IE8 compatibility - not hack
+.mosaic-item.mosaic-item-grid:hover {
+      .mosaic-item-overlay {
+        display: block!important;
+      }
+}
+//For IE8 compatibility - not hack
+.mosaic-item.mosaic-item-list:hover, .mosaic-item.mosaic-item-list:focus{
+  .mosaic-item-overlay {
+    display: none!important;
+    opacity: 0!important;
+  }
+}
+
+//Touch devices has the issue, it shows the overlay when we toggle the view, as it does not have no-touch class in it
+.touch.opacity .mosaic-item-overlay{
+  display: none;
+}
+

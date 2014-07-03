@@ -1,0 +1,32 @@
+.carousel-wrapper {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.carousel-wrapper .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.owl-theme .owl-controls .owl-page span{ 
+   background: transparent!important;
+   border: 1px #000 solid!important;
+   @include breakpoint(md) {
+        border: 1px #FFF solid!important;
+   }
+}
+
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span{
+    background: #000!important;
+    @include breakpoint(md) {
+        background: #FFF!important;
+    }
+}
+
+.owl-theme .owl-controls {
+    margin-top: 1em!important;
+    @include breakpoint(md) {
+        margin-top: 4em!important;
+    }
+}

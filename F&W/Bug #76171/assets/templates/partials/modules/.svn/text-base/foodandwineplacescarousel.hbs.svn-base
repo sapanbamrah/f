@@ -1,0 +1,47 @@
+---
+title: Food and Wine Places Carousel
+---
+<!-- FOOD AND WINE PLACES CAROUSEL -->
+<div class="carousel faw-places-carousel faw-bg-full-container">
+    <ul class="carousel-wrapper" data-mobilemaxresolution="0" data-autoslidetime="0" data-startindex="0" data-iconpagination="true" data-breakpoint-sm="800" data-breakpoint-md="1168" data-carouseltheme="faw-places-theme">
+        <li class="item">
+            {{>foodandwineplacescarouselitem_black}}
+        </li>
+        <li class="item">
+            {{>foodandwineplacescarouselitem}}
+        </li>
+        <li class="item">
+            {{>foodandwineplacescarouselitem}}
+        </li>
+        <li class="item">
+            {{>foodandwineplacescarouselitem}}
+        </li>
+        <li class="item">
+            {{>foodandwineplacescarouselitem}}
+        </li>
+        <li class="item">
+            {{>foodandwineplacescarouselitem}}
+        </li>
+        <li class="item">
+            {{>foodandwineplacescarouselitem}}
+        </li>
+        <li class="item">
+            {{>foodandwineplacescarouselitem}}
+        </li>
+        <li class="item">
+            {{>foodandwineplacescarouselitem}}
+        </li>
+    </ul>
+    <p class="carousel-pagination-icons">
+        <span class="icon-map icon-map-white icon-map icon-hidden"> <span>Australia</span> </span>
+        <span class="icon-map icon-map-white icon-map-capital"> <span>Australian Captital Territory</span> </span>
+        <span class="icon-map icon-map-white icon-map-nsw"> <span>New South Wales</span> </span>
+        <span class="icon-map icon-map-white icon-map-northern"> <span>Northern Territory</span> </span>
+        <span class="icon-map icon-map-white icon-map-queensland"> <span>Queensland</span> </span>
+        <span class="icon-map icon-map-white icon-map-south"> <span>South Australia</span> </span>
+        <span class="icon-map icon-map-white icon-map-tasmania"> <span>Tasmania</span> </span>
+        <span class="icon-map icon-map-white icon-map-victoria"> <span>Victoria</span> </span>
+        <span class="icon-map icon-map-white icon-map-western"> <span>Western Australia</span> </span>
+    </p>
+</div>
+<!-- END: FOOD AND WINE PLACES CAROUSEL -->

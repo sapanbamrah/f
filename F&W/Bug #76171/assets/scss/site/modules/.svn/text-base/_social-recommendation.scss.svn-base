@@ -1,0 +1,31 @@
+.social-recommendation {
+
+  position: relative;
+  min-height: 14em;
+
+
+
+  @include breakpoint(sm) {
+    display: table;
+  }
+
+}
+
+.social-recommendation-media {
+  padding-right:1em;
+  text-align: center;
+
+  @include breakpoint(sm) {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+  }
+}
+
+.social-recommendation-body {
+  @include breakpoint(sm) {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+}

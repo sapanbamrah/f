@@ -1,0 +1,188 @@
+{
+    "navigation": [
+        {
+          "text" : "All"
+        },
+        {
+            "text": "Base",
+            "category": [
+                {
+                    "text": "Global",
+                    "item": [
+                        { "text": "colours" },
+                        { "text": "fonts"},
+                        { "text": "animations"},
+                        { "text": "visibility"}
+                    ]
+                },
+                {
+                    "text": "Text",
+                    "item": [
+                        { "text": "headings" },
+                        { "text": "paragraph"},
+                        { "text": "headerlockup" },
+                        { "text": "listing"},
+                        { "text": "inlineelements"},
+                        { "text": "time"},
+                        { "text": "preformattedtext"},
+                        { "text": "emphasiscolors"},
+                        { "text": "hr"},
+                        { "text": "caption"}
+                    ]
+                },
+                {
+                    "text": "Lists",
+                    "item": [
+                        { "text": "unorderedlist" },
+                        { "text": "orderedlist"},
+                        { "text": "definitionlist"}
+                    ]
+                },
+                {
+                    "text": "Images",
+                    "item": [
+                    	{ "text": "socialcounter"},
+                        { "text": "logo" },
+                        { "text": "icon" },
+                        { "text": "foodandwinecarouselitem" },
+                        { "text": "foodandwineplacescarouselitem" },
+                        { "text": "landscape_4x3"},
+                        { "text": "landscape_16x9"},
+                        { "text": "square"},
+                        { "text": "avatar"},
+                        { "text": "shareicons"},
+                        { "text": "loadericon"},
+                        { "text": "favicon"}
+                    ]
+                },
+                {
+                    "text": "Forms",
+                    "item": [
+                        { "text": "textfields" },
+                        { "text": "selectmenu"},
+                        { "text": "selectmenu-sample"},
+                        { "text": "checkbox"},
+                        { "text": "radiobuttons"},
+                        { "text": "html5inputs"}
+                    ]
+                },
+                {
+                    "text": "Buttons",
+                    "item": [
+                        { "text": "buttons" }
+                    ]
+                },
+                {
+                    "text": "Tables",
+                    "item": [
+                        { "text": "table" }
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "Components",
+            "category": [
+                {
+                    "text" : "Layout",
+                    "item": [
+                        { "text": "mosaicblank" },
+                        { "text": "carousel" },
+                        { "text": "imageuploader" },
+                        { "text": "categories" },
+                        { "text": "grid" }
+                    ]
+                },
+                {
+                    "text" : "Home",
+                    "item": [
+                        { "text": "sponsorsvideo" },
+                        { "text": "sponsorsimage" }
+                    ]
+                },
+                {
+                    "text" : "Article",
+                    "item": [
+                        { "text": "mosaicitemshare" },
+                        { "text": "mosaiciteminfo" }
+                    ]
+                }
+
+            ]
+        },
+        {
+            "text": "Modules",
+            "category": [
+                {
+                    "text" : "Overall",
+                    "item": [
+                        { "text": "navbar" },
+                        { "text": "footer" }
+                    ]
+                },
+                {
+                    "text" : "Home",
+                    "item": [
+                    	{ "text": "foodandwineherohome" },
+                    	{ "text": "foodandwinecarousel" },
+                    	{ "text": "foodandwinesponsors" }
+                    ]
+                },
+                {
+                    "text" : "Home extended",
+                    "item": [
+                        { "text": "foodandwineherohomeextended" },
+                    	{ "text": "foodandwineplaces" },
+                    	{ "text": "foodandwineplacescarousel" },
+                    	{ "text": "foodandwinecategoriemosaic" },
+                    	{ "text": "foodandwinesharelist" },
+                        { "text": "foodandwineterritories" },
+                        { "text": "foodandwinesponsors" }
+                    ]
+                },                
+                {
+                    "text" : "Form",
+                    "item": [
+                        { "text": "foodandwineheroform" },
+                    	{ "text": "imageuploader" },
+                    	{ "text": "form_categories" }
+                    ]
+                },
+                {
+                    "text" : "Form thank you",
+                    "item": [
+                        { "text": "foodandwineherothankyou" }
+                    ]
+                },
+                {
+                    "text" : "Contributers List",
+                    "item": [
+                        { "text": "foodandwineherocontributerslist" },
+                    	{ "text": "sortedlist" }
+                    ]
+                },
+                {
+                    "text" : "Article",
+                    "item": [
+                        { "text": "foodandwineheroarticle" },
+                    	{ "text": "imagewithdescription" },
+                    	{ "text": "avatar" },
+                    	{ "text": "historylist" },
+                        { "text": "custommap" },
+                        { "text": "experiences" }
+                    ]
+                },
+                {
+                    "text" : "Explore",
+                    "item": [
+                        { "text": "foodandwineheroexplore" },
+                    	{ "text": "foodandwineexploreteaser" },
+                    	{ "text": "foodandwinecategorieexploremosaic" },
+                        { "text": "calltoactionbubblebig" },
+                        { "text": "calltoactionbubblebig_withiconlogo" }
+                    ]
+                }
+            ]
+        }
+    ]
+}

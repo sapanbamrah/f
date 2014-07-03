@@ -1,0 +1,30 @@
+.faw-places{
+    -webkit-transform:translateZ(0); //to solve Safari Rendering problem
+    position: relative;
+    z-index: 3;
+    background-color: #666;
+    text-align: center;
+    background-size: cover!important;
+    overflow: hidden;
+    background-color:#040000;
+}
+
+
+.faw-places-inner{
+    position: relative;
+    padding-bottom: 0;
+    @include breakpoint(md){
+      background:none;
+    }
+
+}
+
+.faw-places .head-divider{
+  margin-top: pxtoem(10px);
+  margin-bottom: pxtoem(10px);
+}
+
+.faw-places .responsive-image img{
+  max-width: none;
+}
+

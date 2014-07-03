@@ -1,0 +1,19 @@
+.faw-territories{
+    -webkit-transform:translateZ(0); //to solve Safari Rendering problem
+    position: relative;
+    background-color: #FFF;
+}
+
+.faw-territories-copy{
+    padding-top: 8em;
+    
+    h5{
+        color: white;
+        padding: 0.2em;
+    }
+    
+    h2{
+        color: white;
+        padding: 0.2em;
+    }
+}

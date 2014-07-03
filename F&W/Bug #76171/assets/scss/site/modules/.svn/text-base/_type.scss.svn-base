@@ -1,0 +1,187 @@
+
+
+//**********************
+// Font styles:
+//**********************
+
+// TAheadline will always include a letter-spacing element
+@mixin type_TAheadline(){  //Todo - this needs to be placed where headings are defined.
+  font-family: "TAheadline", Helvetica, Arial, sans-serif;
+  letter-spacing: .015em;
+}
+
+.type-font-primary-i {
+  font-family: $font-family-primary-i;
+}
+.type-font-primary-b{
+  font-family: $font-family-primary-b;
+}
+.type-font-primary-bi{
+  font-family: $font-family-primary-bi;
+}
+.type-font-primary-sb{
+  font-family: $font-family-primary-sb;
+}
+.type-font-secondary{
+  font-family: $font-family-secondary;
+}
+.type-font-feature{
+  font-family: $font-family-feature;
+}
+
+//**********************
+// Spacing above or below element styles:
+//**********************
+.type-spacing-10 {
+  margin-bottom: 10px;
+}
+.type-spacing-15 {
+  margin-bottom: 15px;
+}
+.type-spacing-20 {
+  margin-bottom: 20px;
+}
+.type-spacing-25 {
+  margin-bottom: 25px;
+}
+.type-spacing-30 {
+  margin-bottom: 30px;
+}
+.type-spacing-40 {
+  margin-bottom: 40px;
+}
+.type-spacing-50 {
+  margin-bottom: 50px;
+}
+.type-spacing-60 {
+  margin-bottom: 60px;
+}
+.type-spacing-70 {
+  margin-bottom: 70px;
+}
+.type-spacing-80 {
+  margin-bottom: 80px;
+}
+.type-spacing-90 {
+  margin-bottom: 90px;
+}
+.type-spacing-100 {
+  margin-bottom: 100px;
+}
+.type-spacing-110 {
+  margin-bottom: 110px;
+}
+.type-spacing-120 {
+  margin-bottom: 120px;
+}
+
+//**********************
+// Type styles:
+//**********************
+
+.type-body {
+  line-height: pxtolineheightem(16px, 26px);
+  color: $type-category-colour;
+  margin-bottom: pxtoem(2px);
+}
+
+.type-article {
+  color: $type-heading-colour;
+  margin-bottom: pxtoem(5px);
+}
+.type-secondary {
+  font-family: $font-family-base;
+  //line-height:  pxtolineheightem(28px, 38px);
+  letter-spacing: pxtoletterspacingem(-20);
+  margin-bottom: pxtoem(4px);
+}
+.type-tertiary {
+  //line-height: pxtolineheightem(24px, 38px);
+  letter-spacing: pxtoletterspacingem(-20);
+  margin-bottom: pxtoem(3px);
+}
+.type-category {
+   line-height: pxtolineheightem(18px, 24px);
+   color: $type-category-colour;
+   margin-bottom: pxtoem(2px);
+ }
+
+/*
+.type-hero-image {
+  @extend .font-feature;
+  letter-spacing: pxtoletterspacingem(-10);
+}
+.type-intro-copy{
+  font-family: $font-family-base-i;
+  font-size: pxtoem(22px);
+  line-height: pxtolineheightem(22px, 32px);
+}
+
+.type-module {
+  font-family: $font-family-module-link;
+  font-size: pxtoem(14px);
+  line-height: pxtolineheightem(14px, 22px);
+  text-decoration: none;
+}
+.type-module:hover {
+  text-decoration: none;
+}
+*/
+
+/*
+
+.type-lead {
+  font-family: $font-family-lead;
+  font-size: pxtoem(22px);
+}
+
+.type-feature {
+  font-family: $font-family-feature;
+}
+
+.type-subheader {
+  font-family: $font-family-secondary;
+}
+
+*/
+
+/*
+
+.type-dash {
+  display: inline-block;
+  width: 3.6%;
+  background: #FFF;
+  height: 1px;
+  position: relative;
+  top: -0.4em;
+  margin: 0 0.8em;
+}
+
+.type-dash-inverse {
+  background:#333;
+}
+
+.type-border {
+  display: block;
+  position: relative;
+  background: #d6e9ed;
+  width:35%;
+  margin: 1.3em auto;
+  height: 1px;
+}
+
+.type-border-full {
+  background: #e7e5d7;
+  width: 100%;
+}
+
+.type-emdash {
+    display: inline-block;
+    position: relative;
+    background: #d6e9ed;
+    width:16px;
+    margin: .25em 0;
+    height: 1px;
+}
+*/
+

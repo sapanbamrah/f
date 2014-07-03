@@ -1,0 +1,11 @@
+---
+title: Select Menu
+---
+<div class="field-container">
+	<select class="input-select">
+		<option selected="selected" disabled="disabled">Select a state or territory*</option>
+		<option value="nsw">NSW</option>
+		<option value="southernaustralia">Southern Australia</option>
+		<option value="victoria">Victoria</option>
+	</select>
+</div>

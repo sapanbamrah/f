@@ -1,0 +1,99 @@
+.faw-sponsors-outer{
+    margin-left: 0;
+    @include breakpoint(lg) {
+         margin-left: -805px;
+    }
+}
+
+.faw-sponsors{
+    -webkit-transform:translateZ(0); //to solve Safari Rendering problem
+    text-align: center;
+    overflow: hidden;
+    height: auto;
+    padding-top: 4em;
+    padding-bottom: pxtoem(120px);
+    position: relative;
+    z-index: 1;
+    background-color: $color-white;
+    margin-top: -0.5em;
+
+    @include breakpoint(lg) {
+      padding-bottom: pxtoem(90px);
+    }
+
+    .faw-carousel-bullets{
+        display: inline-block;
+        @include breakpoint(md) {
+            display: none;
+        }
+    }
+}
+.faw-sponsors-wrapper{
+    width: 100%;
+    display: inline-block;
+    overflow: visible;
+    
+    @include breakpoint(md) {
+         width: 400px;
+    }
+}
+
+.faw-sponsors-carousel{
+    .owl-controls{
+        display: block!important;
+        @include breakpoint(lg) {
+            display: none!important;
+        }
+    }
+}
+
+.faw-sponsors-wrapper{
+    .owl-wrapper-outer {
+        overflow: visible!important;
+    }
+    
+    .owl-theme .owl-controls .owl-page span{ 
+       background: transparent!important;
+       border: 1px #000 solid!important;
+       @include breakpoint(md) {
+            border: 1px #000 solid!important;
+       }
+    }
+    
+    .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span{
+        background: #000!important;
+        @include breakpoint(md) {
+            background: #000!important;
+        }
+    }
+    
+    .owl-theme .owl-controls {
+        margin-top: 1em!important;
+        @include breakpoint(md) {
+            margin-top: 1em!important;
+        }
+    }
+}
+
+.faw-sponsors-carousel-item{
+    width: 100%;   
+    margin: 0;
+    padding: 0;
+    text-align: center;  
+    background-color: #fff;
+    
+    .sponsors-item{
+        display: inline-block;
+    } 
+    .sponsors-item-video {
+        @include breakpoint(md) {
+            max-width: 500px;
+            width: 500px;
+            margin-left: 0px;
+        }
+    }
+}
+
+.faw-sponsors-carousel-wrapper{
+    overflow: visible;
+}

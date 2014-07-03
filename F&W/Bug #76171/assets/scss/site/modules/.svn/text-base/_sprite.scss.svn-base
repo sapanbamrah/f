@@ -1,0 +1,13 @@
+@import "compass/utilities/sprites";
+
+//Declare image location and generate all sprites
+$icon-social-spacing: 10px;
+$icon-social-sprite-dimensions: true;
+@import "icon-social/*.png";
+@include all-icon-social-sprites;
+
+$icon-experience-spacing: 10px;
+$icon-experience-sprite-dimensions: true;
+@import "icon-experience/*.png";
+@include all-icon-experience-sprites;
+

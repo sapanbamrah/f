@@ -1,0 +1,11 @@
+---
+title: Mosaic Grid Changer
+---
+<div class='mosaicgridchanger'>
+	<div class="mosaicgridchanger-button mosaicgridchanger-grid-button mosaicgridchanger-button-active">
+		<span class="icon-font-sort_grid"></span>
+	</div>
+	<div class="mosaicgridchanger-button mosaicgridchanger-list-button">
+		<span class="icon-font-sort_list"></span>
+	</div>
+</div>

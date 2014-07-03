@@ -1,0 +1,25 @@
+---
+title: Form Categories Item
+note: note-formcategories
+---
+
+
+<div class="field-container">
+    <div class="categories-box">
+        <h4 class="categories-box-headline"><strong>Categories*</strong></h4>
+        <p class="categories-box-copy"><em>Select <strong>one</strong> or <strong>two</strong> categories that best reflect your business:</em></p>
+
+        <div class="form-category-radios">
+
+            <input type="hidden" name="category-primary" value="">
+            <span id="category-primary" class="form-category-tick checkbox-label">Primary category</span>
+            <input type="hidden" name="category-secondary" value="">
+            <span id="category-secondary" class="form-category-tick checkbox-label">Secondary category</span>
+
+        </div>
+
+        {{> categories }}
+
+    </div>
+</div>
+

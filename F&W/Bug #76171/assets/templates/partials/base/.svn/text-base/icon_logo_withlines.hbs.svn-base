@@ -1,0 +1,9 @@
+---
+title: Icon Logo With Lines
+---
+
+<div class="icon-logo-withlines-container">
+    <hr class="icon-logo-withlines-hr">
+    <span href="#" class="icon-logo-withlines-logo btn-restaurant-australia-logo icon-font-logo"></span>
+    <hr class="icon-logo-withlines-hr">
+</div>

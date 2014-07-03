@@ -1,0 +1,257 @@
+---
+title: Restaurant Australia – List your business
+layout: layout-base.hbs
+---
+
+{{> foodandwineheroform}}
+
+
+
+
+
+<div class="row form-container">
+
+
+	<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+
+        <form class="form-container-inner" action="#">
+
+            <!-- input fields -->
+            <div class="field-container">
+                <div class="input-field" data-type="text">
+                    <div class="col-xs-4">
+                        <label class="input-field-label" for="text">
+                            <p>
+                                <strong>Business name*</strong>
+                            </p></label>
+                    </div>
+                    <div class="col-xs-8">
+                        <input class="input-field-input" type="text" placeholder="E.g. Rockpool"/>
+                        <span class="input-field-validation-icon"></span>
+                    </div>
+                    <div class="col-xs-12">
+                        <p class="input-field-validation-alert">
+                            Please enter a valid Business name
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field-container">
+                <div class="input-field" data-type="text">
+                    <div class="col-xs-4">
+                        <label class="input-field-label" for="text">
+                            <p>
+                                <strong>Business location*</strong>
+                            </p></label>
+                    </div>
+                    <div class="col-xs-8">
+                        <input class="input-field-input" type="text" placeholder="E.g. Sydney"/>
+                        <span class="input-field-validation-icon"></span>
+                    </div>
+                    <div class="col-xs-12">
+                        <p class="input-field-validation-alert">
+                            Please enter a valid location
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field-container">
+                <div class="input-field input-field-select" data-type="select">
+                    <select class="input-select">
+                        <option selected="selected" disabled="disabled">Select a state*</option>
+                        <option value="act">Australian Capital Territory</option>
+                        <option value="nsw">New South Wales</option>
+                        <option value="nt">Northern Territory</option>
+                        <option value="qld">Queensland</option>
+                        <option value="sa">South Australia</option>
+                        <option value="tas">Tasmania</option>
+                        <option value="vic">Victoria</option>
+                        <option value="wa">Western Australia</option>
+                    </select>
+                    <span class="input-field-validation-icon"></span>
+                    <div class="col-xs-12">
+                        <p class="input-field-validation-alert">
+                            Please select a state
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="field-container">
+                <div class="input-field" data-type="text">
+                    <div class="col-xs-4">
+                        <label class="input-field-label" for="text">
+                            <p>
+                                <strong>Contact name*</strong>
+                            </p></label>
+                    </div>
+                    <div class="col-xs-8">
+                        <input class="input-field-input" type="text" placeholder="E.g. John Smith"/>
+                        <span class="input-field-validation-icon"></span>
+                    </div>
+                    <div class="col-xs-12">
+                        <p class="input-field-validation-alert">
+                            Please enter a valid Contact name
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field-container">
+                <div class="input-field" data-type="number">
+                    <div class="col-xs-4">
+                        <label class="input-field-label" for="text">
+                            <p>
+                                <strong>Contact number*</strong>
+                            </p></label>
+                    </div>
+                    <div class="col-xs-8">
+                        <input class="input-field-input" type="text" placeholder="E.g. +61-2-2222-2222"/>
+                        <span class="input-field-validation-icon"></span>
+                    </div>
+                    <div class="col-xs-12">
+                        <p class="input-field-validation-alert">
+                            Please enter a valid contact number
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field-container">
+                <div class="input-field" data-type="mail">
+                    <div class="col-xs-4">
+                        <label class="input-field-label" for="text">
+                            <p>
+                                <strong>Contact email*</strong>
+                            </p></label>
+                    </div>
+                    <div class="col-xs-8">
+                        <input id="mail" class="input-field-input" type="text" placeholder="E.g. john.smith@email.com"/>
+                        <span class="input-field-validation-icon"></span>
+                    </div>
+                    <div class="col-xs-12">
+                        <p class="input-field-validation-alert">
+                            Please enter a valid email address
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field-container">
+                <div class="input-field" data-type="verify-mail">
+                    <div class="col-xs-4">
+                        <label class="input-field-label" for="text">
+                            <p>
+                                <strong>Verify email*</strong>
+                            </p></label>
+                    </div>
+                    <div class="col-xs-8">
+                        <input id="verifymail" class="input-field-input" type="text" placeholder="E.g. john.smith@email.com"/>
+                        <span class="input-field-validation-icon"></span>
+                    </div>
+                    <div class="col-xs-12">
+                        <p class="input-field-validation-alert">
+                            Please enter the right verify email
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field-container">
+                <div class="input-field">
+                    <div class="col-xs-4">
+                        <label class="input-field-label" for="text">
+                            <p>
+                                <strong>Business website</strong>
+                            </p>
+                        </label>
+                    </div>
+                    <div class="col-xs-8">
+                        <input class="input-field-input" type="text" placeholder="E.g. www.business.com.au"/>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="field-container">
+                <div class="description-box">
+                    <h4 class="description-box-headline"><strong>Your story</strong></h4>
+                    <p class="description-box-copy">
+                        <em>Write a short description of what your business does best</em>
+                    </p>
+                    <textarea class="description-box-input-field" rows="4" placeholder="..."></textarea>
+                </div>
+            </div>
+
+            <div class="field-container">
+                <div class="description-box description-box-outer">
+                    <h4 class="description-box-headline"><strong>Upload image(s)</strong></h4>
+                    <p class="description-box-copy">
+                        <em>Jpeg, Gif or PNG - 5mb file limit. Your image should be at least 600 x 600px</em>
+                    </p>
+
+                    {{>imageuploader}}
+
+                </div>
+            </div>
+            <!-- END: input fields -->
+
+            {{> form_categories}}
+            
+            
+            <div class="field-container">
+                <div class="input-field" data-type="text">
+                    <div class="col-xs-4">
+                        <label class="input-field-label" for="text">
+                            <p>
+                                <strong>Video URL</strong>
+                            </p></label>
+                    </div>
+                    <div class="col-xs-8">
+                        <input class="input-field-input" type="text" placeholder="E.g. www.youtube.com/myvideo"/>
+                    </div>
+                </div>
+            </div>
+
+            <!-- tac checkbox -->
+            <div class="field-container terms-conditions">
+                <div class="input-field input-field-checkbox form-agree-container" data-type="checkbox">
+
+                        <fieldset class="options">
+                            <input id="legals" class="checkbox" name="legals" type="checkbox"/>
+                            <label for="legals"  class="checkbox-label">I agree to lorem ipsum terms & conditions<sup>*</sup></label>
+                            <!-- Checkbox powered by CssCheckbox.com -->
+                            <p class="checkbox-description">
+                                Tourism Australia may need to contact you to complete or edit your listing. By ticking you accept the <a href="http://www.australia.com/privacypolicy.aspx" target="_blank">Privacy Policy</a> and <a href="http://www.australia.com/terms-conditions.aspx" target="_blank">Terms & Conditions</a>
+                            </p>
+                        </fieldset>
+
+                    <span class="input-field-validation-icon"></span>
+                    <div class="col-xs-12">
+                        <p class="input-field-validation-alert">
+                            Please accept the terms and conditions
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- END: tac checkbox -->
+
+            <hr class="form-clear">
+
+            <!-- send button -->
+            <p class="form-submit-button">
+                <input onclick="validateForm();" value="I'm done, submit" class="btn-secondary">
+            </p>
+            <!-- END: send button -->
+        </form>
+	</div>
+</div>
+
+<script>
+	$(document).ready(function() {
+		$(".categories-box").formcategory();
+	});
+</script>
+

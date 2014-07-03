@@ -1,0 +1,225 @@
+// Container
+.footer-container {
+  position: relative;
+  margin: 0 auto;
+  background: #000;
+}
+.footer {
+  outline: 1px solid #f5f5f5;
+  padding: 0 0.5em;
+  background-color: #000;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// Generic
+.footer-col {
+  display: block;
+  margin: 0 auto;
+  max-width:pxtoem(400px);
+  position: relative;
+  @extend .type-spacing-30;
+  text-align: left;
+
+  @include breakpoint(sm) {
+    text-align: center;
+    width: 100%;
+  }
+
+
+}
+.footer-col.fixed-height {
+  //min-height: 180px;
+}
+
+
+.footer-col a1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: pxtoem(14px);
+  text-decoration: none;
+  color: #787474;
+}
+.footer-col a1:hover, .footer-col a1:focus {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: pxtoem(14px);
+  color: #928e8e;
+}
+.footer-heading{
+  margin: 0 0 15px 0;
+  font-family: "TheSanB5Pla", Helvetica, Arial, sans-serif;
+  font-size: pxtoem(16px);
+  padding: 0;
+  color: #FFF;
+}
+
+
+.footer-text-list li {
+  padding: pxtoem(8.8px) 0;
+  color: #787474;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: pxtoem(14px);
+
+  @include breakpoint(sm) {
+    display: inline-block;
+    margin-right: 0.5em;
+  }
+
+  &:last-child {
+    margin-right:0;
+  }
+}
+
+
+
+.footer-text-list li a {
+  color: #787474;
+  text-decoration: none;
+}
+.footer-text-list li a {
+  &:hover, &:focus {
+    color: #FFF;
+  }
+}
+
+// Restaurant Australia Header
+.restaurant-australia-elements{
+  text-align: center;
+  padding-top: 4em;
+  //background-color: #000;
+  height: 100%;
+  //max-width: $screen-lg;
+  margin: 0 auto;
+}
+.restaurant-australia-elements-link{
+  display: block;
+  font-family: "TheSanB5Pla", Helvetica, Arial, sans-serif;
+  font-size: pxtoem(16px);
+  text-transform: uppercase;
+  color: #787474;
+  text-decoration: none;
+}
+.restaurant-australia-elements-link:hover, .restaurant-australia-elements-link:focus {
+  color: #787474;
+  text-decoration: none;
+}
+.restaurant-australia-elements-biline-container {
+  height: 100%;
+  text-align:center;
+  //background: #000;
+}
+.restaurant-australia-elements-biline-container hr {
+  margin-top: -10px;
+  border-top: 1px solid #504d4d;
+  margin: -10px 15px 0;
+  @media (max-width: pxtoem($screen-sm - 300) ) {
+    visibility: hidden;
+  }
+}
+.restaurant-australia-elements-biline {
+  @include type_TAheadline();
+  font-size: pxtoem(18px);
+  color: #FFF;
+  background-color: #000;
+  display: inline-block;
+  //margin: 0 0 0 50%;
+  padding: 0 14px;
+}
+
+// TA Logo
+.footer-ta-logo-container-ab {
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  padding-bottom: 10px;
+}
+.footer-ta-logo-container {
+  bottom: 10px;
+  position: absolute;
+  left: 50px;
+}
+.footer-ta-logo-copyright {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: pxtoem(14px);
+  color: #787474;
+  text-align: right;
+  padding-right: 2px;
+}
+
+// Social
+.footer-social {
+  width: 300px;
+  background: #000;
+}
+.footer-social-heading {
+  font-family: "TheSanB5Pla", Helvetica, Arial, sans-serif;
+  font-size: pxtoem(16px);
+  padding: 0;
+  color: #FFF;
+}
+
+.footer-social-list {
+  @extend .l-list-clean;
+  @extend .l-list-inline;
+  width: 300px;
+
+  & > li {
+    width: 150px;
+  }
+
+  & > li:last-child {
+    width: 140px;
+  }
+}
+
+/////////////////////////////////
+//Todo - need to review
+.footer-header{
+  text-align: center;
+  padding-top: 4em;
+  color: #FFF;
+}
+
+
+.site-footer{
+  color: #33738f;
+  background-color: #0a334c;
+  padding-bottom: 5em;
+
+  h3{
+    color: #FFF;
+
+    margin-bottom: 1.3em;
+    font-size: 0.9em;
+
+    //Todo - consider mixin?
+    @media screen and (max-width:990px) {
+      text-align: center;
+    }
+  }
+  a{
+    font-size: 0.9em;
+    color: #33738f;
+  }
+  p{
+    font-size: 0.9em;
+  }
+}
+
+
+.site-footer-content{
+  margin-top: 2em;
+}
+
+.site-footer-copy-label{
+  font-size: 0.4em;
+}
+
+
+
+.site-footer-subheader{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color:#fff;
+}
+
+

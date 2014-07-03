@@ -1,0 +1,37 @@
+$buttonPadding: 1em!default;
+$buttonBg: #CC6!default;
+$buttonColour: #fff!default;
+$buttonRadius: pxtoem(4px)!default;
+$buttonTransitionDuration: 300ms!default;
+
+
+
+@mixin button_base($padding:$buttonPadding) {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 0 1.25em;
+  padding: $padding;
+  text-decoration: none;
+  font-weight: normal;
+  line-height: normal;
+  text-align: center;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size:1em;
+  -webkit-appearance: none;
+  border: none;
+}
+
+
+@mixin button_style($bg:$buttonBg, $colour: $buttonColour, $radius: $buttonRadius ) {
+  background-color: $bg;
+  color:$colour;
+  border-radius: $radius;
+}
+
+
+@mixin button_transition($duration: $buttonTransitionDuration) {
+  -webkit-transition: background-color #{$duration} ease-out;
+  -moz-transition: background-color #{$duration} ease-out;
+  transition: background-color #{$duration} ease-out;
+}

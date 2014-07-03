@@ -1,0 +1,133 @@
+/* Select box */
+.input-select{
+  position: relative;
+  width: 100%;
+  font-family: "ProximaNova Bold", "Helvetica", "Arial", sans-serif;
+  //font-family: arial narrow, helvetica, sans-serif;
+  font-size: 1.1em;
+  height: 55px;
+  -webkit-appearance: none;
+  border: 1px $color-light-grey solid;
+  border-radius: 0;
+  font-weight: normal;
+  color: #393939;
+  padding: 1em;
+  background: url('../imgs/base/input-select-icon.jpg');
+  background-repeat: no-repeat;
+  background-position: center right;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+
+  &:focus{
+    outline: pxtoem(1px) solid #000;
+    //        outline: none;
+    //        border: 1px $color-black solid;
+    //        border-left: 7px $color-black solid;
+    //        margin-left: -6px;
+  }
+}
+
+
+@-moz-document url-prefix() {
+  .input-select{
+    background: url('../imgs/base/input-select-icon.jpg');
+    background-repeat: no-repeat;
+    background-position: center right;
+
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+  }
+
+  .input-select option{
+    padding-top:5px;//'GearedSlab' font cuts the text from top
+  }
+}
+
+.input-select-small{
+  font-family: "GearedSlab-Thin-Fix", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  height: 61px;
+  width: auto;
+  border: none;
+  padding-right: 2.5em;
+
+  &:focus{
+    outline: pxtoem(1px) solid #000;
+    //        outline: none;
+    //        border: 1px $color-black solid;
+    //        border-top: none;
+    //        border-left: 7px $color-black solid;
+  }
+}
+
+.input-field-select{
+  border: none;
+}
+
+.input-select-top-border{
+  border-top: 1px $color-light-grey solid;
+  border-bottom: 0;
+
+  @include breakpoint(md) {
+    border-bottom: 1px $color-light-grey solid;
+    border-top: 0;
+  }
+}
+
+.input-select-bottom-border{
+  border-bottom: 1px #fff solid;
+}
+.input-select-bottom-border:hover{
+  border-bottom: 1px $color-light-grey solid;
+}
+
+.input-select-mosaic-filter{
+  height: 40px;
+  padding: 0.5em;
+  padding-right: 2.5em;
+
+  //IE settings
+  padding-right: .95em\0;
+  font-size: 1.2em\0;
+
+  width:100%;
+  margin-bottom: 1em;
+
+  @include breakpoint(md) {
+    margin-bottom: 0;
+  }
+}
+
+.input-select-white-box{
+  padding-right: 3.5em;
+  background-color: white;
+  margin-top: 2em;
+}
+
+
+/****** start - Resolve the 2 arrows issue and font cut issue in IE ********/
+
+.input-select-small
+{
+  padding-right: 18px\9; //IE9 & below hack
+  min-width: 195px\9; //IE9 & below hack
+  height: 65px\9; //IE9 & below hack
+  padding-bottom: 16.8px\9; //IE9 & below hack
+}
+
+//IE10 & above hack
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .input-select-small
+  {
+    padding-right: 17px;
+    min-width: 195px;
+    height: 65px;
+    padding-bottom: 16.8px;
+  }
+}
+
+/****** end - Resolve the 2 arrows issue and font cut issue in IE ********/

@@ -1,0 +1,12 @@
+---
+title: Footer About
+---
+
+<div class="footer-col">
+    <p class="footer-heading">About this site</p>
+    <ul class="footer-text-list l-list-clean">
+        <li><a href="http://www.australia.com/disclaimer.aspx">Special offers disclaimer</a></li>
+        <li><a href="http://www.australia.com/privacypolicy.aspx">Privacy policy</a></li>
+        <li><a href="http://www.australia.com/terms-conditions.aspx">Terms & conditions</a></li>
+    </ul>
+</div>

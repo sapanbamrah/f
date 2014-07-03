@@ -1,0 +1,74 @@
+---
+title: Textfields
+---
+<fieldset>
+	<!-- INPUT TEXTFIELDS -->
+	<div class="field-container">
+		<div class="input-field" data-type="text">
+			<div class="col-xs-4">
+                <label class="input-field-label" for="text"><p><strong>Input text*</strong></p></label>
+            </div>
+            <div class="col-xs-8">
+                <input class="input-field-input" type="text" placeholder="E.g. Jhon Smith"/>
+                <span class="input-field-validation-icon"></span>
+            </div>
+            <div class="col-xs-12">
+        		<p class="input-field-validation-alert">Please enter a valid name</p>
+        	</div>    	
+		</div>
+	</div>
+	
+	<div class="field-container">
+		<div class="input-field" data-type="mail">
+			<div class="col-xs-4">
+                <label class="input-field-label" for="text"><p><strong>Input mail*</strong></p></label>
+            </div>
+            <div class="col-xs-8">
+                <input class="input-field-input" type="text" placeholder="E.g. john.smith@email.com"/>
+                <span class="input-field-validation-icon"></span>
+            </div>
+            <div class="col-xs-12">
+        		<p class="input-field-validation-alert">Please enter a valid email</p>
+        	</div>    	
+		</div>
+	</div>
+	
+	<div class="field-container">
+		<div class="input-field" data-type="number">
+			<div class="col-xs-4">
+                <label class="input-field-label" for="text"><p><strong>Input phonenumber*</strong></p></label>
+            </div>
+            <div class="col-xs-8">
+                <input class="input-field-input" type="text" placeholder="E.g. 0481234567"/>
+                <span class="input-field-validation-icon"></span>
+            </div>
+            <div class="col-xs-12">
+        		<p class="input-field-validation-alert">Please enter a valid phonenumber</p>
+        	</div>    	
+		</div>
+	</div>
+	
+	<div class="field-container">
+		<div class="description-box">
+			<h4 class="description-box-headline">Description</h4>
+			<p class="description-box-copy"><em>Write a short description of what your business does best</em></p>
+			<textarea class="description-box-input-field" rows="4" placeholder="..."></textarea>
+		</div>
+	</div>
+	
+	<div class="field-container">
+		<div class="description-box">
+			<h4 class="description-box-headline">Photos</h4>
+			<p class="description-box-copy"><em>Jpeg, Gif or PNG - 5mb file limit. Your image should be at least 600 x 600px</em></p>
+			
+			{{>imageuploader}}
+			
+			<div class="description-box">
+			<h4 class="description-box-headline">Optional Description</h4>
+			<p class="description-box-copy"><em>Write a short description about your photo</em></p>
+			<textarea class="description-box-input-field" rows="4" placeholder="..."></textarea>
+		</div>
+		</div>
+	</div>
+	
+</fieldset>

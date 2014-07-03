@@ -1,0 +1,33 @@
+---
+title: Food and Wine Hero Home
+note: note-foodandwineherohome
+---
+<!-- test background for testing, whow the transparent menu respons -->
+<div class='faw-hero-home make-black'>
+	<div class="faw-hero-home-bg fullwidth-bg">
+		<div class="responsive-image" data-picture="" data-alt="" >
+			<div data-src="imgs/pages/home/faw-hero-bg.jpg" data-media="(min-width: 1px)"></div>
+			<div data-src="imgs/pages/home/faw-hero-bg.jpg" data-media="(min-width: 481px)"></div>
+			<div data-src="imgs/pages/home/faw-hero-bg.jpg" data-media="(min-width: 769px)"></div>
+			<div data-src="imgs/pages/home/faw-hero-bg.jpg" data-media="(min-width: 993px)"></div>
+			
+			<noscript>
+				<img src='imgs/pages/home/faw-hero-bg.jpg' alt=''>
+			</noscript>
+		</div>
+        <!--Will show in IE8 -->
+        <img src='imgs/pages/home/faw-hero-bg.jpg' alt='' class="base-show-in-ie8">
+	</div>
+	
+	<div class="faw-hero-home-container">
+
+        {{> icon_logo_withlines }}
+
+		<h1 class='faw-hero-home-headline'>Inviting the world to dinner</h1>
+        <hr class="faw-hero-home-hr">
+
+        {{> calltoactionregister }}
+
+	</div>
+	{{>foodandwinevideoteaser}}
+</div>

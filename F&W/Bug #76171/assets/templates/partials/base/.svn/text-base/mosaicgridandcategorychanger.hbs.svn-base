@@ -1,0 +1,50 @@
+---
+title: Mosaic Grid Changer
+---
+<div class='mosaicgridchanger'>
+
+	<!-- CATEGORY DROP DOWNS -->
+	<div class="faw-category-mosaic-drop-downs">
+
+		<!-- CATEGORY DROP DOWN -->
+		<div class="faw-category-mosaic-drop-down">
+			<select class="input-select input-select-small input-select-bottom-border input-select-mosaic-filter">
+				<option value="" selected="selected" disabled>Filter by category</option>
+				<option value="restaurants">Restaurants</option>
+				<option value="wine">Wine</option>
+				<option value="produce">Produce</option>
+				<option value="events">Events</option>
+				<option value="people">People</option>
+				<option value="experiences">Experiences</option>
+				<option value="seafood">Seafood</option>
+			</select>
+		</div>
+		<!-- END: CATEGORY DROP DOWN -->
+
+		<!-- STATE DROP DOWN -->
+		<div class="faw-category-mosaic-drop-down">
+			<select class="input-select input-select-small input-select-bottom-border input-select-mosaic-filter">
+				<option value="" selected="selected" disabled>Filter by location</option>
+				<option value="southernaustralia">Capital</option>
+				<option value="victoria">NSW</option>
+				<option value="northern">Northern</option>
+				<option value="queensland">Queensland</option>
+				<option value="south">South</option>
+				<option value="tasmania">Tasmania</option>
+				<option value="victoria">Victoria</option>
+				<option value="western">Western</option>
+			</select>
+		</div>
+		<!-- END: STATE DROP DOWN -->
+	</div>
+	<!-- END: CATEGORY DROP DOWNS -->
+	
+	<!-- GRID CHANGER BUTTONS -->
+	<div class="mosaicgridchanger-button mosaicgridchanger-grid-button mosaicgridchanger-button-active">
+		<span class="icon-font-sort_grid"></span>
+	</div>
+	<div class="mosaicgridchanger-button mosaicgridchanger-list-button">
+		<span class="icon-font-sort_list"></span>
+	</div>
+	<!-- END: GRID CHANGER BUTTONS -->
+</div>

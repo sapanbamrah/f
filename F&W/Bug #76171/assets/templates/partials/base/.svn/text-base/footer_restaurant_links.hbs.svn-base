@@ -1,0 +1,11 @@
+---
+title: Footer About
+---
+
+<div class="footer-col">
+    <p class="footer-heading">Restaurant Australia</p>
+    <ul class="footer-text-list l-list-clean">
+        <li><a href="#">Restaurant Australia</a></li>
+        <li><a href="#">List your business</a></li>
+    </ul>
+</div>

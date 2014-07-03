@@ -1,0 +1,13 @@
+.language-selector {
+  position: relative;
+}
+
+.language-selector-header {
+  margin-bottom: 1.1em;
+  color: #FFF;
+  text-align: center;
+
+  @include breakpoint(md) {
+    text-align: left;
+  }
+}

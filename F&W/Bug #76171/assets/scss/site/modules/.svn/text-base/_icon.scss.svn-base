@@ -1,0 +1,573 @@
+///*
+// * Font Based Icons:
+// * ---------------------------------------------------------------------------------------------------------------- */
+[class^="icon-font-"], [class*=" icon-font-"] {
+  font-family: 'foodWineIcons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  //overflow: hidden;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-font-logo:before {
+  content: "\e624";
+}
+.icon-font-tick:before {
+  content: "\e601";
+}
+.icon-font-twitter:before {
+  content: "\e602";
+}
+.icon-font-twitter-outline:before {
+  content: "\e603";
+}
+.icon-font-instagram:before {
+  content: "\e604";
+}
+.icon-font-arrow-right:before {
+  content: "\e605";
+}
+.icon-font-arrow-next:before {
+  content: "\e606";
+}
+.icon-font-arrow-left:before {
+  content: "\e607";
+}
+.icon-font-arrow-previous:before {
+  content: "\e608";
+}
+.icon-font-arrow-down:before {
+  content: "\e609";
+}
+.icon-font-mail-outline:before {
+  content: "\e60a";
+}
+.icon-font-facebook:before {
+  content: "\e60b";
+}
+.icon-font-facebook-outline:before {
+  content: "\e60c";
+}
+.icon-font-wine-story:before {
+  content: "\e60d";
+}
+.icon-font-seafood:before {
+  content: "\e60e";
+}
+.icon-font-restaurants:before {
+  content: "\e60f";
+}
+.icon-font-produce:before {
+  content: "\e610";
+}
+.icon-font-people:before {
+  content: "\e611";
+}
+.icon-font-experiences:before {
+  content: "\e612";
+}
+.icon-font-events:before {
+  content: "\e613";
+}
+.icon-font-plus:before {
+  content: "\e614";
+}
+.icon-font-cross:before {
+  content: "\e615";
+}
+.icon-font-youtube:before {
+  content: "\e618";
+}
+.icon-font-pinterest:before {
+  content: "\e617";
+}
+.icon-font-googleplus:before {
+  content: "\e616";
+}
+.icon-font-video-play:before {
+  content: "\e619";
+}
+.icon-font-mobile-menu:before {
+  content: "\e61a";
+}
+.icon-font-listing:before {
+  content: "\e61b";
+}
+.icon-font-google-logo:before {
+  content: "\e61c";
+}
+.icon-font-email-computer:before {
+  content: "\e61d";
+}
+.icon-font-tag-posts:before {
+  content: "\e61e";
+}
+.icon-font-phone:before {
+  content: "\e61f";
+}
+.icon-font-star:before {
+  content: "\e620";
+}
+.icon-font-sort_list:before {
+  content: "\e621";
+}
+.icon-font-sort_grid:before {
+  content: "\e622";
+}
+
+
+.icon-colour-white {
+  color: #FFF;
+}
+.icon-colour-black {
+  color: #000;
+}
+.icon-colour-grey {
+  color: #504d4d;
+}
+
+
+.icon-logo-withlines-container {
+  position: relative;
+  width: 244px;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 0em;
+  
+  @include breakpoint(md) {
+    width: 220px;
+  }
+}
+.icon-logo-withlines-hr {
+  width: 36px;
+  border-top: 1px solid #040000;
+  float: left;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 34px;
+  right: 0px;
+  &:first-child{//Changed from last child to first child, as IE8 does not supports last-child
+    right: auto;
+  }
+  @include breakpoint(md) {
+    width: 26px;
+  }
+}
+.icon-logo-withlines-logo {
+  font-size: 10em;
+}
+
+.icon-logo-withlines-hr-small {
+    bottom: 5px;
+}
+
+
+///*
+// * Sprite Based Icons:
+// * ---------------------------------------------------------------------------------------------------------------- */
+.icon {
+  font-weight: normal !important;
+  vertical-align: middle;
+  display: inline-block;
+  background-image: url(../imgs/icon-sprite.png);
+  background-repeat: no-repeat;
+  background-position: 0 0; // top left corner should contain a 68x68 pixel transparent square...
+}
+
+///*
+// * Icon size presets:
+// * ---------------------------------------------------------------------------------------------------------------- */
+.icon-32 {
+  margin:-16px 0; // reduce the line height
+  @include icon-sprite-size(32px);
+}
+
+.icon-52 {
+  margin:-26px 0; // reduce the line height
+  @include icon-sprite-size(52px);
+}
+
+///*
+// * Icon positions:
+// * ---------------------------------------------------------------------------------------------------------------- */
+.icon-red-heart {
+  background-position: -10px -10px;
+}
+
+.icon-green-search {
+  background-position: -56px -10px;
+}
+
+.icon-diamond-koalas {
+  background-position: -10px -58px;
+}
+
+.icon-diamond-camping {
+  background-position: -82px -58px;
+}
+
+.icon-diamond-aboriginal {
+  background-position: -154px -58px;
+}
+
+
+
+
+///*
+// * Icon positions:
+// * ---------------------------------------------------------------------------------------------------------------- */
+.icon-circle {
+  position: relative;
+  display: block;
+  border-radius: 50%;
+  color:#fff;
+  border:pxtoem(1px) solid #fff;
+  min-height: 4.2em;
+  min-width: 4.2em;
+}
+
+
+//Todo - migrate over to the video scss
+
+
+.icon-play {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.48em;
+  left: 50%;
+  margin-left: -0.55em;
+  font-size: 0.7em;
+}
+
+.icon-map-wrapper{
+    background: none;
+    text-align: center;
+    padding: 0.5em 0;
+    max-width: 100%;
+    margin-bottom: 0;
+}
+
+.icon-map-wrapper-gradient{
+  height: 14.95em;
+  background: url(../imgs/pages/home/bg_gradient_carousel.png) repeat-x;
+}
+
+
+.icon-map{
+    width: 111px;
+    height: 111px;
+    background: url('../imgs/map-icons/map-icons-sprite.png');
+    background-repeat: no-repeat;
+    display: block;
+    background-color: transparent;
+    border: 1px white solid;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    
+    span{
+        position: absolute;
+        top: 120px;
+        width: 120px;
+        text-align: center;
+        font-size: 1em;
+        line-height: 1em;
+        left: -5px;
+    }
+}
+
+.icon-map-small {
+    background: url('../imgs/map-icons/map-icons-sprite-small.png');
+    width: 80px;
+    height: 80px;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+
+    span {
+      position: absolute;
+      top: 95px;
+      width: 80px;
+      left: 0;
+      font-size: 0.75em;
+    }
+}
+
+.icon-map-white{
+    border: 1px white solid;
+    
+     &:hover{
+       background-color: #cfcfcf;
+       background-color: rgba(255, 255, 255, 0.4);
+    }
+    
+    span{
+        color: white;
+    }
+
+    &.icon-map-small {
+        background-position: -478px -20px;
+    }
+}
+
+.icon-map-white-active{
+    background-position: 0px -113px;
+        background-color: white;
+    span{
+        font-family: "ProximaNova Bold", Helvetica, Arial, sans-serif;
+    }
+}
+
+.icon-map-black{
+    background-position:0px -113px;
+    border: 1px #393939 solid;
+    
+    &:hover{
+        background-color: #393939;
+    }
+    
+    span{
+        color: #393939;
+    }
+
+    &.icon-map-small {
+        background-position: -478px -111px;
+    }
+}
+
+.icon-map-black-active{
+    background-color: #393939;
+    span{
+        font-family: "ProximaNova Bold", Helvetica, Arial, sans-serif;
+    }
+}
+
+/*! ROLLOVER AND ACTIVE STATES FOR CATEGORY ITEMS
+    Example usage:
+    @include itemstate(bgXpos, bgYpos)
+ */
+@mixin itemstate-with-parent-background($bgXpos) {
+  background-position: $bgXpos 0px;
+    &:hover{
+        background-position: $bgXpos 0px;
+    }
+
+    &.icon-map-black-active{
+        background-position:$bgXpos 0px;
+    }
+
+    &.icon-map-white{
+        //background-position: 0px 0px;
+    }
+}
+
+@mixin itemstate($bgXpos) {
+  background-position: $bgXpos -113px;
+  &:hover{
+    background-position: $bgXpos 0px;
+  }
+
+  &.icon-map-black-active{
+    background-position:$bgXpos 0px;
+  }
+
+  &.icon-map-white{
+    //background-position: 0px 0px;
+  }
+}
+
+//For Icons above the white page
+.icon-map-capital{
+    @include itemstate(0px);
+}
+.icon-map-nsw{
+    @include itemstate(-111px);
+}
+.icon-map-northern{
+   @include itemstate(-222px);
+}
+.icon-map-queensland{
+    @include itemstate(-333px);
+}
+.icon-map-south{
+    @include itemstate(-444px);
+}
+.icon-map-tasmania{
+    @include itemstate(-555px);
+}
+.icon-map-victoria{
+    @include itemstate(-666px);
+}
+.icon-map-western{
+    @include itemstate(-777px);
+}
+
+// ************************************
+// Places Carousel icons
+// ************************************
+$whiteYpos: -20px;
+$blackYpos: -111px;
+$small-blackYpos: -20px;
+
+@mixin itemstate-small($bgXpos, $bgYpos) {
+    background-position: $bgXpos $bgYpos;
+    &:hover{
+        background-position: $bgXpos $bgYpos;
+    }
+}
+
+@mixin itemstate-small-black($bgXpos, $bgYpos, $bgYposActive) {
+  background-position: $bgXpos $bgYpos;
+  &:hover{
+    background-position: $bgXpos $bgYposActive;
+  }
+  &.icon-map-black-active{
+    background-position:$bgXpos $bgYposActive;
+  }
+}
+
+.icon-map-small.icon-map-white {
+  &.icon-map-capital{
+    @include itemstate-small(-758px, ($whiteYpos + 10));
+  }
+  &.icon-map-nsw{
+    @include itemstate-small(-111px, ($whiteYpos + 10));
+  }
+  &.icon-map-northern{
+    @include itemstate-small(-201px, ($whiteYpos + 10));
+  }
+  &.icon-map-queensland{
+    @include itemstate-small(-291px, ($whiteYpos + 10));
+  }
+  &.icon-map-south{
+    @include itemstate-small(-380px, ($whiteYpos + 10));
+  }
+  &.icon-map-tasmania{
+    @include itemstate-small(-18px, ($whiteYpos + 10));
+  }
+  &.icon-map-victoria{
+    @include itemstate-small(-560px, ($whiteYpos + 10));
+  }
+  &.icon-map-western{
+    @include itemstate-small(-649px, ($whiteYpos + 10));
+  }
+}
+
+.icon-map-small.icon-map-black {
+  &.icon-map-capital{
+    @include itemstate-small-black(-758px, ($blackYpos + 10), ($small-blackYpos + 10));
+  }
+  &.icon-map-nsw{
+    @include itemstate-small-black(-111px, ($blackYpos + 10), ($small-blackYpos + 10));
+  }
+  &.icon-map-northern{
+    @include itemstate-small-black(-201px, ($blackYpos + 10), ($small-blackYpos + 10));
+  }
+  &.icon-map-queensland{
+    @include itemstate-small-black(-291px, ($blackYpos + 10), ($small-blackYpos + 10));
+  }
+  &.icon-map-south{
+    @include itemstate-small-black(-380px, ($blackYpos + 10), ($small-blackYpos + 10));
+  }
+  &.icon-map-tasmania{
+    @include itemstate-small-black(-18px, ($blackYpos + 10), ($small-blackYpos + 10));
+  }
+  &.icon-map-victoria{
+    @include itemstate-small-black(-560px, ($blackYpos + 10), ($small-blackYpos + 10));
+  }
+  &.icon-map-western{
+    @include itemstate-small-black(-649px, ($blackYpos + 10), ($small-blackYpos + 10));
+  }
+}
+
+.owl-replaced-pagination{
+ z-index: 9\9; //in IE9 * below this is not shown
+}
+
+.owl-replaced-pagination .icon-map-small {
+    width: 80px;
+    height: 80px;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+
+    span {
+        position: absolute;
+        top: 95px;
+        width: 80px;
+        left: 0;
+        font-size: 0.75em;
+    }
+
+    &.icon-map-capital{
+        @include itemstate-small(-758px, ($whiteYpos + 10));
+    }
+    &.icon-map-nsw{
+        @include itemstate-small(-111px, ($whiteYpos + 10));
+    }
+    &.icon-map-northern{
+        @include itemstate-small(-201px, ($whiteYpos + 10));
+    }
+    &.icon-map-queensland{
+        @include itemstate-small(-291px, ($whiteYpos + 10));
+    }
+    &.icon-map-south{
+        @include itemstate-small(-380px, ($whiteYpos + 10));
+    }
+    &.icon-map-tasmania{
+        @include itemstate-small(-18px, ($whiteYpos + 10));
+    }
+    &.icon-map-victoria{
+        @include itemstate-small(-560px, ($whiteYpos + 10));
+    }
+    &.icon-map-western{
+        @include itemstate-small(-649px, ($whiteYpos + 10));
+    }
+}
+// **************************
+
+//For Icons above the background
+.faw-bg-full-container .icon-map-capital{
+  @include itemstate-with-parent-background(0px);
+}
+.faw-bg-full-container .icon-map-nsw{
+  @include itemstate-with-parent-background(-111px);
+}
+.faw-bg-full-container .icon-map-northern{
+  @include itemstate-with-parent-background(-222px);
+}
+.faw-bg-full-container .icon-map-queensland{
+  @include itemstate-with-parent-background(-333px);
+}
+.faw-bg-full-container .icon-map-south{
+  @include itemstate-with-parent-background(-444px);
+}
+.faw-bg-full-container .icon-map-tasmania{
+  @include itemstate-with-parent-background(-555px);
+}
+.faw-bg-full-container .icon-map-victoria{
+  @include itemstate-with-parent-background(-666px);
+}
+.faw-bg-full-container .icon-map-western{
+  @include itemstate-with-parent-background(-777px);
+}
+
+
+.icon-google-color{
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-top: -3px;
+}
+
+.icon-atdw-color{
+    background-repeat: no-repeat;
+    display: inline-block;
+}

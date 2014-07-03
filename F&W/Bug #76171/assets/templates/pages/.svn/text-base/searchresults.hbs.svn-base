@@ -1,0 +1,10 @@
+---
+title: Serach Results
+layout: layout-base.hbs
+---
+
+{{> foodandwineherosearchresults}}
+
+{{> foodandwinesearchtagcloud}}
+
+{{> foodandwinecategoriesearchresultsmosaic}}

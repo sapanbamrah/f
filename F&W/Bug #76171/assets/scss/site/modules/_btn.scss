@@ -1,0 +1,329 @@
+// PRIMARY
+.btn-primary {
+  display: inline-block;
+  width: 280px;
+  height: 60px;
+  padding-top: 17px;
+  background-color: #040000;
+  color: #fff;
+  font-family: "ProximaNova Regular", Helvetica, Arial, sans-serif;
+  font-size: pxtoem(24px);
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+.btn-primary {
+  &:hover, &:focus {
+    //background: #393939;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+  }
+}
+.btn-primary:lang(de) {
+  font-size: pxtoem(20px);
+}
+
+// SECONDARY
+.btn-secondary {
+  display: inline-block;
+  width: 280px;
+  height: 60px;
+  padding-top: 17px;
+  background-color: #FFF;
+  color: #040000;
+  font-family: "ProximaNova Regular", Helvetica, Arial, sans-serif;
+  font-size: pxtoem(24px);
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #040000;
+}
+input.btn-secondary
+{
+  border: 1px solid #040000!important;
+}
+
+.btn-secondary {
+  &:hover, &:focus {
+    //background: #ebebeb;
+    //color: #040000;
+    //text-decoration: underline;
+    background-color: #000;
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+.btn-secondary:lang(de) {
+  font-size: pxtoem(22px);
+}
+.btn-secondary-md {
+  width: 100%;
+  max-width: 320px;
+  border: inherit;
+}
+.btn-register {
+  @include breakpoint(md){
+    max-width: 230px;
+  }
+
+}
+.btn-small{
+   width: 180px;
+   height: 46px;
+   font-size: pxtoem(18px);
+   padding-top: 12px;
+}
+
+.btn-auto-size{
+   width: auto;
+   height: 59px;
+   padding-left: 0.5em;
+   padding-right: 0.5em;
+   margin-left: 0.5em;
+   margin-right: 0.5em;
+   
+   @include breakpoint(md){
+    width: auto;
+  }
+}
+
+//TRANSPARENT
+.btn-transparent {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.btn-transparent {
+  &:hover, &:focus {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+  }
+}
+
+// ARROW
+.btn-arrow {
+  display: inline-block;
+  width: 280px;
+  height: 60px;
+  padding-top: 17px;
+  background-color: #FFF;
+  color: #040000;
+  font-family: "ProximaNova Regular", Helvetica, Arial, sans-serif;
+  font-size: pxtoem(24px);
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #040000;
+}
+
+// SQUARE
+.btn-square {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  padding-top: 17px;
+  vertical-align: top;
+  background-color: #FFF;
+  color: #040000;
+  font-family: "ProximaNova Regular", Helvetica, Arial, sans-serif;
+  font-size: pxtoem(24px);
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #c9c9c9;
+}
+.btn-square:hover, .btn-square:focus {
+  background: #ebebeb;
+  text-decoration: none;
+}
+.btn-square.is-active {
+  background: #393939;
+  color: #FFF;
+}
+
+// ROUND
+.btn-round {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  padding-top: 17px;
+  line-height: 1em;
+  font-family: "ProximaNova Regular", Helvetica, Arial, sans-serif;
+  font-size: pxtoem(56px);
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #c9c9c9;
+  @include circle(100px, 100px, #FFF);
+  
+  img{
+      margin-top: 0.1em;
+  }
+}
+.btn-round:hover, .btn-round:focus {
+  text-decoration: none;
+  color: #606060;
+}
+.btn-round.is-active {
+  color: #FFF;
+  @include circle(100px, 100px, #393939);
+  &:hover, &:focus {
+    text-decoration: none;
+    color: #FFF;
+  }
+}
+
+// ROUND - based on font size
+@mixin btn-round-font-size($fs:3.5em, $p:.3em, $bg: white, $brc: #c9c9c9, $hoverc: #606060, $mt: 0px) {
+  padding: $p;
+  display: inline-block;
+  font-size: $fs;
+  border: 1px solid $brc;
+  background: $bg;
+  @include border-radius(100%);
+  margin-top: $mt;
+  text-decoration: none;
+  &:hover, &:focus {
+    text-decoration: none;
+    color: $hoverc;
+  }
+}
+
+// SHARING
+.btn-round-share {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  padding-top: 17px;
+  line-height: .45em;
+  font-family: "ProximaNova Regular", Helvetica, Arial, sans-serif;
+  font-size: pxtoem(32px);
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #c9c9c9;
+  @include circle(50px, 50px, #FFF);
+}
+.btn-round-share:hover, .btn-round-share:focus {
+  text-decoration: none;
+}
+
+.btn-share {
+  display: inline-block;
+  line-height: 1em;
+  font-size: pxtoem(30px);
+  text-decoration: none;
+  text-align: center;
+  color: #393939;
+  margin-bottom: 0.7em;
+  margin-left: -0.3em;
+  margin-right: 0.5em;
+  
+  img{
+      opacity: 0.6;
+      margin: 0;
+      padding: 0;
+      margin-right: 0.5em;
+      padding-bottom: 0.2em;
+  }
+}
+.btn-share:hover { //, .btn-share:focus
+  text-decoration: none;
+  color: #FFF;
+  span {
+    color: #FFF;
+  }
+  
+  img{
+      opacity: 1;
+  }
+}
+.btn-share span{
+  padding-left: pxtoem(10px);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  position: relative;
+  bottom: 4px;
+  color: #787474;
+}
+
+// VIDEO
+.btn-round-video {
+  line-height: 4em;
+  font-size: 1.3125em;
+  text-decoration: none;
+  text-align: center;
+  display: inline;
+  padding: 1em;
+  border: 2px solid #FFF;
+  @include circle(10px, 10px, none);
+  color: #FFF;
+}
+.btn-round-video:hover, .btn-round-video:focus {
+  text-decoration: none;
+  color: #040000;
+  background: #FFF;
+  border: none;
+  border: 2px solid #FFF;
+  
+  @include breakpoint(md){
+    border: 1px solid #FFF;
+  }
+  
+}
+
+// ICONS
+.btn-restaurant-australia-logo {
+  font-size: pxtoem(68px);
+  text-decoration: none;
+  color: #000;
+}
+.btn-restaurant-australia-logo:hover, .btn-restaurant-australia-logo:focus {
+  text-decoration: none;
+  color: #000;
+}
+.btn-restaurant-australia-logo-box {
+  display: inline-block;
+  width: 255px;
+  height: 96px;
+  font-size: pxtoem(68px);
+  line-height: 1.4em;
+  text-decoration: none;
+  color: #FFF;
+  background: #000;
+  text-align: center;
+}
+.btn-restaurant-australia-logo-box:hover, .btn-restaurant-australia-logo-box:focus {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.btn-white-black {
+  border: 1px solid #040000;
+  text-decoration: none;
+  color: #393939;
+  &:hover, &:focus {
+    border: 1px solid #FFF;
+    text-decoration: none;
+    background: #000;
+    color: #FFF !important;
+  }
+}
+
+.btn-black-white {
+  border: 1px solid #FFF !important;
+  text-decoration: none;
+  background: #040000 !important;
+  color: #FFF;
+  &:hover, &:focus {
+    border: 1px solid #393939 !important;
+    text-decoration: none;
+    background: #FFF !important;
+    color: #393939 !important;
+  }
+}
+

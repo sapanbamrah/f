@@ -1,0 +1,41 @@
+//Todo Note will need to have fallback for background cover / Table Cell
+
+.feature-full {
+
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 25em;
+  overflow: hidden;
+
+  @include breakpoint(md) {
+    height:pxtoem(500px);
+  };
+
+
+  @include breakpoint(lg) {
+    height:pxtoem(680px);
+  };
+
+}
+
+.feature-full-image {
+
+  //-webkit-transform:translateZ(0); //Fix janking
+
+  position: absolute;
+  width:200%;
+  height: 100%;
+
+  @include breakpoint(sm) {
+    width:100%;
+  };
+
+}
+
+
+.feature-full-body {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+}

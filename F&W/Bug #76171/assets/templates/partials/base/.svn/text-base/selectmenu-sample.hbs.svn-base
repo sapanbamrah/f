@@ -1,0 +1,62 @@
+---
+title: Select Menu Sample
+---
+<p>Normal Select</p>
+<div class="field-container">
+	<select class="input-select">
+		<option selected="selected" disabled="disabled">Select a state or territory*</option>
+		<option value="nsw">NSW</option>
+		<option value="southernaustralia">Southern Australia</option>
+		<option value="victoria">Victoria</option>
+	</select>
+</div>
+
+<p>Small Input</p>
+<div class="field-container">
+    <select class="input-select input-select-small">
+        <option selected="selected" disabled="disabled">Select a state or territory*</option>
+        <option value="nsw">NSW</option>
+        <option value="southernaustralia">Southern Australia</option>
+        <option value="victoria">Victoria</option>
+    </select>
+</div>
+
+<p>Bottom Border</p>
+<div class="field-container">
+    <select class="input-select input-select-small input-select-bottom-border">
+        <option selected="selected" disabled="disabled">Select a state or territory*</option>
+        <option value="nsw">NSW</option>
+        <option value="southernaustralia">Southern Australia</option>
+        <option value="victoria">Victoria</option>
+    </select>
+</div>
+
+<p> Top Border</p>
+<div class="field-container">
+    <select class="input-select input-select-small input-select-top-border">
+        <option selected="selected" disabled="disabled">Select a state or territory*</option>
+        <option value="nsw">NSW</option>
+        <option value="southernaustralia">Southern Australia</option>
+        <option value="victoria">Victoria</option>
+    </select>
+</div>
+
+<p>Show on image with white-box</p>
+<div class="field-container">
+    <select class="input-select input-select-white-box input-select-small">
+        <option selected="selected" disabled="disabled">Select a state or territory*</option>
+        <option value="nsw">NSW</option>
+        <option value="southernaustralia">Southern Australia</option>
+        <option value="victoria">Victoria</option>
+    </select>
+</div>
+
+<p>For mosaic filter</p>
+<div class="field-container">
+    <select class="input-select input-select-small input-select-mosaic-filter">
+        <option selected="selected" disabled="disabled">Select a state or territory*</option>
+        <option value="nsw">NSW</option>
+        <option value="southernaustralia">Southern Australia</option>
+        <option value="victoria">Victoria</option>
+    </select>
+</div>

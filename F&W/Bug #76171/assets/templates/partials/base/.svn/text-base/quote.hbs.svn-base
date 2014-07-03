@@ -1,0 +1,13 @@
+---
+title: Quotes
+---
+<blockquote>
+    PULL QUOTE<br>
+    At vero eos et accusamus et iusto dolor odio dignissimos ducimus  praesentium upta deleniti
+</blockquote>
+
+<blockquote class="type-quote type-quote-social">
+    SOCIAL QUOTE<br>
+    At vero eos et accusamus et iusto dolor odio dignissimos et iusto dolor odio dignissimos.
+    <cite>Janice travelled here in Jan 2014</cite>
+</blockquote>

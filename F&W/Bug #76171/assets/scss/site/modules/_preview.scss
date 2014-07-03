@@ -1,0 +1,63 @@
+.preview {
+  position: relative;
+  max-width: pxtoem(380px);
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  text-align: left;
+}
+
+
+.preview-cover {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  background: rgba(255,255,255,0.6);
+  z-index: 10;
+  height: 9999em;
+  top:0;
+  left:0;
+}
+
+
+/**
+ Change icon based on state
+**/
+.preview-icon-is-fav {
+  @extend .icon-experience-unfav;
+}
+
+/**
+Preview item has been selected
+**/
+.preview.is-active {
+
+  .preview-cover {
+    visibility: visible;
+  }
+
+  .preview-icon-is-fav {
+    @extend .icon-experience-fav;
+  }
+
+
+}
+
+
+.preview-body {
+  position: relative;
+  padding: 1.6em;
+
+}
+
+
+//Todo - confirm margins this is inconsistent with standard paragraphs
+.preview-body p {
+  margin: 0.7em 0;
+}
+
+
+.preview-cta {
+  text-transform: uppercase;
+  font-size: 0.8em;
+}

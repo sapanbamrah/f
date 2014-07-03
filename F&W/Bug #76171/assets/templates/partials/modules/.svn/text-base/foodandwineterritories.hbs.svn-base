@@ -1,0 +1,69 @@
+---
+title: Food and Territories
+---
+
+{{> socialcounter}}
+
+<div class="faw-territories">
+
+	<div class='faw-places faw-bg-full-container'>
+	
+		<div class="l-position-absolute fullwidth-bg">
+		<div class="responsive-image" data-picture="" data-alt="" >
+			<div data-src="imgs/pages/home/territory-bg.jpg" data-media="(min-width: 1px)"></div>
+			<div data-src="imgs/pages/home/territory-bg.jpg" data-media="(min-width: 481px)"></div>
+			<div data-src="imgs/pages/home/territory-bg.jpg" data-media="(min-width: 769px)"></div>
+			<div data-src="imgs/pages/home/territory-bg.jpg" data-media="(min-width: 993px)"></div>
+			
+			<noscript>
+				<img src='imgs/pages/home/territory-bg.jpg' alt=''>
+			</noscript>
+		</div>
+		<!--[if (lt IE 9) & (!IEMobile)]>
+            <img src='imgs/pages/home/territory-bg.jpg' alt=''>
+        <![endif]-->
+	</div>
+		
+		<div class='faw-places-inner'>
+			
+			<div class="faw-territories-copy">
+				<hr class="divider-small">
+				<h5>Go further explore by</h5>
+				<h2>Australian state & territory</h2>
+				<hr class="divider-small">
+			</div>
+			
+			<!-- selection for desktop -->
+			<div class="l-display-none-md">
+				<p class='icon-map-wrapper icon-map-wrapper-gradient'>
+					<a href="#" class="icon-map icon-map-white icon-map-capital"> <span>Australian Captital Territory</span> </a>
+					<a href="#" class="icon-map icon-map-white icon-map-nsw"> <span>New South Wales</span> </a>
+					<a href="#" class="icon-map icon-map-white icon-map-northern"> <span>Northern Territory</span> </a>
+					<a href="#" class="icon-map icon-map-white icon-map-queensland"> <span>Queensland</span> </a>
+					<a href="#" class="icon-map icon-map-white icon-map-south"> <span>South Australia</span> </a>
+					<a href="#" class="icon-map icon-map-white icon-map-tasmania"> <span>Tasmania</span> </a>
+					<a href="#" class="icon-map icon-map-white icon-map-victoria"> <span>Victoria</span> </a>
+					<a href="#" class="icon-map icon-map-white icon-map-western"> <span>Western Australia</span> </a>
+				</p>
+			</div>
+			<!-- END: selection -->
+
+			<!-- selection for mobile -->
+			<div class="l-display-md">
+				<select class="input-select input-select-small input-select-white-box">
+					<option value="" disabled>Select place</option>
+					<option value="southernaustralia">Capital</option>
+					<option value="victoria">NSW</option>
+					<option value="northern">Northern</option>
+					<option value="queensland">Queensland</option>
+					<option value="south">South</option>
+					<option value="tasmania">Tasmania</option>
+					<option value="victoria">Victoria</option>
+					<option value="western">Western</option>
+				</select>
+			</div>
+			<!-- END: selection -->
+	
+		</div>
+	</div>
+</div>

@@ -1,0 +1,300 @@
+$color-light-grey: #e0e0e0;
+$color-grey: #f5f5f5;
+$color-black: #000000;
+
+/* Input field */
+.field-container{
+    margin-bottom: 2em;
+}
+
+.input-field{
+    height: 55px;
+    border: 1px $color-light-grey solid;
+    margin-bottom: 2em;
+    position: relative;
+}
+
+.input-field-blank{
+    height: 55px;
+    border: 1px $color-light-grey solid;
+    margin-bottom: 0.5em;
+    position: relative;
+    padding: 1em;
+    font-size: 1.1em;
+    padding-top: 22px;
+        
+    &:focus{
+    outline: none;
+    border: 1px $color-black solid;
+    border-left: 7px $color-black solid;
+  }
+}
+
+.input-field-big{
+    width: 100%;
+    height: 60px;
+    
+    @include breakpoint(md) {
+        width: 472px;
+    }
+}
+.input-field-normal-left-border:focus{
+  border-left-width: 1px;
+}
+
+.input-field-input{
+    height: 55px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1.1em;
+    line-height: 2em;
+    width: 100%;
+    padding-right: 2.5em;
+}
+
+.input-field-checkbox{
+    border: none;
+    height: auto;
+}
+
+.input-field-label{
+    p{
+        font-size: 1.1em;
+        margin: 0;
+        margin-top: 0.9em;
+    };
+}
+
+.input-field-validation-icon{
+    background: none;
+    background-repeat: no-repeat;
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    right: 1em;
+    top: 0.7em;
+}
+
+
+.input-field-validation-icon-true{
+   background: url('../imgs/base/input-isvalid-icon.png'); 
+}
+.input-field-validation-icon-false{
+   background: url('../imgs/base/input-isnotvalid-icon.png'); 
+}
+
+.input-field-validation-alert{
+    text-align: right;
+    color: #c13f2d;
+    margin: 0;
+    padding: 0;
+    font-size: 0.8em;
+    display: none;
+}
+
+.input-field-checkbox{
+    .input-field-validation-icon
+    {
+        margin-top: 1.5em;
+    }
+    
+    .input-field-validation-alert{
+        margin-top: -4em;
+    }
+}
+
+.input-field-focus{
+    border: 1px $color-black solid;
+    border-left: 7px $color-black solid;
+    margin-left: -6px;
+}
+
+.input-field-validation-show{
+    display: block;
+}
+.input-field-validation-hide{
+    display: none;
+}
+
+.input-field-label p {
+  display: table-cell;
+  line-height: 1.2em;
+  height:  54px;
+  vertical-align: middle;
+  text-align: left;
+}
+
+/* Description box */
+.description-box{
+  border: 1px $color-light-grey solid;
+  padding: 1em;
+}
+.description-box-headline{
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.description-box-copy{
+  font-size: 0.9em;
+  margin: 0;
+  padding: 0;
+  text-align:left;
+}
+.description-box-input-field{
+  border: 0;
+  resize: none;
+  width: 100%;
+  &:focus{
+    outline: none;
+  }
+}
+
+
+.form-conatiner{
+  .input-field-select{
+    .input-field-validation-icon{right:50px;}
+  }
+}
+//validation Icon appears above the Dropdown arrow, results the arrow cursor as normal
+.input-field-select{
+  .input-field-validation-icon{z-index: -1;}
+  .input-field-validation-icon-false{z-index: 1;}
+  .input-field-validation-icon-true{z-index: 1;}
+}
+
+/* Categories box */
+.categories-box{
+  border: 1px $color-light-grey solid;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+//Start - fix for error message overlapping
+/* uncomment this
+.categories-box{
+  padding-bottom: 3.5em;
+  @include breakpoint(sm) {
+    padding-bottom: 1em;
+  }
+}
+.categories-box .categories-box-validation-alert{
+  bottom: -3em;
+  left: 1em;
+  @include breakpoint(sm) {
+    bottom: 0em;
+    right:4em;
+    left:auto;
+  }
+}
+.categories-box .categories-box-validation-alert .input-field-validation-icon{
+  top: -0.6em;
+  right: 1.3em;
+  @include breakpoint(sm) {
+    top: 0.7em;
+  }
+}
+*/
+//End
+
+.categories-box-headline{
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.categories-box-copy{
+  font-size: 0.9em;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.checkbox-description {
+  text-align: left;
+}
+
+/* Input submit button */
+.form-submit-button{
+    text-align: center;
+    
+    input{
+        width: 60%;
+        height: 60px;
+        display: inline-block;
+        padding: 0.8em;
+        margin: 0.5em;
+        cursor: pointer;
+        
+        &:hover{
+            color: #fff;
+        }
+    }
+}
+
+@include rng-breakpoint($min: $tny_breakpoint, $max : $sml_breakpoint){
+
+  .field-container.terms-conditions{height: 14%;}
+  .input-field-input{@include font-size(14); height: auto;}
+  .input-field-label p{height: auto; padding-top:1.0em;}
+  .input-field{
+    height:auto;
+    .col-xs-4, .col-xs-8,.col-xs-12{float: none; display: block}
+    .col-xs-4{width: 100%; padding-right: 0}
+    .col-xs-8{width: 100%; padding-bottom: 0.5em;}
+    .col-xs-12{position:""; width: 100%;}
+  }
+  .input-field-validation-alert{
+    text-align: left;
+  }
+
+.form-conatiner{
+
+  .input-field-select{
+      .input-field-validation-icon{
+        right:42px;
+        top:0.7em;
+      }
+
+}
+  .input-field-validation-icon{
+    top: -0.8em
+  }
+}
+  .field-container{
+      .input-select{
+        @include font-size(14);
+    }
+
+  }
+
+  .form-submit-button{
+    input{
+      @include font-size(14);
+    }
+  }
+
+
+  .terms-conditions{
+    .checkbox-description{
+      padding-top:1.0em
+    }
+
+    .input-field-validation-icon{
+      top:0.6em;
+    }
+
+    .checkbox-label{
+      padding-right: 2.5em;
+    }
+  }
+
+  label{
+    &.input-field-label{
+      p{
+       @include font-size(14);
+      }
+    }
+  }
+}

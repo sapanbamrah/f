@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>{{title}}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <link rel="stylesheet" href="css/screen.css"/>
+        <link rel="stylesheet" href="css/patch_category.css"/>
+
+		<!--[if IE]>
+		<link href="css/screen-ie9.css" rel="stylesheet"/>
+		<![endif]-->
+
+		<!-- Owl Carousel Assets -->
+		<link href="js/vendor/owl-carousel/owl.carousel.css" rel="stylesheet">
+		<link href="js/vendor/owl-carousel/owl.theme.css" rel="stylesheet">
+
+
+		<script src="js/vendor/modernizr.js"></script>
+
+        <!--[if (gte IE 6)&(lte IE 8)]>
+        <script src="js/vendor/respond.js"></script>
+        <link href="css/screen-ie8.css" rel="stylesheet"/>
+        <![endif]-->
+
+	</head>
+
+	<script type="application/javascript">
+		// IE console.log disable errors
+		if ( typeof console === "undefined" || typeof console.log === "undefined") {
+			console = {};
+			console.log = function() {
+			};
+		}
+	</script>
+
+	<script src="js/vendor/jquery.js"></script>
+	<!--<script src="js/vendor/skrollr.js"></script>-->
+	<script src="js/vendor/jquery.swipe.js"></script>
+
+	<body>
+
+		<header id="main-header">
+			{{> navbar}}
+		</header>
+
+		<div class="site-wrapper">
+
+			<!-- End #main-header -->
+
+			<div id="main-content">
+				{{> body}}
+			</div>
+			<!-- End #main-content -->
+
+		</div>
+
+		<footer id="main-footer">
+			{{> footer }}
+		</footer>
+		<!-- End #main-footer -->
+
+		<!-- <script src="js/src/helper/dataTags.js"></script> -->
+		<!-- <script src="js/src/helper/stacticMapUrlConverter.js"></script> -->
+		<script src="js/vendor/jquery.placeholder.js"></script>
+		<script src="js/vendor/owl-carousel/owl.carousel.js"></script>
+		<script src="js/vendor/skrollr.js"></script>
+
+
+
+        <script src="js/vendor/responsive-images/jquery.picturefill.js"></script>
+		<script src="js/vendor/responsive-images/mediamatch.js"></script>
+
+
+        <script type='application/javascript' src='js/vendor/fastclick.js'></script>
+
+		<script src="js/src/modules/jquery.ta.carousel.js"></script>
+        <script src="js/src/modules/jquery.ta.iconmapwrapper.js"></script>
+		<script src="js/src/modules/jquery.ta.navbar.js"></script>
+        <script src="js/src/modules/jquery.ta.video.js"></script>
+		<script src="js/src/modules/jquery.ta.inputfield.js"></script>
+		<script src="js/src/modules/jquery.ta.formcategory.js"></script>
+		<script src="js/src/modules/jquery.ta.imageuploader.js"></script>
+
+		<!-- <script src="js/src/modules/jquery.ta.customstaticmap.js"></script> -->
+		<script src="js/src/modules/jquery.ta.mosaicgridchanger.js"></script>
+		<script src="js/src/modules/jquery.ta.fullwidthbg.js"></script>
+		<script src="js/src/main.js"></script>
+
+		<!-- Share this -->
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-iPvGM74PMdaT4Rot4m5VnW5UnPSBnag&sensor=true"></script>
+		<script type="text/javascript">
+			var switchTo5x = true;
+		</script>
+		<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+		<script type="text/javascript">
+			stLight.options({
+				publisher : "9444254e-e2d7-4016-8984-c3ead5896acb",
+				doNotHash : false,
+				doNotCopy : false,
+				hashAddressBar : false
+			});
+		</script>
+		<!-- End Share this -->
+
+		<script>
+			//Hack for mobile detection
+			function checkPlatform() {
+				return (/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera);
+			}
+
+
+			$(window).load(function() {
+				if (!checkPlatform()) {
+					var s = skrollr.init();
+				}
+			});
+		</script>
+
+	</body>
+</html>

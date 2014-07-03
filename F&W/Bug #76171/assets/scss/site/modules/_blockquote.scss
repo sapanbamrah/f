@@ -1,0 +1,68 @@
+/**
+* Block quote style for social-quote & pull quotes
+*/
+
+$quote-pull-size: 22px;
+$quote-pull-bg-colour: #00545d;
+
+$font-family-quote-social: "ProximaNova Semi Bold Italic"!default;
+$quote-social-size: 18px;
+$quote-social-colour: #5b7236;
+$quote-social-cite-size: 14px;
+$quote-social-cite-colour: #040000;
+
+/* use if webkit only support for pull quote styling
+blockquote-webkit {
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+*/
+
+.blockquote-quote {
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blockquote-quote-social {
+  font-family: $font-family-quote-social;
+  font-size: pxtoem($quote-social-size);
+  line-height: pxtolineheightem($quote-social-size, 26px);
+  color:$quote-social-colour;
+  max-width: 35em;
+}
+.blockquote-quote-social p {
+  margin-bottom: 0;
+}
+.blockquote-quote-social p:before {
+  content: "\201C";
+}
+.blockquote-quote-social p:after {
+  content: "\201D";
+}
+.blockquote-quote-social cite {
+  display: block;
+  font-family: $font-family-quote-social-cite;
+  font-size: pxtoem($quote-social-cite-size);
+  line-height: pxtolineheightem($quote-social-cite-size, 26px);
+  color: $quote-social-cite-colour;
+}
+
+.blockquote-quote-pull {
+  font-family: $font-family-quote-pull;
+  font-size: pxtoem($quote-pull-size);
+  color:#fff;
+  max-width: 25em;
+}
+
+.blockquote-quote-pull p {
+  display: inline;
+  line-height: pxtolineheightem($quote-pull-size, 28px);
+  padding: 0.2em 0;
+  background:$quote-pull-bg-colour;
+  color:#fff;
+
+  @include box-shadow(0.4em 0 0 $quote-pull-bg-colour,-0.4em 0 0 $quote-pull-bg-colour);
+
+}

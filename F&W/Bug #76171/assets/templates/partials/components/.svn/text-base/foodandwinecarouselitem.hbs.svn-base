@@ -1,0 +1,15 @@
+---
+title: Food and Wine Carousel Item
+---
+<div class='faw-carousel-item'>
+	<div class="headerlockup">
+	    <hr class="headerlockup-hr">
+	    <div class="headerlockup-type-sml1">What is</div>
+	    <div class="headerlockup-type-lrg">Restaurant Australia</div>
+    	<hr class="headerlockup-hr">
+	</div>
+	<p class='faw-carousel-copy'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud consequat.</p>
+	<p>
+    	<a href="#" class="btn-secondary btn-small">Find out more</a>
+	</p>
+</div>

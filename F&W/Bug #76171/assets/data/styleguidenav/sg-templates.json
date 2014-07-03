@@ -1,0 +1,13 @@
+{
+    "navigation" : [
+        { "text": "home" },
+        { "text": "home-extended" },
+        { "text": "form" },
+        { "text": "formthankyou" },
+        { "text": "contributerslist"},
+        { "text": "article"},
+        { "text": "explore"},
+        { "text": "searchresults"},
+        { "text": "sample" }
+    ]
+}

@@ -1,0 +1,30 @@
+///*
+// * Icons:
+// * ---------------------------------------------------------------------------------------------------------------- */
+// sets the icon font family for font based icons
+@mixin icon($fontname, $line_height: 1) {
+    font-family: $fontname;
+    speak: none;
+    @if ( $line_height != null ) {
+        line-height: 1;
+    }
+    -webkit-font-smoothing: antialiased;
+}
+
+// sets the font-size of font based icons.
+@mixin icon-size($size) {
+    font-size:$size;
+}
+
+// sets the element dimensions of sprite based icons.
+@mixin icon-sprite-size($size, $h: $size) {
+    width:$size;
+    height:$h;
+}
+
+// sets the icon charachter for font based icons.
+@mixin icon-type($icon) {
+    &:before {
+        content: $icon;
+    }
+}

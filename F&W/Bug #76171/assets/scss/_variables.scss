@@ -1,0 +1,150 @@
+/**
+* Global variables for entire site / including bootstrap
+*/
+
+//**********************
+// Bootstrap:
+//**********************
+$font-size-base: 16px;
+$basepxadd: 16 !default;
+
+//**********************
+// Breakpoints:
+//**********************
+$screen-xs: 480px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+$screen-sm-min : 768px;
+$screen-xs-max : 767px;
+
+//**********************
+// Fonts:
+//**********************
+$font-family-base: "ProximaNova Regular", Helvetica, Arial, sans-serif;
+$font-family-base-i: "ProximaNova Regular Italic", Helvetica, Arial, sans-serif;
+//$font-family-base-l: "ProximaNova Light", Helvetica, Arial, sans-serif;
+$font-family-base-b: "ProximaNova Bold", Helvetica, Arial, sans-serif;
+$font-family-base-bi: "ProximaNova Bold Italic", Helvetica, Arial, sans-serif;
+
+$font-family-primary: "ProximaNova Regular", Helvetica, Arial, sans-serif;
+$font-family-primary-b: "ProximaNova Bold", Helvetica, Arial, sans-serif;
+$font-family-primary-i: "ProximaNova Regular Italic", Helvetica, Arial, sans-serif;
+$font-family-primary-bi: "ProximaNova Bold Italic", Helvetica, Arial, sans-serif;
+$font-family-primary-sb: "ProximaNova Semi Bold", Helvetica, Arial, sans-serif;
+
+$font-family-secondary: "TAheadline", Helvetica, Arial, sans-serif;
+$font-family-feature: "GearedSlab-Thin", Helvetica, Arial, sans-serif;
+
+//$font-family-primary: "TheSanB5Pla", Helvetica, Arial, sans-serif;
+//$font-family-feature: "Mission Gothic Light Italic", Helvetica, Arial, sans-serif;
+//$font-family-lead: "ProximaNova Semi Bold Italic", Helvetica, Arial, sans-serif;
+$font-family-quote-social: "ProximaNova Semi Bold Italic", Helvetica, Arial, sans-serif;
+$font-family-quote-social-cite: "ProximaNova Regular", Helvetica, Arial, sans-serif;
+$font-family-quote-pull: "ProximaNova Light", Helvetica, Arial, sans-serif;
+$font-family-module-link: "ProximaNova Regular", Helvetica, Arial, sans-serif;
+
+//**********************
+// Font Sizes
+//**********************
+$h1-size: 72px;
+$h2-size: 48px;
+$h3-size: 30px;
+$h4-size: 30px;
+$h5-size: 24px;
+$h7-size: 18px;
+
+//**********************
+// Text Colours:
+//**********************
+$type-body-colour: #393939;
+$type-heading-colour: #393939;
+$type-category-colour: #6b6155;
+$type-navigation: #fff;
+$type-link-colour: #040000;
+$type-link-hover-colour: #393939;
+
+//**********************
+// Background Colours:
+//**********************
+
+//*********************
+// Block Element Colours:
+//*********************
+$colour-navigation-solid: #15202e;
+$colour-navigation: rgba(21, 32, 46, 0.9);
+$colour-footer: #0a334c;
+$colour-content-section-light: #fff;
+$colour-content-section-dark: #f6f5f0;
+
+//**********************
+// Nav bar
+//**********************
+$navbar-height: 82px;
+
+//Border radius
+$border-radius-base:             0px;
+$border-radius-large:            0px;
+$border-radius-small:            0px;
+
+
+//Buttons
+$btn-default-color:              #fff;
+$btn-default-bg:                 #66acbd;
+$btn-default-border:             rgba(0,0,0,0);
+
+$btn-primary-color:              #fff;
+$btn-primary-bg:                 #007491;
+$btn-primary-border:             rgba(0,0,0,0);
+
+$btn-success-color:             #fff;
+$btn-success-bg:                #cf4330;
+$btn-success-border:            rgba(0,0,0,0);
+
+$btn-info-color:                 #000000;
+$btn-info-bg:                    #fff;
+$btn-info-border:                #d4d2b9;
+
+
+$padding-base-vertical:          13px;
+$padding-base-horizontal:        25px;
+
+//**********************
+// Top-Bottom spacing:
+//**********************
+$space-top-bottom-full:           60px;
+$space-top-bottom-half:           30px;
+
+///*
+// * Maximum & Minimum layout widths:
+// * ---------------------------------------------------------------------------------------------------------------- */
+$min_width: 280;
+$max_width: 1024;
+
+///*
+// * Breakpoints:
+// * ---------------------------------------------------------------------------------------------------------------- */
+$tny_breakpoint: 320px;
+// Tiny Screen, Phone Portrait...
+$tny_breakpoint_inner: $tny_breakpoint - 1;
+$tny_breakpoint_outer: $tny_breakpoint + 1;
+
+$sml_breakpoint: 480px;
+// Small Screen, Phone Landscape...
+$sml_breakpoint_inner: $sml_breakpoint - 1;
+$sml_breakpoint_outer: $sml_breakpoint + 1;
+
+$med_breakpoint: 768px;
+// Medium Screen, Large Phone/Tablet...
+$med_breakpoint_inner: $med_breakpoint - 1;
+$med_breakpoint_outer: $med_breakpoint + 1;
+
+$lrg_breakpoint: 980px;
+// Large Screen, Laptop/Desktop...
+$lrg_breakpoint_inner: $lrg_breakpoint - 1;
+$lrg_breakpoint_outer: $lrg_breakpoint + 1;
+
+$xlg_breakpoint: 1024px;
+// Extra Large Screen, Desktop...
+$xlg_breakpoint_inner: $xlg_breakpoint - 1;
+$xlg_breakpoint_outer: $xlg_breakpoint + 1;

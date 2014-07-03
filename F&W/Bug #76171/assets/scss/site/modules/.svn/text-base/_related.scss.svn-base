@@ -1,0 +1,15 @@
+$relatedHeight:590px !default;
+$relatedBackgroundColour: #f6f5f0 !default;
+
+
+.related {
+  position: relative;
+  width: 100%;
+  padding: 3em 1em;
+  text-align: center;
+  background: $relatedBackgroundColour;
+}
+
+.related-header {
+  margin-bottom: 2em;
+}

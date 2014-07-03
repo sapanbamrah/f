@@ -1,0 +1,55 @@
+.hint-icon-wrapper{
+    width: 100%;
+    text-align: center;
+}
+.hint-icon{
+  @include breakpoint(sm){
+    margin: 2em;
+  }
+  margin-bottom: 1em;
+  display: inline-block;
+  hr{
+    width: 220px;
+  }
+}
+.hint-icon-label{
+    width: 100%;
+    float: none;
+    padding: 0.5em;
+    margin: 0em;
+    
+    @include breakpoint(md) {
+        width: 240px;
+        float: left;
+        padding-top: .8em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+}  
+
+.hint-icon-label-left{
+   text-align: center;
+   @include breakpoint(md) {
+        text-align: right;
+   }
+}
+
+.hint-icon-label-right{
+    text-align: center;
+    @include breakpoint(md) {
+        text-align: left;
+   }
+}
+
+.hint-icon-icon{
+    float: none;
+    @include btn-round-font-size(1.8em, .3em, white, #c9c9c9, #606060, 0);
+    @include breakpoint(md) {
+      float: left;
+      margin-top: 5px;
+    }
+}  
+
+.cleardiv{
+    clear: left;
+}

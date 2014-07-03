@@ -1,0 +1,47 @@
+---
+title: Mosaic Item share
+---
+
+
+<a href="#" title="" class="mosaic-item">
+    <img class='mosaic-item-image' src="http://placehold.it/580x580" alt="" width="100%"/>
+
+    <!-- Parent view -->
+    <span class="mosaic-item-description">
+        <span class="mosaic-item-description-head type-font-feature">Melbourne & Wine</span>
+        <span class="mosaic-item-description-sub">New South Wales</span>
+        <span class="mosaic-item-description-copy">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <br><br>
+            <span class="mosaic-item-description-copy-link"><strong>Read more</strong></span>
+        </span>
+        <span class="mosaic-item-description-share mosaic-item-description-share-dark">
+            <img src="imgs/base/share/share-instagram-black.png" alt="">
+        </span>
+        <span class="mosaic-item-description-share mosaic-item-description-share-white">
+            <img src="imgs/base/share/share-instagram-white.png" alt=""/>
+        </span>
+    </span>
+    <!-- End Parent view -->
+
+    <!-- Overlay -->
+    <span class="mosaic-item-overlay mosaic-item-overlay-share">
+
+         <span class="mosaic-item-overlay-share-container">
+
+             <span class="mosaic-item-overlay-share-copy">
+                Looking forward AS ALWAYS to seeing you all @eveleighmarket @carriageworks tomorrow! All you need is an empty basket to fill with...
+              <br><br>
+              <strong>kylie_kwong on Instagram</strong>
+            </span>
+
+        </span>
+
+    </span>
+    <!-- End Overlay -->
+
+
+</a>
+
+
+

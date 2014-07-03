@@ -1,0 +1,42 @@
+---
+title: Grid
+---
+
+
+<style>
+    .item {
+        outline: 1px solid #F00;
+        background: grey;
+        color: #FFF;
+        padding-left: 1em;
+        padding: 1em;
+    }
+
+
+
+
+</style>
+
+<div class="row">
+  <div class="col-xs-12 col-sm-4">
+
+      <div class="item">
+         blah blah
+      </div>
+
+  </div>
+  <div class="col-xs-12 col-sm-4">
+
+      <div class="item">
+          blah blah
+      </div>
+
+  </div>
+  <div class="col-xs-12 col-sm-4">
+
+      <div class="item">
+          blah blah
+      </div>
+
+  </div>
+</div>

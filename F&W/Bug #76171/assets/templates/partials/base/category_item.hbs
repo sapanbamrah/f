@@ -1,0 +1,44 @@
+---
+title: Category Item
+---
+
+<div class="category-item-container">
+{{#if category_id}}
+        <input id="{{category_id}}" type="checkbox" class="category-input">
+        <label for="{{category_id}}">
+{{else}}
+        <input id="category-id-default" type="checkbox" class="category-input">
+        <label for="category-id-default">
+{{/if}}
+    <div class="category-item">
+        {{#if category_icon}}
+            <span class="icon-round">
+        		<img class='category-image-light' src="imgs/base/categories/category-icon-{{category_icon}}-white.png" alt=""/>
+	            <img class='category-image-dark' src="imgs/base/categories/category-icon-{{category_icon}}-dark.png" alt=""/>
+        	</span>
+        {{else}}
+                
+			<span class="icon-round">
+        		<img class='category-image-light' src="imgs/base/categories/category-icon-wine-white.png" alt=""/>
+	            <img class='category-image-dark' src="imgs/base/categories/category-icon-wine-dark.png" alt=""/>
+        	</span>
+
+		{{/if}}
+        <span class="category-title">
+            {{#if title}}
+                {{title}}
+            {{else}}
+                Default title
+            {{/if}}
+        </span>
+        <span class="category-description">
+            {{#if description}}
+                {{description}}
+            {{else}}
+                Default copy...
+            {{/if}}
+        </span>
+    </div>
+</label>
+
+</div>

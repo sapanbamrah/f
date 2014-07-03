@@ -1,0 +1,22 @@
+---
+title: Food and Wine Sponsors
+note: note-foodandwinesponsors
+---
+
+<div class="faw-sponsors">
+	<div class='faw-sponsors-outer'>
+		<div class='faw-sponsors-wrapper'>
+			<ul class="carousel-wrapper faw-sponsors-carousel" data-mobilemaxresolution="1200" data-startIndex="0" data-disablecarouselondesktop="true">
+				<li class="faw-sponsors-carousel-item">
+					{{> sponsorsimage }}
+				</li>
+				<li class="faw-sponsors-carousel-item">
+					{{> sponsorsvideo }}
+				</li>
+				<li class="faw-sponsors-carousel-item">
+					{{> sponsorsimage }}
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

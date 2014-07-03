@@ -1,0 +1,444 @@
+///*
+// * Form CSS:
+// * ---------------------------------------------------------------------------------------------------------------- */
+
+.form-h1 {
+  //line-height: 1.15em;
+  font-size: pxtoem(48px);
+  @include breakpoint(md){
+    font-size: pxtoem(70px);
+  }
+}
+.form-h3 {
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.23em;
+  font-size: pxtoem(24px);
+  @include breakpoint(md){
+    font-size: pxtoem(30px);
+  }
+}
+.form-faw fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: .8em;
+  position:relative;
+}
+.form-legend {
+  display:block;
+  padding: 0 0 .5em 0;
+  font-family: "ProximaNova Bold", Helvetica, Arial, sans-serif;
+}
+.form-description {
+  font-family: "ProximaNova Regular Italic", Helvetica, Arial, sans-serif;
+  margin-bottom: 1em;
+}
+
+.form-category-radios{
+  margin-bottom: 2em;
+}
+
+/*
+    Hide the original radios and checkboxes
+    (but still accessible)
+
+    based on:
+    http://css-tricks.com/snippets/css/custom-checkboxes-and-radio-buttons/
+
+    :not(#foo) > is a rule filter to block browsers
+                 that don't support that selector from
+                 applying rules they shouldn't
+*/
+.form-faw INPUT[type=radio]:not(#foo) {
+  display: none;
+}
+
+// label needs to be after input
+.form-faw INPUT[type=radio] + label {
+  cursor: pointer;
+  min-width: pxtoem(160px);
+  vertical-align: top;
+
+}
+.form-faw INPUT[type=radio]:checked + label {
+
+  .form-faw-icon-square {
+    color: #FFF;
+    border: 1px solid #393939;
+    background: #393939;
+    &:before {
+      visibility: visible;
+    }
+  }
+
+}
+.form-faw-icon-square {
+  font-size: 1.6em;
+  border: 1px solid #000;
+  &:before {
+    visibility: hidden;
+  }
+}
+.form-faw-label-text {
+  vertical-align: SUPER;
+}
+
+
+
+
+.form-container {
+  max-width: pxtoem(1200px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-container-inner {
+  max-width: pxtoem(590px);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-top: 1em;
+}
+.form-container-inner .form-submit-button{
+  margin-bottom:7.5em;
+}
+.form-container-inner .form-submit-button input{
+  margin-bottom:0;
+}
+
+/*
+.form-container-inner{
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+    padding: 0;
+    @include breakpoint(sm){
+      padding: 15px 10%;
+      padding-left: 0em;
+      padding-right: 0em;
+    }
+    @include breakpoint(md){
+      padding: 15px;
+        width: 620px;
+        left: 50%;
+        margin-left: -310px;
+    }
+}
+
+
+*/
+
+
+.form-container-padding {
+  padding: 0 2em 2em;
+}
+
+.form-category-tick {
+  margin: 1em 5em 0 0;
+  padding-left: 2.6em;
+  height: 36px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  vertical-align: middle;
+  background-image: url('../imgs/base/checkbox-unchecked.png');
+  opacity: .5;
+
+  line-height: 1em;
+  width: 30px;
+  font-size: 1em;
+  padding-top: 3px;
+
+  @include breakpoint(md){
+    line-height: 2.3em;
+    width: inherit;
+    font-size: 1.1em;
+    padding-top: inherit;
+    margin: 1em 1em 0 0;
+  }
+}
+.form-category-tick.checked {
+  background-image: url('../imgs/base/checkbox-checked.png');
+  opacity: 1;
+}
+
+.form-biline-container {
+  height: 100%;
+  text-align:center;
+  margin-top: .5em;
+  line-height: .8em;
+}
+.form-biline-container hr {
+  border-top: 1px solid #504d4d;
+  width: 280px;
+  text-align: center;
+  margin: 0 auto;
+  top: 0.3em;
+  position: relative;
+  @include breakpoint(md){
+    width: 300px;
+  }
+}
+.form-elements-biline {
+  @include type_TAheadline();
+  font-size: pxtoem(24px);
+  color: #040000;
+  background-color: #FFF;
+  display: inline-block;
+  padding: 0 pxtoem(7px);
+  z-index: 100;
+  position: relative;
+  //letter-spacing: .03em;
+}
+
+.form-agree-container {
+
+  font-size: .9em;
+  margin-bottom: 1.75em!important;
+
+  input[type=checkbox].checkbox + label.checkbox-label {
+    line-height: 1.1em;
+    display: table-cell;
+    height: 36px;
+    padding-top: 2px;
+  }
+
+  .input-field-checkbox {
+    font-size: .9em;
+  }
+
+  .checkbox-description {
+    margin-bottom: 2em;
+  }
+
+  .input-field-validation-icon {
+    margin-top: 0 !important;
+  }
+
+  @include breakpoint(sm){
+    font-size: inherit;
+    padding-top: 1em;
+    input[type=checkbox].checkbox + label.checkbox-label {
+      line-height: inherit;
+    }
+
+    .input-field-checkbox {
+      font-size: inherit;
+    }
+
+    .checkbox-description {
+      margin-bottom: inherit;
+    }
+    .col-xs-12{
+      float:none;
+      bottom:0em;
+      width: 100%;
+      position: absolute;
+      text-align: left;
+
+    }
+  }
+
+    fieldset.options{
+      display: block;
+      padding-bottom: 0;
+    }
+
+
+
+
+
+}
+
+.field-container{
+  &.terms-conditions{
+    height:25%;
+
+    .input-field-validation-alert.input-field-validation-show{
+        margin:0;
+
+    }
+  }
+}
+.form-clear {
+  clear: both;
+  display: none;
+  @include breakpoint(sm){
+    display: block;
+  }
+}
+
+// THANK YOU
+.form-hero-thankyou {
+  .faw-hero-home-container .icon-logo-withlines-container {
+    margin: 3.125em 0 .7em;
+  }
+
+}
+.form-thankyou-h1 {
+  //line-height: 1.15em;
+  font-size: pxtoem(48px);
+  line-height: .93em;
+  margin-bottom: .55em;
+  @include breakpoint(md){
+    font-size: pxtoem(74px);
+  }
+}
+.form-thank-you {
+  p {
+    font-size: pxtoem(16px);
+    line-height: 1.2em;
+    padding: 0 1em;
+    strong {
+      a {
+        text-decoration: none;
+        border-bottom: 1px solid #bbbbbb;
+      }
+    }
+    @include breakpoint(md){
+      font-size: pxtoem(18px);
+    }
+  }
+  .form-biline-container hr {
+    width: 225px;
+    top: 0.5em;
+  }
+}
+
+.form-number-container {
+  height: 100%;
+  text-align:center;
+  margin-top: .5em;
+  line-height: .8em;
+}
+.form-number-container hr {
+  border-top: 1px solid #bbbbbb;
+  width: 280px;
+  text-align: center;
+  margin: 0 auto;
+  top: 1.8em;
+  position: relative;
+  @include breakpoint(md){
+    width: 300px;
+  }
+}
+.form-number-container .form-number {
+  font-family: "GearedSlab-Bold", Helvetica, Arial, sans-serif;
+  font-size: pxtoem(24px);
+  //color: #040000;
+  //background-color: #FFF;
+  display: inline-block;
+  //padding: .8em .6em .6em;
+  z-index: 100;
+  position: relative;
+  line-height: 0.3;
+
+  @include btn-round-font-size(pxtoem(24px), .75em, white);
+  border: 1px solid #bbbbbb;
+  color: #040000;
+  cursor: inherit;
+  &:hover, &:focus {
+    color: #040000;
+  }
+}
+.form-number-text {
+  display:block;
+  margin-top: pxtoem(3px);
+  margin-bottom: pxtoem(-2px);
+  margin-top: 0\0;
+  margin-bottom: 0\0;
+
+}
+
+.form-number-square-box {
+  background: #FFF;
+  padding: .3em .3em 0;
+  display: inline-block;
+  position: relative;
+}
+.form-thanks-google-logo {
+  font-size: 3.4em;
+}
+
+.form-social-list {
+  @extend .l-list-clean;
+  @extend .l-list-inline;
+
+  font-size: 1.6em;
+  & > li:nth-child(odd) {
+    width: 95px;
+  }
+  li:last-child {
+    font-size: .9em;
+    bottom: 2px;
+    position: relative;
+  }
+  a, a:hover, a:focus {
+    color: #3b5997;
+  }
+}
+
+.form-thank-you-states {
+  @extend .l-list-clean;
+  @extend .l-list-inline;
+  margin-bottom: 60px;
+
+  & > li {
+    padding-bottom: 28px;
+    display: block;
+    text-align: center;
+  }
+
+}
+
+/**
+ Fix due to using repsondjs there is partial
+ support, detecting for rgba to enable this breakpoint to work
+ else just center align for all screen sizes
+**/
+.rgba .form-thank-you-states {
+
+
+
+
+  @include breakpoint(md){
+    margin-bottom: 94px;
+    text-align: left;
+
+    & > li {
+      display: inline-block;
+      text-align: left;
+
+    }
+
+    & > li:nth-child(odd) {
+      width: 238px;
+      margin-left: 100px;
+    }
+  }
+}
+
+
+
+
+
+.form-thank-you-contact-icon-size {
+  font-size: 1.8em;
+}
+.form-thank-you-small-print {
+  font-size: .8em;
+  line-height: 0em;
+}
+
+.form-contact-icon{
+    img{
+        margin-bottom: 0.5em;
+    }
+}
+
+  .form-agree-container fieldset.options{
+    padding-bottom: 0;
+    @include breakpoint(sm){
+      padding-bottom: pxtoem(25px);
+    }
+  }

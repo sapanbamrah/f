@@ -1,0 +1,13 @@
+---
+title: Mosaic Item
+---
+<div class='mosaic-item mosaic-item-location'>
+	<img class='mosaic-item-image' src="http://placehold.it/580x580" alt="" width="100%"/>
+	
+	<img class="mosaic-item-location-icon" src="imgs/map-icons/map-marker-white.png" alt=""/>
+	<div class='mosaic-item-description'>
+		<p class="mosaic-item-description-head type-font-feature">Melbourne & Wine</p>
+		<p class="mosaic-item-description-sub">New South Wales</p>
+	</div>
+</div>
+

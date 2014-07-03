@@ -1,0 +1,46 @@
+.explore-hero{
+
+  p {
+      max-width: inherit;
+    }
+}
+
+.explore-h3{
+  max-width: 780px;
+  font-size: 1.5em;
+  line-height: 1.1em;
+  @include breakpoint(md){
+    font-size: 1.9em;
+  }
+
+}
+
+.faw-explore-teaser{
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.faw-explore-teaser-inner{
+    position: relative;
+}
+
+.fawexploremosaic{
+    margin-top: 4em;
+    margin-bottom: 2em;
+    text-align: center;
+    
+    .fawexploremosaictext{
+        font-size: 1.2em;
+        text-align: center;
+        max-width: 600px;
+        padding: 0.5em;
+        display: inline-block;
+    }
+}
+
+.faw-explore-teaser .responsive-image img{
+  max-width: none;
+}

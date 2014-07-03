@@ -1,0 +1,138 @@
+.sorted-list{
+       ul{
+           list-style: none;
+           padding: 0;
+           margin: 0;
+       }
+       
+       padding-bottom: 3em;
+       border-bottom: 1px #bbbbbb solid;
+}
+
+.sorted-list-head{
+    border-bottom: 1px #bbbbbb solid;
+    padding-bottom: 1.5em;
+    margin-bottom: 2em;
+    margin-top: 4em;
+
+    p {
+      text-align: left;
+    }
+}
+
+.sorted-list-category{
+    h2{
+        border-bottom: 1px #bbbbbb solid; 
+        width: 1em;
+        margin-top: 0.5em;
+        margin-bottom: 0.2em;
+    }
+
+    p {
+      text-align: left;
+    }
+
+  a{
+    text-decoration: none;
+    font-size: 1em;
+    font-family: $font-family-base;
+    text-align: left;
+  }
+}
+
+.sorted-list-sort-button{
+    font-size: 1.1em;
+    margin: 0;
+    padding: 0;
+    padding-right: 1em;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-decoration: none;
+} 
+
+.sorted-list-sort-active{
+    background-image: url('../imgs/base/list-icon-active.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.sorted-list-sort-inactive{
+    background-image: url('../imgs/base/list-icon-inactive.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.sorted-list-item{
+    padding: 0.5em;
+    padding-left: 0.5em;
+    margin-left: 0em;
+    
+    &:hover{
+        background-color: #ebebeb;
+    }
+
+    p{
+        margin: 0em;
+        line-height: 1.3em;
+        text-decoration: none;
+        text-align: left;
+    }
+
+
+
+    @include breakpoint(md) {
+        padding: 0.5em;
+        padding-left: 1.5em;
+        margin-left: -1.5em;
+    }
+}
+.sorted-list-item li a{
+  font-size: 1.1em;
+  font-family: $font-family-base-b;
+  line-height: 1.3em;
+  text-decoration: underline;
+}
+
+.sorted-list-pagination{
+    position: relative;
+    text-align: center;
+    padding: 2em;
+    margin-bottom: 5.5em;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.sorted-list-results-label{
+    font-size: 0.9em;
+    position: relative;
+    left:0;
+    top: 0;
+    
+    @include breakpoint(lg) {
+        position: absolute;
+        left:0;
+        top: 2.5em;
+    }
+}
+
+.sorted-list-pagination-buttons{
+    .btn-square {
+        width: 40px;
+        height: 40px;
+        padding-top: 10px;
+        font-size: 1.2em;
+        
+        @include breakpoint(lg) {
+             width: 60px;
+            height: 60px;
+            padding-top: 17px;
+            font-size: 1.5em;
+        }
+   }
+}
+
+.sorted-list-head-mobile{
+    border-top: 1px #bbbbbb solid; 
+    margin-top: 2em;
+    text-align: center;
+}

@@ -1,0 +1,18 @@
+---
+title: Mosaic Item
+---
+<div class='mosaic-item'>
+	<img class='mosaic-item-image' src="http://placehold.it/580x580" alt="" width="100%"/>
+	
+	<div class='mosaic-item-description'>
+		<p class="mosaic-item-description-head type-font-feature">Melbourne & Wine</p>
+		<p class="mosaic-item-description-sub">New South Wales</p>
+		<p class="mosaic-item-description-copy">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			<br><br>
+			<a href=""><strong>Read more</strong></a>
+			<strong class="mosaic-item-description-categories"><em>Restaurant, Places, People</em></strong>
+		</p>
+	</div>
+</div>
+

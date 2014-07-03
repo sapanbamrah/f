@@ -1,0 +1,218 @@
+///*
+// * Project Mixins:
+// * ---------------------------------------------------------------------------------------------------------------- */
+
+/*! Circle */
+@mixin circle($w:100px, $h:100px, $bg: #000) {
+  width: $w;
+  height: $h;
+  background: $bg;
+  @include border-radius(100%);
+}
+
+/*! Mirror Text / Element */
+@mixin mirror {
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+/*! Force GPU to render transformations... */
+@mixin gpu-render() {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+/*! Transition
+    Example usage:
+    @include transition(width height, 4s, linear, 1s)
+ */
+@mixin transition ($property, $duration: 1s, $timing:linear, $delay:0) {
+  /* For Safari 3.1 to 6.0 */
+  -webkit-transition-property: $property;
+  -webkit-transition-duration: $duration;
+  -webkit-transition-timing-function: $timing;
+  -webkit-transition-delay: $delay;
+  /* Standard syntax */
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $timing;
+  transition-delay: $delay;
+}
+
+/*! Animation
+    Example usage:
+    @include animation(changecolour, 4s, 1s, infinite)
+ */
+@mixin animation ($animation, $duration, $timing:ease, $delay:0, $fillMode: forwards) {
+  /* -webkit-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+  /* none 0 ease 0 1 normal none running
+  animation-name
+  animation-duration
+  animation-timing-function
+  animation-delay
+  animation-iteration-count
+  animation-direction.
+  */
+  /*@if $delay {
+    -webkit-animation-delay: $delay;
+    -moz-animation-delay: $delay;
+    -o-animation-delay: $delay;
+    animation-delay: $delay;
+  }*/
+  -webkit-animation: $animation $duration $timing $delay $fillMode; /* Safari 4+ */
+  -moz-animation:    $animation $duration $timing $delay $fillMode; /* Fx 5+ */
+  -o-animation:      $animation $duration $timing $delay $fillMode; /* Opera 12+ */
+  animation:         $animation $duration $timing $delay $fillMode; /* IE 10+ */
+}
+
+// keyframes mixin
+/* Example usage:
+@include keyframes(bgcolor) {
+  0% {
+    background-color: #ffccf2;
+  }
+  50% {
+    background-color: #ccffcc;
+  }
+  100% {
+    background-color: #ccffff;
+  }
+}
+*/
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+
+//**
+//
+// Font-size mixins
+//**/
+
+@mixin font-size($size) {
+  font-size: frmpxtoem($size);
+}
+
+///*
+// * Breakpoints: for  responsive design
+// * ------------------------------------------------------------------------------------------------------------------ */
+@mixin tny-breakpoint($box: '') {
+  @if $box == 'inner' {
+    @media (max-width: $tny_breakpoint_inner) {
+      @content;
+
+    }
+  } @else if $box == 'outer' {
+    @media (max-width: $tny_breakpoint_outer) {
+      @content;
+    }
+  } @else {
+    @media (max-width: $tny_breakpoint) {
+      @content;
+    }
+  }
+}
+
+@mixin sml-breakpoint($box: '') {
+  @if $box == 'inner' {
+    @media (max-width: $sml_breakpoint_inner) {
+      @content;
+
+    }
+  } @else if $box == 'outer' {
+    @media (max-width: $sml_breakpoint_outer) {
+      @content;
+
+    }
+  } @else {
+    @media (max-width: $sml_breakpoint) {
+      @content;
+
+    }
+  }
+}
+
+@mixin med-breakpoint($box: '') {
+  @if $box == 'inner' {
+    @media (max-width: $med_breakpoint_inner) {
+      @content;
+    }
+  } @else if $box == 'outer' {
+    @media (max-width: $med_breakpoint_outer) {
+      @content;
+    }
+  } @else {
+    @media (max-width: $med_breakpoint) {
+      @content;
+    }
+  }
+}
+
+@mixin lrg-breakpoint($box: '') {
+  @if $box == 'inner' {
+    @media (max-width: $lrg_breakpoint_inner) {
+      @content;
+    }
+  } @else if $box == 'outer' {
+    @media (max-width: $lrg_breakpoint_outer) {
+      @content;
+    }
+  } @else {
+    @media (max-width: $lrg_breakpoint) {
+      @content;
+    }
+  }
+}
+
+@mixin xlg-breakpoint($box: '') {
+  @if $box == 'inner' {
+    @media (max-width: $xlg_breakpoint_inner) {
+      @content;
+    }
+  } @else if $box == 'outer' {
+    @media (max-width: $xlg_breakpoint_outer) {
+      @content;
+    }
+  } @else {
+    @media (max-width: $xlg_breakpoint) {
+      @content;
+    }
+  }
+}
+
+// Custom Breakpoint for custom max-width breakpoints
+@mixin ctm-breakpoint($bp: $xlg_breakpoint, $min_max: 'max') {
+  @if $min_max == 'max' {
+    @media (max-width: $bp) {
+      @content;
+    }
+  } @else {
+    @media (min-width: $bp) {
+      @content;
+    }
+  }
+}
+
+// Range Breakpoint for custom min-width and max-width range breakpoints
+@mixin rng-breakpoint($min: $tny_breakpoint, $max: $xlg_breakpoint) {
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}

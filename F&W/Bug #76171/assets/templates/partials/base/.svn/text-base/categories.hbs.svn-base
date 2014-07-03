@@ -1,0 +1,44 @@
+---
+title: Category Items
+---
+
+<div class="row categories-row">
+
+    <div class="col-xs-12">
+
+        {{#parseJSON '{"category_id": "category-restaurants", "category_icon" : "restaurants", "title": "Restaurants", "description": "Restaurants, desc..."}'}}
+            {{> category_item}}
+        {{/parseJSON}}
+
+        {{#parseJSON '{"category_id": "category-wine", "category_icon" : "wine", "title": "Wine", "description": "Winery, Wine Producers, Wine Family, Vinyards"}'}}
+            {{> category_item}}
+        {{/parseJSON}}
+
+        {{#parseJSON '{"category_id": "category-produce", "category_icon" : "produce", "title": "Produce", "description": "Produce, desc..."}'}}
+            {{> category_item}}
+        {{/parseJSON}}
+
+        {{#parseJSON '{"category_id": "category-events", "category_icon" : "events", "title": "Festivals", "description": "Festivals, desc..."}'}}
+            {{> category_item}}
+        {{/parseJSON}}
+
+        {{#parseJSON '{"category_id": "category-people", "category_icon" : "people", "title": "People", "description": "People, desc..."}'}}
+            {{> category_item}}
+        {{/parseJSON}}
+
+        {{#parseJSON '{"category_id": "category-experiences", "category_icon" : "experiences", "title": "Experiences", "description": "Experiences, desc..."}'}}
+            {{> category_item}}
+        {{/parseJSON}}
+
+        {{#parseJSON '{"category_id": "category-seafood", "category_icon" : "seafood", "title": "Seafood", "description": "Seafood, desc..."}'}}
+            {{> category_item}}
+         {{/parseJSON}}
+		
+    </div>
+    
+    	<p class="input-field-validation-alert categories-box-validation-alert">
+        Please select at least one category<span class="input-field-validation-icon input-field-validation-icon-false categories-box-validation-icon"></span>
+    </p>
+</div>
+
+

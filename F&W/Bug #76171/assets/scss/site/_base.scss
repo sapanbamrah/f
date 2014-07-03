@@ -1,0 +1,193 @@
+/**
+* Base styles, top level only
+*/
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+    height:100%; 
+
+  // font smooting for webkit, introduced because of win8.1 Select List issue
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+body {
+  font-family: $font-family-base;
+  color:$type-body-colour;
+  line-height: 1;
+  /*@include breakpoint(xs) {
+    height:pxtoem(500px);
+    min-width: 320px;
+  };*/
+
+}
+
+h1, h2, h3, h4, h5  {
+  font-weight: normal;
+  color: $type-heading-colour;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+h1 {
+  font-family: $font-family-feature;
+  font-size: pxtoem($h1-size);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: $font-family-feature;
+  font-size: pxtoem($h2-size);
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: $font-family-primary;
+  font-size: pxtoem($h3-size);
+  line-height: pxtolineheightem($h3-size, 36px);
+
+
+
+
+  /**
+   All quick fixes for integration
+  **/
+  text-align: center;
+  max-width: pxtoem(750px);
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+h4 {
+  font-family: $font-family-primary-sb;
+  font-size: pxtoem($h4-size);
+  line-height: pxtolineheightem($h4-size, 36px);
+}
+
+h5 {
+  font-family: $font-family-secondary;
+  font-size: pxtoem($h5-size);
+}
+
+h6 {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-family: $font-family-base-b;
+  font-size: pxtoem($h7-size);
+  line-height: pxtolineheightem($h7-size, 24px);
+}
+
+p {
+  line-height: pxtolineheightem($font-size-base, 24px);
+
+
+  /**
+   All quick fixes for integration
+  **/
+  max-width: pxtoem(750px);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+/*
+Quick fix to solve padding issues when in CQ
+**/
+.text > p {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+a {
+  color: $type-link-colour;
+  text-decoration: underline;
+  font-family: $font-family-base-b;
+  font-size: $h7-size;
+}
+
+a:hover, a:focus {
+  color: $type-link-hover-colour;
+  cursor: pointer;
+}
+/*a:visited {
+  color: $type-link-hover-colour;
+}*/
+
+strong, b {
+  font-family: $font-family-base-b;
+  em{
+    font-family: $font-family-base-bi;
+        font-weight: normal;
+  }
+    font-weight: normal;
+}
+em{
+  font-family: $font-family-base-i;
+    font-weight: normal;
+}
+
+hr {
+  border-top: 1px solid #bbbbbb;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+//**********************
+// Hacks
+//**********************
+
+/**
+ Quick hack to remove styling in chrome on buttons
+**/
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance:none;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+}
+
+.base-show-in-ie8{
+  display: none;
+}
+
+/*
+    Hide the original radios and checkboxes
+    (but still accessible)
+
+    based on:
+    http://css-tricks.com/snippets/css/custom-checkboxes-and-radio-buttons/
+
+    :not(#foo) > is a rule filter to block browsers
+                 that don't support that selector from
+                 applying rules they shouldn't
+
+*/
+/*
+li:not(#foo) > fieldset > div > span > input[type='radio'],
+li:not(#foo) > fieldset > div > span > input[type='checkbox'] {
+
+  opacity: 0;
+  float: left;
+  width: 18px;
+}*/
+
+/* Hide the input, but have it still be clickable */

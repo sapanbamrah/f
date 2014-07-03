@@ -1,0 +1,12 @@
+---
+title: Explore
+layout: layout-base.hbs
+---
+
+{{> foodandwineheroexplore}}
+
+{{> foodandwineexploreteaser}}
+
+{{> foodandwineexplorelocationmosaic}}
+
+{{> foodandwinecategorieexploremosaic}}

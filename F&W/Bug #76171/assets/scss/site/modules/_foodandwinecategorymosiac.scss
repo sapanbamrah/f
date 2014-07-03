@@ -1,0 +1,51 @@
+.faw-category-mosaic{
+    position: relative;
+    z-index: 3;
+    background-color: white;
+    padding-top: 2em;
+    padding-bottom: 6.5em;
+    text-align: center;
+}
+.faw-category-mosaic .btn-secondary{
+  margin-bottom: 0;
+  @include breakpoint(md) {
+    margin-bottom: 0;
+  }
+}
+
+.faw-category-mosaci-items{
+  margin-top: 2em;
+  .category-input[type=checkbox] + label{
+    display: inline-block;
+    min-width: 4em;
+  }
+}
+
+.touch .faw-category-mosaci-items{
+
+  .category-input[type=checkbox] + label > * {
+    pointer-events: none;
+  }
+}
+
+.faw-category-mosaic-drop-downs{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-bottom: 1em;
+
+    @include breakpoint(md) {
+       position: absolute;
+       top: 2.2em;
+       right: 8em;
+       margin-bottom: 0em;
+    };
+}
+
+.faw-category-mosaic-drop-down{
+    display: inline-block;
+    margin-left: 0.5em;
+    width:auto;
+
+}
+

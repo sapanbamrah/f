@@ -1,0 +1,121 @@
+---
+title: Restaurant Australia – List your business
+layout: layout-base.hbs
+---
+
+{{> foodandwineheroform}}
+
+<div class="head-divider">
+    <div class="head-divider-inner">
+        <hr class="icon-logo-withlines-hr icon-logo-withlines-hr-small">
+        <h5>Get your business on Google for free </h5>
+        <hr class="icon-logo-withlines-hr icon-logo-withlines-hr-small">
+    </div>
+</div>
+
+<div class="text section">
+    <p>Your Google+ page connects you with customers, whether they’re looking for you on Search, Maps, Google+ or mobile devices. Best of all, it’s free. Really, we mean it.</p>
+</div>
+
+<div class="head-divider">
+    <div class="head-divider-inner">
+        <hr class="icon-logo-withlines-hr icon-logo-withlines-hr-small">
+        <h5>Be there when customers look for you online </h5>
+        <hr class="icon-logo-withlines-hr icon-logo-withlines-hr-small">
+    </div>
+</div>
+
+<div class="text section">
+    <p>Playing hard to get: good for dating, bad for business. Your Google+ page puts the right info about your business on Search, Maps and Google+ so that customers can get in touch. </p>
+</div>
+
+<div class="head-divider">
+    <div class="head-divider-inner">
+        <hr class="icon-logo-withlines-hr icon-logo-withlines-hr-small">
+        <h5>Show up on the web</h5>
+        <hr class="icon-logo-withlines-hr icon-logo-withlines-hr-small">
+    </div>
+</div>
+
+
+<div class="head-divider">
+    <div class="head-divider-inner">
+        <hr class="icon-logo-withlines-hr icon-logo-withlines-hr-small">
+        <h5>Participate in the conversation</h5>
+        <hr class="icon-logo-withlines-hr icon-logo-withlines-hr-small">
+    </div>
+</div>
+
+
+<div class="articleImage section">
+
+
+    <div class="imagewithdescription">
+
+
+        <div class="responsive-image" data-picture="" data-alt="">
+            <div data-src=" http://stagingrestaurant.australia.com/content/food-and-wine/help/be-found-on-google-/jcr:content/mainparsys/articleimage/backgroundImage.adapt.480.low.jpg"
+                 data-media="(min-width: 1px)"></div>
+            <div data-src=" http://stagingrestaurant.australia.com/content/food-and-wine/help/be-found-on-google-/jcr:content/mainparsys/articleimage/backgroundImage.adapt.720.medium.jpg"
+                 data-media="(min-width: 481px)"></div>
+            <div data-src=" http://stagingrestaurant.australia.com/content/food-and-wine/help/be-found-on-google-/jcr:content/mainparsys/articleimage/backgroundImage.adapt.683.high.jpg"
+                 data-media="(min-width: 769px)"></div>
+            <div data-src=" http://stagingrestaurant.australia.com/content/food-and-wine/help/be-found-on-google-/jcr:content/mainparsys/articleimage/backgroundImage.adapt.683.high.jpg"
+                 data-media="(min-width: 993px)"></div>
+            <noscript>
+                &lt;img src='.adapt.1663.high.jpg'&gt;
+            </noscript>
+
+            <noscript>
+                &lt;img
+                src='/content/food-and-wine/help/be-found-on-google-/_jcr_content/mainparsys/articleimage/backgroundImage.adapt.1663.high.jpg'
+                alt=''&gt;
+            </noscript>
+            <img alt=""
+                 src="/content/food-and-wine/help/be-found-on-google-/jcr:content/mainparsys/articleimage/backgroundImage.adapt.720.medium.jpg">
+        </div>
+        <!--[if (lt IE 9) & (!IEMobile)]>
+        <img src='/content/food-and-wine/help/be-found-on-google-/jcr:content/mainparsys/articleimage/backgroundImage.adapt.1663.high.jpg'
+             alt=''>
+        <![endif]-->
+
+
+    </div>
+</div>
+
+
+
+<div class="head-divider">
+    <div class="head-divider-inner">
+        <hr class="icon-logo-withlines-hr icon-logo-withlines-hr-small experiences-head-divider-hr">
+        <div style="background: #ccc" class="head-divider-title">
+            <img class="experiences-head-divider-image" src="imgs/base/headline-map-icon.png">
+        </div>
+        <hr class="icon-logo-withlines-hr icon-logo-withlines-hr-small experiences-head-divider-hr">
+    </div>
+</div>
+
+
+
+<div class="text section">
+
+    <p>By using #restaurantaustralia in your social media communications about your food and wine offering you will:</p>
+    <p>Alert Tourism Australia’s social media team to your product and have the opportunity to have your image, video or post amplified through Tourism Australia’s social media platforms (Facebook, Twitter, Instagram) and on www.australia.com/restaurantaustralia.</p>
+    <p>Particpate in a global conversation on Australia’s quality food and wine experiences and inform the social media community about your product.</p>
+    <p>&nbsp;</p>
+
+</div>
+
+
+
+<div class="head-divider">
+    <div class="head-divider-inner">
+        <hr class="icon-logo-withlines-hr icon-logo-withlines-hr-small">
+        <h5>About</h5>
+        <hr class="icon-logo-withlines-hr icon-logo-withlines-hr-small">
+    </div>
+</div>
+
+
+<p>Simone’s had been run by George and Patrizia Simone since 1986, in which time it has moved from its first location on the outskirts of Bright, to a beautiful Victorian cottage in the heart of the township.
+    Simone's Restaurant has made the shortlist for this year's The Age Good Food Guide and have regained their hatted status with one chef's hat!</p>

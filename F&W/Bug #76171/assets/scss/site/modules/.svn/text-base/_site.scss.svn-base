@@ -1,0 +1,22 @@
+$siteWrapperHeaderHeight:pxtoem(1000px)!default;
+
+.site-wrapper {
+    
+    overflow: hidden;
+
+  @include breakpoint(lg) {
+    //min-height: 100%;
+    //margin-bottom: $siteWrapperHeaderHeight *-1;
+  }
+}
+.site-wrapper:after {
+	content: "";
+	display: block;
+}
+
+.site-footer, .site-wrapper:after {
+
+  @include breakpoint(lg) {
+    //height: $siteWrapperHeaderHeight;
+  }
+}

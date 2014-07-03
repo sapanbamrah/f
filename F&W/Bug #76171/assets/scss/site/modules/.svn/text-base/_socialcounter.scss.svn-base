@@ -1,0 +1,64 @@
+.socialcounter{
+  position: relative;
+  z-index: 4;
+  padding: 33px 0 8px 0;// To Se the diamond height (after rotating the div) in divs height
+  margin-bottom: -246px;//To fit the half of diamond above the image
+}
+
+
+.socialcounter-inner{
+  position: relative;
+  width: 195px;
+  height: 195px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+
+.socialcounter-bg{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 170px;
+    height: 170px;
+    background-color: #007491;   
+    transform:rotate(45deg);
+    -ms-transform:rotate(45deg); /* IE 9 */
+    -webkit-transform:rotate(45deg); /* Opera, Chrome, and Safari */
+    z-index: 1;
+}
+
+.socialcounter-content{
+    width: 190px;
+    text-align: center;
+    position: relative; 
+    z-index: 2;
+    
+    p{
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.socialcounter-count{
+    padding-top: 0.5em!important;
+    font-size: 3em;
+    line-height: 1em;
+}
+
+.socialcounter-bottom-space{
+  padding-bottom: 8em;
+  background: #fff;
+  position: relative;
+  -webkit-transform: translateZ(0);
+
+}
+.socialcounter-tagged{
+    
+}
+.socialcounter-link strong{
+  font-weight: normal;
+  font-family:$font-family-base;
+}
